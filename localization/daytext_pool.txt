@@ -1,0 +1,17 @@
+
+#
+#keep in format @#daytext_NAMEOFUNIT=text, where NAMEOFUNIT = the unique unit name specified in units.xml
+#
+
+@#daytext_Rangers=以牙还牙！
+@#daytext_Rangers=带头冲！
+@#daytext_Rangers=呼啊！
+@#daytext_Rangers=游骑兵，带头冲！
+
+@#daytext_CIA=记住，出门在外靠自己。
+@#daytext_CIA=隐蔽行动，但果断出击。
+
+@#daytext_Nowheraki=今天他们必须死。
+@#daytext_Nowheraki=又是在战壕里的一天。
+
+@#squadnamedelta=祝你好运！

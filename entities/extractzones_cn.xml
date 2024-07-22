@@ -1,0 +1,23 @@
+<Entities>
+	<Entity name="RescueZone" 		type="RescueZone" editorAutoHeight="false" initialHeight="0.03" tooltip="@entity_rescuezone_tooltip" editorTags="logic">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/gui_ingame/rescue_zone_cn.dds" sizeX="2" sizeY="2" blendMode="add_masked"/>
+		<RenderObject3D model="data/models/fx/collision_evacuation_zone.khm" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" blendMode="normal" diffuseColor="00000000"/>
+		<RescueZone type="Hostage" />
+	</Entity>
+
+	<!-- NOTE: Don't rename these ! Needed for RMG -->
+	<Entity name="EvacZone" 		type="RescueZone" editorAutoHeight="false" initialHeight="0.03" tooltip="@entity_evaczone_tooltip" editorTags="logic">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/gui_ingame/evac_zone_cn.dds" sizeX="2" sizeY="2" blendMode="add_masked"/>
+		<RenderObject3D model="data/models/fx/collision_evacuation_zone.khm" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" blendMode="normal" diffuseColor="00000000"/>
+		<RescueZone type="Evacuation" />
+	</Entity>
+	
+	<Entity name="HVT EscapeZone"	type="RescueZone" editorAutoHeight="false" initialHeight="0.03" tooltip="@entity_hvtescape" editorTags="logic">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/gui_ingame/escape_zone_HVT_cn.dds" sizeX="2" sizeY="2" blendMode="add_masked"/>
+		<RenderObject3D model="data/models/fx/collision_evacuation_zone.khm" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" blendMode="normal" diffuseColor="00000000"/>
+		<RescueZone type="Escape" />
+	</Entity>
+</Entities>

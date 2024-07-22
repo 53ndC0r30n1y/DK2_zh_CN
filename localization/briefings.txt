@@ -1,0 +1,123 @@
+﻿#
+# Mission Specific Briefings and Intel Info
+#
+@briefing_pathtosuckless=游骑兵侦查队意外发现一个叛军的小型\n窝点。外面有分神的哨兵，里面有可疑的声\n音。\n\n清理所有敌人。\n\n左键点击拖动你的士兵来绘制他们穿过建筑\n的路径。\n\n士兵会自动与视野内的敌人交战。
+@briefing_wooddoorsareeasy=通信情报发现了这公寓内的一个高价值目标\n，并且有武装护卫。\n\n定位，抓捕并撤离高价值目标。\n\n你们寡不敌众，所以先使用闪光弹和狙击手\n支援，然后逐步搜索和清理公寓。\n\n使用炸药时要谨慎，因为高价值目标的精确\n位置目前还不清楚。
+@briefing_alltogethernow=在街角的小市场上，发现了一个5-6人的\n独立叛乱团伙在粗暴对待当地人，必须采取\n行动才能赢得民心。\n\n消灭或拘捕所有敌人。\n\n据我们所知，这并不是人质劫持事件，但现\n场的平民和商店的家具阻挡了射界。\n\n建议使用多个突破口，所以使用同步行动代\n号。
+@intel_alltogethernow_weapons=空手的敌人逮到机会就可能拿起武器。
+@intel_alltogethernow_windows=封闭的窗户可以徒手破坏或用爆炸装置清除。
+
+@briefing_whywefight=有时效性的情报称，这个已知的叛军窝\n点藏有2名人质。\n\n预计有大量敌人，包括老练的敌人和自杀式\n炸弹。\n\n找到并营救所有人质。\n\n这是一个夜间任务，所以要利用这个优势，\n关掉院子里的灯——但别忘了装备夜视仪!
+@intel_whywefight_gratingdoor=格栅门和铁网围栏使你暴露在敌人的视线和枪火下。
+@intel_whywefight_gate=金属门难以用机械方式破开。使用炸药快速进入。
+@briefing_rescueatdawn=通过无人机监视已知叛军窝点，发现昨\n晚偷运进一名人质，可能送往边境途中，车\n暂时出现了引擎故障，所以我们必须今天到\n达目标地点。\n\n找到并营救人质。\n\n据了解，至少有十几名战士长期驻扎该地点\n，更多的战士于昨晚抵达。\n\n利用出其不意、速度和火力来占上风。
+@briefing_jihadiliveshow=圣战分子现在正在直播一场处决，但幸运的\n是，他们仍然在滔滔不绝。这种情况不会持\n续太久，所以我们必须马上行动。\n\n拯救所有人质，消灭所有坏蛋。\n\n有3名人质需要营救，但我们相信只有1名\n人质在行刑室，所以爆破攻入可能会以最小\n的风险实施。\n\n注意蒙面刽子手这类，如果他们发现你或己\n方伤亡，他们会毫不犹豫地射杀人质。
+@briefing_killingtime=一场打击敌人营地的简单战斗，攻入营地并\n击倒任何抵抗的敌人。\n\n清理所有敌人。\n\n我们确信现场没有平民、非战斗人员或人质\n，敌人大多是普通的叛军。利用突然袭\n击、速度和团队合作行动。
+
+@briefing_gatecrashers=我们正以好莱坞电影里的方式袭击敌人的营\n地——撞开前门，跳下车用枪扫射。\n\n清理建筑内所有敌人。\n\n敌人可能已经注意到你糟糕的停车技术，所\n以突袭的优势很快就会消失，但是，如果你\n行动迅速，你仍然可以在他们没穿裤子的时\n候消灭他们。\n\n如果你的士兵携带的装备足够轻，也可以在\n后门部署。
+@briefing_vbiedsareus=叛军之间的联络频率在过去的几个小时内达\n到了顶峰，这些信号引导我们来到这个据点。\n情报表明他们正在使用这里制造汽车炸弹。\n他们可能就是在该地区袭击平民的罪魁祸首。\n\n以暴力方式进攻，尽快确保该地点的安全。\n\n你的驾驶技能自上次以来已经提高，所以他\n们不知道你会来。利用这个惊喜，打击他们，\n防止他们引爆任何爆炸物。
+@briefing_aquaintlittleman=汽车炸弹工厂的现场勘查显示叛军拥有了\n令人惊讶的技术水平。一些技术细节直接\n指向哈尔谢里技术大学的一位前教授。\n\n顺便提一下，这位教授曾经鼓励学生攻击\n联军部队，随后辞职，但除此之外，他一\n直专注于自己的工作。\n\n抓捕这位教授。\n\n初步勘察显示，你的目标住所由两名武装\n叛乱分子守卫。悄悄地行动，确保在作战\n过程中不要误伤我们的目标。
+@briefing_fireandmaneuver=在城市东部，一处最近发现的叛军藏身处\n被用作策源地，偶尔也用作俘虏的拘留设施。\n高度可信的当地线人已经确认了一名被扣押\n在此地的人质，它被囚禁在藏身处后面的棚子里。\n\n保护并营救人质。\n\n敌人包括老兵和新兵蛋子，但主要集中在主楼里。\n你可以悄悄地进去，把人质偷偷带出来，或者你\n可以发起全面攻击，提醒他们为什么劫持人质是\n不赚钱的。
+@briefing_safehousestrike=在早先的一次突袭中，我们在厨房桌子上发现\n了一张口吻严肃的纸条，引导我们到了街区的\n另一个目标。我们将前往那里，帮助他们卸下\n需要运送的武器。\n\n消灭仓库内的所有抵抗。\n\n这个目标非同寻常，被叛军严密保护，阵地上\n有着更有经验的对手，所以要你细心谋划。\n\n人们常说知己知彼，但这并不适用于手雷，所以\n尽情使用它们来清理那些难以到达的角落和缝隙。
+@briefing_alhasanhasitall=上次营救行动获得了大量的情报，情报显示\n叛军不断地将他们的俘虏在城镇中转移，以\n使他们更难被我们定位。\n\n他们使用了一系列地点，我们能够确定第一\n个地点是进出口商Art Al-Hasan的仓库。\n\n进入仓库并营救所有人质。\n\n这个设施拥有大型开放空间、小房间以及\n多个叛军可以突袭你的地方。开阔地很难\n通过，但非常适合杀人，只要你清理的够\n彻底。
+@briefing_vipersnest=另一次营救行动告诉我们，绑匪们正在参与\n一个小组领导人会议。事实证明，成为叛军\n并不是有趣的，一些人总是在开会或者在开\n会的路上。\n\n长话短说，我们现在锁定了这个会议地点，\n在城市东部的一栋小房子里。\n\n消灭现场的所有敌军。\n\n你唯一的进攻途径可能是一个潜在的死亡\n漏斗，所以要快速运动或利用烟雾掩护和\n优越的火力进入建筑物。\n\n记住，这里没有好人，所以你们可以自由开火。
+@briefing_truebelievers=通过一次早期的突袭行动中抢救出的网络设备，\n技术人员找到一个可能与HVT有关的信号，\n我们已经派遣一支小队去验证了。\n\n突袭这个地点，扣押并撤离HVT。\n\n我们认为敌人虽然缺乏战斗经验，但他们准备\n充分，并渴望一战。所以要慢慢来，而不是跑\n去送死。\n\n当然，还要注意观察那里是否存在供HVT逃离\n的后门。毕竟，攻克一个空巢没有意义。
+@briefing_tuffnutcrackers=我们从一名叛军的手机里获取了叛军地区\n指挥官的地址，情报部门也通过对广播信\n号的追踪锁定了这一位置。\n\n消灭院子内的所有抵抗力量。\n\n这里有很多开阔地和一些重装叛军，但你\n有足够的资源部署一支庞大的力量。\n\n利用多个进攻途径来分散叛乱分子的火力，\n并搜索和清理每个建筑物，不留活口。
+
+@briefing_trainingwheels=
+@briefing_breakanddestroy=我们的情报小组利用截获外国顾问手机信号来\n定位他们的行动基地。目前，我们有一个排大\n小的敌方部队在这个大院进行重大行动。\n\n目标：销毁所有敌方武器弹药。\n\n我们的主要目的不是杀死每一个敌人，而是压\n制叛乱分子在未来行动中使用的ATGM。对\n于这次任务来说，低调行动是一个很好方式\n利用卧底潜入目标可以大大提高我们成功执行\n任务的几率。
+@briefing_snatchandgrab=近期的审讯盘问出了HVT在城市深处的安全\n屋。目前，有一支庞大的叛乱部队用重机枪和\n巡逻队守卫着他。\n\n渗透进去并抓捕HVT。\n\n有几种方法可以破解这个问题。记住，如果\nHVT听到你的话，他会试图沿着东边道路逃\n跑。话虽如此，暗中或迅速实施暴力是你的两\n个最佳选择。请记住，北方有一支敌人\n的QRF，所以如果你搞大动作，一定要有外\n围掩护帮助你将他们击退。 
+@briefing_marketday=我们的高级监视小组已经确认了一名失踪已\n久的美国国民的位置。我们必须在线索中断\n之前营救他。\n\n找到并营救人质。\n\n你将深入敌后，但兵力短缺，且没有后援。\n敌人的数量远远超过你，平民的伤亡也是\n一个问题。\n\n建议你在敌人做出反应或处决人质之前，\n使用隐蔽的方式接近目标并营救人质。
+@briefing_deathdealers=数月以来，我们一直在追踪丢失的 ATGM，\n并且找到了它的下落。本来可以通过菲姬特工\n和中情局暗地里买下他们，但我们没钱，\n也没能拿到使用精确制导武器的许可。所以，\n只能辛苦你们跑一趟，签字动手破坏弹头了。\n\n破坏或炸毁所有弹头。\n\n这是一个极其危险的热点地区，所以认真完成\n任务并尽快撤离。
+@briefing_abandoned=
+
+@briefing_foreigninfluencers=“禁忌之树”——一个特别狂热的外国圣战\n教派——正在向首都采取行动，希望在那里\n建立势力，并勒索公司。我们也应该顺便过\n来打个招呼!\n\n消灭该区域的所有敌人。\n\n这些人中的大多数都是相当致命的枪手，但\n他们也会引爆自己，而不是被活捉，所以保\n持距离并注意自杀炸弹。\n\n该任务允许卧底单位向前部署，但也有通过\n下水道的备用方案——如果你想提高单位机\n动性。
+@briefing_universityassault=一周前，“禁忌之树”的疯子们占领了一座\n大学建筑，现在他们决定从烧书转向割喉，\n这意味着我们要马上行动。\n\n找到并营救所有人质。\n\n有5名人质需要解救,但目前只有1人可见\n——即将被杀。\n\n学校的院子显然有防御，很难被攻破，但我\n们预计大楼内的防御会更严密。注意简易爆\n炸装置，自杀式炸弹和战斗至死的意志。
+@briefing_canyonambush=错误的信任和背信弃义使我们的一个小队陷入\n了被伏击的境地，四面楚歌。\n\n生存并消灭所有敌人。\n\n你的部队中加入了一支民兵小队，但他们的忠\n诚度目前还不清楚。\n\n预计会与前车和尾车交火，但还要小心检查站\n的重机枪。
+@briefing_preciouscargo=敌人占领了我们的土地，入侵了我们的家园\n，奴役了我们的家人。我们有一小队特警潜\n入敌人占领的地区，准备解救被敌人俘虏的\n家属。\n\n保护并营救两名女性。\n\n敌人就在我们周围，如果警报一响，援军就\n会到来。在场的人不会不战而降，他们宁愿\n杀死我们的人。
+
+@briefing_noisyneighbors=这个社区的居民能通过声音轻松的分辨低音炮\n和轻机枪上膛。当地人告诉我们，一大群叛军\n搬进来了，他们不会把音乐关小。\n\n清灭公寓内的所有敌人。\n\n这个公寓有很多复杂角度和开放空间。记住，\n你还有余生可以活，所以要慢慢来，使用尽可\n能多的弹药来倾斜天平，使自己处于有利地位。
+@briefing_theview=48小时前，3名美国记者被叛军劫持。\n在一名劫匪在社交媒体发布的自拍后，\n我们通过照片成功锁定了他们的位置。\n\n突袭公寓并确保人质的安全。\n\n叛乱分子随时准备处决人质，因此迅速\n和安静是推荐的选择。无论你做出什么\n选择，都要给这些记者一些好的素材，\n让他们的回忆录更加精彩。
+@briefing_ratwork=叛军准备在一个能俯瞰Nowehraki国家\n警察总部的阳台上处决3名人质。他们\n没有预料到会遭遇战斗，但他们人数\n众多，火力强劲。我们只能派两名干员\n进入建筑物。\n\n进入建筑物，营救人质。\n\n你可以联络到一名狙击手，他一直在向\n我们提供情报，随着情况的发展。他报\n告称，敌人的态度似乎很放松，没有警\n觉。好好利用这一点，但要记住叛军人\n多势众。
+@briefing_uninvitedguests=一支当地叛军小组昨晚抓走了一位公开批评\n他们“事业”的人，并将他带到了城市中心的\n一所房子里。我们的情报部门截获了一通来\n自该小组领导人的电话，他想要把人质出售\n给地区军阀。\n\n营救人质，并以你认为合适的方式消灭任何\n敌方人员。\n\n多个门，长长的走廊，短小的房间，以及一个\n可能存在的自杀式炸弹袭击者，都会给你和敌\n人带来许多惊喜。我们能够开辟一条绳索通道，\n但无论谁去，都需要轻装迅速。
+@briefing_door2door=当地Al-Urzeri小组领导人的私人司机\n今天早上走进我们的办公室，告诉了我\n们他老板的位置。他的理由是什么？\n\n嗯，他已经厌倦了只为“功业”工作。对\n他来说好消息是，如果他的线报准确，\n他将获得5万美元的奖励。\n\n清除目标建筑并在HVT逃脱之前将其抓捕。\n\n线人告诉我们，目标房屋正在举行一次大\n型会议。所以准备战斗。
+@briefing_roomservice=曾经，这是东半球最受追捧的度假胜地之一。\n但战争改变了一切。现在，它只是外国新闻\n记者和外交访客的避难所。这正是我们来到\n这里的原因。今天早上，两支叛军小组冲进\n了8楼，并占领了三个欧洲记者使用的房间。\n\n尽快营救人质。\n\n在突袭队伍中观察到一名穿着自杀式炸弹\n背心的叛军，所以要保持警惕。你有一名\n狙击手可以使用，他注意到敌人目前似乎\n没有意识到我们的营救行动。利用这一点\n来获得优势。
+@briefing_pincerspower=昨晚，两名非常不幸的救援人员在夜跑时被\n绑架。他们的踪迹引导我们到达这里。闯入\n建筑物，营救人质。\n\n这将是一次艰难的任务。虽然小，但这所房\n子里有许多藏在狭窄的角落里的敌人。要击\n中这些人不仅仅是角度的问题，还需要速度\n和出其不意。守卫这些人的叛军是经验丰富\n的战士，如果你让他们有机可乘，他们会让\n你付出代价。因此，请认真制定行动计划。
+@briefing_lonelyabode=这个小房子曾经是一个充满生机的家。\n随着战争愈演愈烈，它的小家庭被迫\n离开，越过边境寻求安全。现在这里\n是一个满是愤怒的人的家，他们也忘\n记了自己曾经在哪里长大。\n\n消灭所有敌人并营救人质。\n\n长长的走廊和疲惫的居民使这所房子\n成为进攻方的噩梦。因此，利用切角\n和清晰的视线来控制敌人，夺取房子。\n速度和出其不意是你们的武器，门后\n的那些家伙根本不知道接下来会发生\n什么。
+@briefing_bigboomcondo=时间不多了，只剩下一次呼吸的空余时间了。\n这间公寓里全是顽固的圣战分子，他们随时准\n备炸掉一整栋公寓，就是现在。\n\n破坏公寓，拆除所有炸药。\n\n我们的狙击手可以看到公寓，但从他的位置只\n能看到这么多。速度和暴力是唯一的选择。准\n备好了吗？深呼吸，开始工作。
+
+@briefing_hotroom=叛乱分子袭击了市政厅，并在市长办公\n室劫持了市长作为人质。我们有一个侦\n察小组在街对面的公寓里为我们提供了\n一个观察哨。根据小组的侦察情况来看\n，叛乱分子似乎正计划处决他，但我们\n不知道什么时候会发生。\n\n目标：到达办公室营救人质。\n\n办公室里的叛乱分子已经做好了准备，\n只要有一丁点动静就要杀人，所以安静\n潜入或快速突击是你最好的选择，但要\n注意整个场所的安全。
+@briefing_knivesinthedark=圣战分子在最近的失败后，选择在市内的一个\n安全屋避难。我们相信，这支叛军将从这个地\n方发动反攻，重新确定领土。这是不可能发生\n的。\n\n目标：摧毁防御并清理据点的敌对人员。\n\n我们没有在该地区发现任何平民，因此，您可\n以按照自己认为合适的方式继续行动。\n\n他们还不知道你会来，所以你可以利用夜幕发\n动奇袭。\n\n消灭这个小组将破坏他们整个攻势的稳定，所\n以消灭所有敌人是至关重要的。
+@briefing_techsupport=一栋高层公寓楼的邻居告诉我们的情报人员，\n目标嫌疑人携带了重型装备还有至少一件的自\n杀背心。这里有几个潜在的目标需要我们侦察，\n所以组织小队开始行动。\n\n目标：进入公寓并解除他们的装备。\n\n我们相信他们可能会部署便携式防空导弹或\nATGM来攻击联军，所以你会救下很多人。\\n\n祝你好运，记住，小心那个穿自杀背心的。
+@briefing_traphouse=那些门后面有什么东西在躁动，而且肯定不是\n音乐。圣战分子绑架了一名欧洲的医疗援助人\n员，并将其关押在这所房子里。请注意，我\n们有可靠的情报告诉我们，这是一个诱杀联军\n的阴谋，整个房子都注定要爆炸。\n\n目标：进入房子并保护人质\n\n这是一个高风险任务，但如果我们不这样做，\n一个好人就会死。你没有太多时间，而且有很\n多敌人希望在这些门后成为烈士。迅速且有意\n识地移动，以确保人质的安全，并在炸弹夷平\n这个街区之前使其失效。
+@briefing_scratchedcarpets=今晚要为我们一个线人的家人执行拯救任务，\n一个圣战组织要在今晚的电视直播里砍下他们\n的头。\n\n拯救所有人质，并消灭所有恐怖分子。\n\n这是一次迫在眉睫的袭击事件，我们没有更多\n部队可以部署，但救援工作非常艰巨。我们\n已经来不及等待了。\n\n我们目前只知道其中两名人质的位置，但应该\n首先考虑第三名人质。他们必须要活着回来。
+@briefing_flatmates=你的安全屋被破坏了,敌人几秒钟后就会破门\n而入。\n\n安全解救VIP。\n\n不知道多少圣战分子来到了这里，你的弹药可\n能不足以应对他们。\n\n加强防御以击退第一次攻击，但不要在该区域\n逗留太久，可能会对你不利。
+@briefing_islandcafe=我们搭船前往国王棋盘,这是一个隐蔽\n的岛屿咖啡馆，打击正在进行的叛乱分\n子会议。\n\n他们可能认为岩石和水让他们安全，但\n他们会发现海水不会吓倒我们的士兵。\n逮捕两个高价值目标。\n\n咖啡馆是一个小型建筑，有室内和室外\n空间，相信我们的目标正在锁着门开会。\n\n目标已经带来了自己的安保人员，并有\n更多人作为快速反应部队待命。请做好\n计划，不要让他们逃脱。
+@briefing_fuelstop=叛军通过炸毁另一个派系的地盘制造麻\n烦，平民卷入了交火中。这次是一座加\n油站，如果它起火，无休止的报复链将\n增加两个档次。\n\n解除所有爆炸物并消灭叛军。\n\n我们及时得到了这次打击的消息，但只\n有一个小组在位置上做出反应。在不完\n美的情况下充分利用，快速清除前往炸\n弹的路上。\n\n在储藏室和加油站院子里寻找爆炸物 \n- 这些家伙以用机油和油箱调味他们\n的IED而闻名。
+@briefing_theritual=传言有一个新的邪教领袖对动物和人进\n行了不可描述的行为；一直认为这是乡\n村传说。结果证明他是真实存在的，当\n地人已经受够了他，向我们告密。我们\n需要进去阻止他最新的邪恶冒险。\n\n解救所有人质并消灭对手。\n\n这个家伙的行为甚至在Belt Area的标\n准下也很奇怪，所以只有愚蠢的人加入\n了他。不过他确实带来了自己的精锐，\n所以当你遇到他们时，要准备进行一场\n艰苦的战斗。\n\n幸运的是，愤怒的当地人给了我们关于\n人质所在地的情报 - 以及他们不在的\n地方。可以在其他地方随意使用爆炸物。
+
+@briefing_covereddebris=今天，我们被派去贝尔特兰执行另一次人质救\n援任务，这次的对手是一些想要获得影响力并\n跻身大佬席位的叛军小子。 那么，让我们教\n给他们大男孩规则吧！\n\n目标：安全解救人质，最好消除所有威胁。\n\n叛乱分子知道有人会来营救或偷走他们的战利品，\n因此他们在尽可能的地方加强防御，并出动了\n所有人马。他们中的大多数在正面对枪中并不\n是很危险，但他们躲藏在很危险的位置，可能\n会导致你陷入一些危险的交火。\n\n缓慢而有条理地推进，不要贸然行动急于送命。
+@briefing_nightbird=我们正在追踪可能是军火商随从的手机信号，\n今晚我们可能会中大奖。 你需要检查这个站\n点并绑架任何你能找到的感兴趣的人。\n\n目标：逮捕所有 HVT。\n\n该地点位于敌方领土深处，位置僻静，因此小\n队应该小而隐秘。 众所周知，这种 HVT\n非常容易受惊，如果感觉不对劲，肯定会逃跑。\n切断他的逃跑路线，并且在你能够采取果断行\n动之前不要引起骚动。@briefing_intervention=One of our asset's been blown, and he pinged Uber for Extraction. It’s safe to assume that we will have mere seconds before the Blackheads paint his office walls with brain matter, so we’ll have to move quick.\n\nRescue our guy Tanto, alive.\n\nOur only advantage is that they aren’t expecting any QRF. We need to capitalize on the surprise and keep the momentum going against them once we hit. There are several heavily armed insurgents outside the structure, but we believe there to be more within.\n\nGet in there and get our man out.
+@briefing_intervention=One of our asset's been blown, and he pinged Uber for Extraction. It’s safe to assume that we will have mere seconds before the Blackheads paint his office walls with brain matter, so we’ll have to move quick.\n\nRescue our guy Tanto, alive.\n\nOur only advantage is that they aren’t expecting any QRF. We need to capitalize on the surprise and keep the momentum going against them once we hit. There are several heavily armed insurgents outside the structure, but we believe there to be more within.\n\nGet in there and get our man out.
+@briefing_avtt6=This morning two American Foreign Service Officers were taken in their home by a group of particularly aggressive Blackheads. It is apparent their main aim is to execute the FSOs to send a message to our government - but the only message that will be sent today is that terrorism leads to a shallow grave.\n\nRescue the hostages before they can be executed.\n\nThe insurgents are on guard but not expecting an assault yet. From our sniper position across the street we can tell they have multiple executioners on the balcony as well as one with a suicide vest.\n\nYou may try the Stealth card but be prepared to go Loud if compromised! Move fast and clear as you go - our intel is incomplete but the enemy will surely move to kill the hostages.
+@briefing_factory=After several hours of coercive “discussion” the foreign advisor we captured revealed the location of their safe house. We believe this is where the advisors assisting the insurgents have been planning their operations and assembling the vehicle born IEDs that have been plaguing NATO convoys.\n\nEliminate all insurgents in the safehouse.\n\nThese are not your average insurgents. They are highly trained, well equipped, and are ready to die for their cause. We believe there may be advisors on the premises equipped with suicide vests so keep your distance.\n\nSpeed and violence of action are the surest ways to clear this structure, so don’t be afraid to get your hands dirty. Good luck. 
+@briefing_tiny_modern_trouble=We just received a distress message from a recently acquired asset. This cat promised the goods on Neighbouristan's covert actions within Nowheraki, but might already be the victim of such actions himself. The little we got before he got cut was: increased surveillance, suspicious vehicles, tac gear visible.\n\nEliminate all enemy operatives on site.\n\nIf this is legit, he got hit by the Covert Ops arm of Neighbouristan's Intel Agency. Expect very strong - potentially Near-Peer - opposition. These guys are pros - well equipped, well trained, and extremely devoted to their mission. Their capabilities are akin to ours, and it is reasonable to assume body armor and armor piercing ammunition will be present. \n\nBe sure to bring weapons that can mitigate this threat, and keep in mind that while you will be outnumbered on this op, you can level the playing field with superior tactics.  
+@briefing_traitors=Briefing info: 
+@briefing_tt10=Briefing info: 
+@briefing_tiny_trouble_09=Briefing info: 
+
+@briefing_jackofhearts=我们正在执行高风险抓捕任务。我们的目标通\n过走私鸦片出境来支付该组织的活动经费，并\n为自己留下了财富，从而在叛乱组织中建立了\n自己的地位。\n\n目标：进入 HVT 的家并抓住他。\n\n通过捕获这个 HVT，我们将截断对该地区\n叛乱分子的资金来源。这所房子由经纪人亲自\n招募的暴徒和退伍军人把守。 记住，我\n们要留活口，我们需要对他进行审问，但请随\n意使用闪光弹。
+@briefing_queenofdiamonds=今晚我们希望抓住一只难以捉摸的鸟—一位\n外国玩家，他们用他们的计划削弱了苦苦挣扎的\nNowheraki州。他很少跨越边境—\n所以我们不能把他引渡到国外，因此不要错过\n这个机会。 作为全球 Blackhead \n业务的主要投资者，他来这里会见一些一直在\n训练叛乱部队的东欧圣战分子。\n\n抓捕 HVT 并消灭所有其他敌人。\n\n公寓由一小型军队守卫。 保镖训练有素，装\n备比圣战者更好，但达不到西方 PMC 标准。\n\n利用奇袭、黑暗和战术来控制建筑。 也许还\n可以参观一下闭路电视室。
+@briefing_kingofspades=这是不寻常的—我们来接一位旧政权官员\n—但他是自愿来的。我猜他不喜欢新时代\n的叛乱。否则，他宁愿要美国纳税人的钱，\n也不愿让圣战分子造成残害。他通过不安全\n的手机给我们打电话——所以你不是唯一来\n的滴滴快车。\n\n把叛逃者送到营救点。\n\n可怜的家伙已经被你控制了，但他害怕很快\n遭到攻击，甚至自己的警卫都调转枪口攻击\n他。别期待同伙，把所有人都当作潜在的敌\n人。
+@intel_kingofspades_VIP=这家伙很配合，希望被安全带回来。你可以像\n普通士兵一样控制他，但不要让他拿武器。 
+@briefing_tenofclubs=叛乱组织的一名地区行动官员正在参观隐藏在\n城市内的一个据点。 在从遭到伏击的Now\nheraki检查站追踪到一辆被盗警车后，\n我们确定了它的位置。\n\n目标：抓捕 HVT 并消灭该场所内的任何敌人。\n\n这些家伙全副武装，不会不战而屈人之兵把他\n交出来。准备好在争取这个家伙的过程中赢得\n每一寸土地。我们的爆破手可以给我们开辟新的路线，\n所以一定要利他们来偷袭毫无戒心的敌人。
+@briefing_twoofspades= 我们和两个低级别的目标有一个双人约会之\n夜。他们是好邻居，在入侵后，他们觉得就\n地隐藏很安全，他们用贿赂、枪支和偶尔的\n勒索掩护自己——直到现在。\n\n抓捕并撤离两个目标。\n\n这是一次夜间任务，但敌人预料会有麻烦。\n会有守卫、陷阱，以及增援部队待命。制定\n相应地计划，不要给他们主动权。
+@briefing_offlimits=迄今为止未被识别的北部叛乱分子领袖\n原来就隐藏在人群中 - 他是一位富有\n的地主和政权顾问。在一次血腥的绿色\n革命事件之后，我们追踪到了这些罪犯，\n直接找到了他。\n\n抓捕高价值目标并安全撤离。\n\n这个任务非常重要，但不要冲动到送死。\n目前有一支小型军队在该地，我们不能\n等到天黑。\n\n从后面进入，利用卓越的射击技巧和火\n力占据优势，前往前院疏散点。
+@briefing_coolpalace=反恐部长—新政权的明星—原来只是叛军的傀儡。\n他利用权力来破坏我们的成果并以\n此资助叛乱分子，同时利用我们的胜利成果将\n对手从他的董事会中清除。在他知道游戏结束\n之前是时候该抓捕他了。\n\n突击宫殿大院并活着带回 HVT。\n\n这座酋长时代的古老宫殿由私人保安重重把守\n，强攻只能被火力压制。\n\n可以寻找其他路线并阻止目标乘坐直升机逃跑。
+
+
+@briefing_crisisonroutekilo=快餐并不是这个加油站唯一糟糕的东西。\n今天早上早些时候，一个圣战组织拦截了一辆\n公共汽车，并挑出一名大学生，因为他的书籍\n、胡须尺寸和信仰不符合他们的教义。更不\n幸的是，油罐和自杀背心的组合简直比吃完加\n油站寿司的窜稀更具爆炸性。\n\n在敌人处决人质或引爆他们的自杀背心之前消灭\n他们。\n\n没有太多空间可以让我们缓慢行动，一旦他们\n知道我们在这里，这就是一场让学生活下去的\n比赛。加油站的后面可能提供另一种方法。但\n无论你做什么，都要以暴力和精准的方式去做。
+@briefing_againsttheodds=在你面前有一项看似不可能完成的任务。\n一架侦察无人机最近在荒地深处发现了一个叛乱\n分子基地。我们相信这是他们运送最近被绑架\n的两名Nowheraki政客的地方。\n\n目标：突破大院防御并保护人质。\n\n这个基地挤满了叛乱分子，我们的分析人员发\n现了他们正准备处决的现场直播。这并不容易\n，但你是这些人最后的希望。这里有很多可以\n和敌人战斗的地方。确保你携带了合适的装备，\n不仅可以用于救援，还可以镇压剩余的圣战分子。
+@briefing_embassysiege=昨天，绿区外的当地大使馆遭到圣战武装袭击。\n尽管大多数工作人员已经安全撤离，但叛乱分子设\n法扣押一些人作为人质。这些圣战分子全副\n武装，并在大使馆内建立了坚固的阵地。\n\n目标：进入大使馆并营救人质。\n\n这是一次旨在进行宣传的袭击，我们有理由相\n信如果劫持者发现我们开始进攻，就会开始处\n决人质。迅速行动清理大使馆并确保每个人\n都能回家。
+@briefing_maniacsmansion=叛乱分子袭击了一名重要线人的家，并将他和\n他的儿子劫持为人质。我们有理由相信他们\n目前正在接受审讯，以便圣战分子盘问出人质\n向我们透露的内容，一但审讯完毕，他们很可\n能会立即杀死人质。\n\n目标：进入营地并营救人质。\n\n在进入之前你有很多地方需要清理，而且里面\n挤满了敌人。确保你利用掩护和隐蔽来机动敌\n人并避开现场的自杀袭击。
+@briefing_countrysidejackpot=城里人就是不明白喜欢住在这里享受开阔的\n田野和稀疏的邻居的宁静的人们。\n这也使其成为那些不怀好意的人的一个有吸引\n力的藏身之处。 我们发现一个圣战宣传小组\n在乡村一处偏远的农舍里活动。他们正在打算\n处决扣押的人质。\n\n目标：营救人质或消灭所有敌人。\n\n目前，圣战分子还不知道我们的营救尝试。\n利用这一点给他们来点惊喜。这里几乎教科书般的角\n落和中央的餐厅让你感觉像是在公园里散步，\n呃，不过这里只有玉米地。
+@briefing_ourmaninaccounting=经营一家杂货店是一项艰苦的工作，当恐怖分\n子迫使你把仓库空间也给他们时，这就更难受了。\n经过几周向我们提供信息后，圣战分子似乎已\n经弄清楚了泄密的来源。目前，他们搞了个牢房\n并威胁我们的人重新效忠他们。\n\n目标：营救我们的线人并把他安全地带到撤离点\n\n现场有很多叛乱分子，如果线人试图逃跑，\n他们会杀死他。他们认为自己占了上风，所以\n优势就在我们这边。但如果你不喜欢隐身，那\n么这个第三世界的建筑给了我们许多可以突破\n的墙壁。
+@briefing_thehandover=你可能会认为背包客决定穿越一个饱受战争蹂\n躏的国家自然是个坏主意。 不幸的是，这并\n没有阻止一名美国大学生的尝试。徒步旅行\n后几个小时内，他就被人贩子拦截，他们打算\n将他卖给叛乱组织。\n\n目标：营救人质或消灭所有敌对分子。\n\n我们的线人，一位名叫 Fergie 的当\n地国民，正在加入我们这样她就可以营救被同\n一人贩子抓获的团队成员。虽然这些人想要出\n售，但如果有机会他们就会杀死人质。桥梁位\n置空旷帮不了我们什么，但没有什么是烟雾解\n决不了的。
+@briefing_fergieparty=我们的朋友菲姬顺便参加了一次圣战集会，她\n认出了太多大鱼，难以啃下。她正要出去，但\n发现了明显的橙色人质，所以她打电话给我们，\n然后退到浴室等待支援。\n\n目标：营救人质。\n\n看守这些人质的叛乱分子训练有素，积极性高，\n我们有理由相信，他们在人质中安置了一名自\n杀式炸弹袭击者，作为救援时的安全保障。\n菲姬也许能为我们带来额外的支援，所以在您\n进入时请联系她。
+@briefing_vantagepoint=两名外国记者在报道冲突期间一直住在该公寓\n里。今天早上，我们接到邻居的电话，通知我们有\n一个圣战组织拜访了他们，并且整晚都在殴打\n他们。\n\n目标：突破公寓并救出两名人质。\n\n我们有理由相信如果我们不干预，他们就会被\n处决。大厅尽头的邻居公寓和街对面的狙击手是帮助\n救援的潜在方法，并注意巨大的阳台和四周的\n玻璃墙。\n\n无论你做什么，都要尽快完成，就像这些叛乱\n分子一样一旦他们知道你在这里就会割断记者\n的喉咙。
+
+@briefing_firesale=你认为黑暗是你的盟友吗？今晚就会如此。\n我们正在拜访一家汽车经销店，躲开路灯应该\n会让你像蝙蝠一样可以盲目地爬到那些巨大的\n窗户前。但如果他们确实看到你，他们可能\n会处决人质，而且陈列室的几何结构并不简单。\n\n目标：进入经销店并营救人质。\n\n不要仅仅因为里面的圣战分子很容易被挑选出\n来进行“费卢杰猎火鸡大赛”，这并不意味着\n没有危险-在停车场发现了一些巡逻队。\n\n停车场的黑暗可能使你事半功倍-但你也\n需要分散队伍并照顾左侧的办公室。
+@briefing_mazerunners=自从一名记者向小布什扔鞋子以来，新闻发布\n会从未如此激烈。今天早上，几个Black\nHead组织占领了外国新闻办公室，因为许\n多记者正在准备每周的简报。\n\n进入办公室解救人质或消灭敌人。\n\n在场的叛乱分子斗志昂扬，训练有素，许多人\n都配备了自杀背心。他们一但看到你，就会试\n图杀死最近的人质。因此，请尽快采取行动，\n拯救生命，以免为时已晚！
+@briefing_speedislife=全国各地有很多高效的部门，但这个呼叫中心\n不是其中之一。然而，这里仍然挤满了需要\n我们帮助的人。叛乱分子的宗教警察对它进行\n了猛烈攻击，作为他们将国家从西方影响中\n“解放”出来的行动的一部分。但他们今天唯\n一的计划是脑袋被子弹解放。\n\n目标：杀死所有敌人并解救人质。\n\n我们在街对面部署了一名狙击手，但他的射击\n速度有限。 你需要利用速度、出其不意和暴\n力的行动来获得战果，\n并提醒圣战分子他们阳寿已经到头。
+@briefing_nightcall=我们追踪到一名失踪线人的家，他家里似乎有\n些不守规矩的客人。我们应该捞他出来。\n\n目标：进入家中并营救我们的线人。\n\n还记得恐怖电影中的怪物是如何在潜入并谋杀\n所有人之前先切断房屋的电源吗？ 现在你的\n机会来了。\n\n这里有多个入口和保险丝盒可以切断房子和院\n子里的灯。秘密行动或强力突击是你在这里的唯\n一选择。你可以用炸药炸开墙壁，或者像恐怖片\n一样并默默地清扫房子。\n该你选择了，而且月亮开始圆了。
+@briefing_doublerush=小伙子们，今晚有个很有挑战性的营救任务。\n这条街道两旁有两座被敌人控制的建筑，\n而且都关押着守卫严密的人质。\n\n锁定人质的位置并拯救所有的5名人质。\n\n敌人还没有警觉，但你需要同时清理两个房间，\n因为它们相互观察并且为对方提供火力支持。\n由您决定如何分散力量以及在何处施加更多力量。\n\n我们目前只有 4 名人质的情报，\n所以请注意爆炸物并找到最后一个还活着的人。
+@briefing_hallwayhell=圣战分子长期以来一直潜伏在荒地深处的这座殖\n民时代的古老建筑中，但情报过于粗略，\n无法用轰炸将他们消灭。现在我们知道他们有人\n质，所以我们可以进去。\n\n找到并营救所有人质。\n\n已知有 10 名人质，我们只有其中一些人\n的情报。你需要有条不紊地梳理结构并找到它\n们。\n\n敌人认为它们遥不可及并且没有处于锁定模式，但他们的数量和技能与你的力量相匹配。期待与外国顾问及其狂热朋友的不愉快遭遇，包括 自杀背心。
+@briefing_unaware=我们当地的一个线人和Nowheraki\n的地下组织走得太远了，叛军决定\n对他进行一次不友好的访问。\n\n幸运的是，菲姬特工及时给了他一个\n警告，他们现在被锁在办公室里，\n寡不敌众，武器也不够。\n\n把线人和他妻子活着带出来。敌人\n已经控制了别墅，他们正在彻底搜\n查别墅，寻找他的家人。\n\n你们需要打开通往我们线人的通道\n并且找到那个妻子——她设法藏在车\n间里并且准备好了——但是没有受过\n训练——来保护自己。
+
+@briefing_kamilpasha=一个追踪大规模杀伤性武器的联合国调查员\n在城市的错误区域吸引了太多的注意力。我\n们奉命安全救出他，并劝他清醒点。\n\n联系那个VIP，把他救出来。\n\n情报显示，追杀小队已经被派去了，安德希\n尔还有30秒的生命——除非你先找到他。
+@briefing_kingoftheslums=This morning our intelligence collectors triangulated a call from an F-Tree cell leader to a senior handler in the organization, callsign Ahab. Ahab has directed cells all across Nowheraki for months, and capturing him is critical for us to further dismantle the Forbidden Tree.\n\nCapture the HVT within the slums.\n\nWhile we were able to narrow down the grid of Ahab’s location, we don’t have exact knowledge of his whereabouts. That gives us a few options, a stealthy clearance to covertly locate and extract Ahab, a rapid and violent clearance to capture him before he escapes, or a combination of the two. Keep in mind that there are insurgents intermixed with civilians throughout the slums, and once we capture Ahab, there is a high likelihood of an insurgent QRF.\n\nAs the commander on the ground, the course of action is up to you, good luck.
+@briefing_bombthreat=We just received a call from a civilian about a hostage situation at the Southern Regional Bus Station. She says that insurgents stormed the station and when she went to hide in a central bathroom, discovered a bomb.\n\nEliminate all insurgents in the station and disarm that bomb.\n\nThe regional manager of the bus station has told us that the office in the southernmost part of the building has a computer which can give us the CCTV footage for the building. Time isn’t on our side with this one, so whatever you do, do it fast.
+@briefing_blockade=One of our confidential informants was captured attempting to pass through an insurgent blockade this morning. We have been able to narrow down his location to the north-westernmost building.\n\nExtract the hostage.\n\nDarkness is on your side, and the insurgents have no idea that we are coming. Capitalize on this advantage to rapidly extract our guy. Be advised that there may be other hostages on site and there is a small civilian presence intermixed with the insurgents. Make your shots count and free any additional hostages you come across.
+@briefing_urbanarea=一个不存在的机构的承包商组织在从行动中\n撤退时遇到了麻烦。他们被困住了，但仍在\n拼死防御，而且需要一辆顺风车。\n\n尝试与盟军接触，并让所有人安全撤离。\n\n该地区充满敌意，敌人拥有无限的增援力量。\n你的救援力量并不是那么好，所以你要尽快\n进入并完成任务。但不要在那里逗留，否则\n你会被人潮淹没。
+
+@briefing_bridgeassault=昨天，圣战部队击退了Nowhera\nki部队的进攻，并巩固了对阿尤斯河\n上唯一一座桥梁的控制。如果我们没有\n控制桥梁，东边的友军将被切断补给。\n\n目标：夺回桥梁并消灭所有敌人。\n\n该地区有一些平民，所以请控制好你的\n交战规则。守卫桥梁的叛乱分子都是有\n经验退伍军人，他们会给你的部队带来\n一场艰苦的战斗。确保你在利用我们的\n夜视仪攻击桥梁之前摧毁了他们在西边\n建筑内的监听站。
+@briefing_tolltakers=昨晚，一辆运送国家警察新兵的巴士被\n圣战组织拦截。他们将人质劫持到深山\n中的一处大院，将其处决制作成宣传视频。\n\n目标：营救人质或清理大院。\n\n我们听说过有关此大院的传言，但无法\n得知验证里头详细情况。这是一个藏在\n悬崖边的废弃苏联基地。清除其中的敌\n人将是一项挑战，因为它戒备森严，光\n线充足，机枪巢压制了主要通道。在一\n切为时已晚之前消灭他们。
+@briefing_raptordown=我们有一架隶属于JSOC的无人侦察机坠毁在\n敌国境内，而大量吃瓜群众的接近让我们放弃了\n立即“从轨道上打击它”的解决方案。我们需要\n深入敌国境内，并销毁所有敏感技术，然后再\n将其走私到与我们不那么亲密的国家那里。\n\n摧毁无人机传感器并安全撤离你的小队。\n\n好吧，这里是印地安国家，附近的学校被称为\n叛军的据点，你必须考虑这一点。\n\n预计敌人会通过北面增援，所以要阻止他们，\n不要在那里逗留太长时间。快速反应，然后快速撤离。
+
+@briefing_opsubjphase1=All those quiet hours on guard duty and then chaos erupts when you're just not ready for it. Objective Silly Symphony is under attack.\n\nRepel the assault on the facility.\n\nThere are still many civilian workers in and around the facility. It seems that the insurgents are just here to damage the equipment, but we need to be sure of our fires as we maneuver through the building. This is a very sensitive situation and there is no ETA on the QRF. So pull up your pants and grab some kit from the truck, don't let them dig in.
+@briefing_opsubjphase2a=The enemy has taken some objectives and we've contained most of them. Now we got one of their relief columns as it was working its way east on Route Sarah, and we need to deploy to ambush.\n\nClear the ambush site of all enemies.\n\nPosition your troops smartly and you'll bag most of the bad guys in the opening salvo, but keep in mind that you need to go in and methodically sweep the area afterwards. The enemy may squirt and take refuge in nearby buildings, so be careful and thorough.  
+@briefing_opsubjphase2=Objective Summer Sadness got overrun earlier this week and several of the workers were dragged back to the administrative offices during the initial assault. We must go in and save those poor blokes.\n\nRescue all hostages.\n\nDrone footage is showing insurgents well dug in in the facility, with several stationary machine guns positioned on avenues of assault. Be sure to move aggressively to secure the hostages without compromising your team to the enemy’s coordinated fires.
+@briefing_opsubjphase3=Amidst the chaos of the initial assault and first day response, the insurgents were able to capture the Sal-Salad water filtration center. Drone footage has shown several large containers being carried in -  which Intel believes to be bombs. If they detonate, the entire region will be without clean drinking water.\n\nNeutralize all hostiles on site and disarm the bombs.\n\nWe have the element of surprise and the technological advantage of night vision. Capitalize on this to retake the facility. There’s a lot riding on this one, Godspeed.
+@briefing_opsubjphase4=The time for reacting to events outside of our control is over. Our human intelligence collectors have relayed the position of the Insurgent lieutenant responsible for the offensive. He’s now in head down mode, retreated in a tunnel complex hidden behind an old factory.\n\nBreach the complex and capture the HVT before he escapes.\n\nThis complex will be packed with insurgents, and they are waiting for someone to drop in. Be sure to bring tools that can get through the dense walls of the complex, and be sure to move quickly to cut off his escape route to the east.
+
+@briefing_kerakI=WIP Briefing Kerak
+@briefing_kerakIopt=WIP Briefing Kerak
+@briefing_kerakIIa=WIP Briefing Kerak
+@briefing_kerakIIb=WIP Briefing Kerak
+
+@intel_generic_hostages=情报显示这里藏有人质。
+@intel_generic_hostages_unsure=可能的人质的位置。
+@intel_generic_bomb=如果真有炸弹，很可能就会藏在这里
+
+@intel_hvt_location=The HVT is nesting in this location. 
+@intel_hvt_possible=This is one of the possible locations for the HVT. 

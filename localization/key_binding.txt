@@ -1,0 +1,149 @@
+
+@keybind_menu_title=控制
+@keybind_menu_code=作用
+@keybind_menu_bind1=按键 1
+@keybind_menu_bind2=按键 2
+@keybind_menu_bind_tips=ESC取消, DEL 删除
+@keybind_menu_wrong_key=按键已绑定到 %s
+
+@keybind_menu_change= 更改
+@keybind_menu_default=重置:
+@keybind_menu_default1=默认
+@keybind_menu_default2=WASD 镜头移动
+
+@keybind_toggle_play=暂停/重新开始
+@keybind_path=改变路径
+@keybind_path_extra=%s (拖动路径 / 人员)
+@keybind_path_ttip=(拖动路径 / 人员)
+@keybind_action_menu=动作菜单
+@keybind_action_menu_extra=%s (在路径 / 人员上)
+@keybind_action_menu_ttip=(在路径 / 人员上)
+@keybind_look_at=视角
+@keybind_look_at_extra=%s ((拖动路径 / 人员)
+@keybind_look_at_ttip=(拖动路径 / 人员)
+@keybind_look_at_pie=切角(保持注视)
+@keybind_look_at_strafe=扫视 (保持注视)
+@keybind_gocodes=行动代号
+@keybind_go_a=行动代号 Alpha
+@keybind_go_b=行动代号 Bravo
+@keybind_go_c=行动代号 Charlie
+@keybind_go_d=行动代号 Delta
+@keybind_go_wait_for_clear=等待确认安全
+@keybind_go_wait_for_clear_extra=%s (动作菜单里)
+@keybind_go_wait_for_clear_ttip=(动作菜单里)
+@keybind_reload_waypoint=Set Reload
+@keybind_reload_waypoint_extra=%s (in action menu)
+@keybind_reload_waypoint_ttip=(in action menu)
+@keybind_stop_in_place=原地停止
+@keybind_stop_in_place_extra=SHIFT + %s (在路径上)
+@keybind_stop_in_place_ttip=SHIFT + <key> (在路径上)
+@keybind_speed_sync=Place Speed Sync gocode
+@keybind_speed_sync_extra=Hold %s + Click (on path)
+@keybind_speed_sync_ttip=Hold <key> + Click (on path)
+@keybind_delete_waypoint=Delete clicked waypoint
+@keybind_delete_waypoint_extra=Hold %s + Click (on path)
+@keybind_delete_waypoint_ttip=Hold <key> + Click (on path)
+@keybind_trigger_stealth_fire=潜行射击
+@keybind_trigger_stealth_fire_extra=%s ( + SHIFT 切换)
+@keybind_trigger_stealth_fire_ttip=SHIFT + <key> 切换全局潜行/自由开火
+@keybind_cycle_troop_selection=选择下一位人员
+@keybind_toggle_troop_list=Show/Hide Troops List
+@keybind_sniper_fire=狙击手开火
+@keybind_sniper_cycle_target=狙击手切换目标
+@keybind_sniper_firecycle=狙击手开火/切换目标
+@keybind_slow_mo=慢镜头
+@keybind_spawn_football=生成足球
+@keybind_cam_panning=摄像机镜头
+@keybind_cam_panning_ttip=或者按住鼠标中键
+@keybind_cam_pan_up=镜头向上移动
+@keybind_cam_pan_left=镜头向左移动
+@keybind_cam_pan_down=镜头向下移动
+@keybind_cam_pan_right=镜头向右移动
+@keybind_cam_zoom=镜头变焦
+@keybind_cam_move_up=镜头焦距缩小
+@keybind_cam_move_down=镜头焦距放大
+@keybind_cam_tilt=镜头倾角
+@keybind_cam_tilt_down=镜头向下倾斜
+@keybind_cam_tilt_up=镜头向上倾斜
+
+@_menu_options_sketchtool=草图画笔
+
+@keybind_or=或者
+@key_arrows=方向键
+@key_wasd=WASD
+
+@key_unbound=<未分配>
+@key_assign=<分配新按键>
+
+@mouse_button1=左键单击
+@mouse_button2=右键单击
+@mouse_button3=中键点击
+@mouse_wheel=鼠标滚轮
+
+@key_backspace=退格键
+@key_tab=TAB
+@key_return=ENTER
+@key_esc=ESC
+@key_space=空格
+
+@key_delete=DELETE
+@key_pgup=PAGE UP
+@key_pgdn=PAGE DOWN
+@key_end=END
+@key_home=HOME
+@key_insert=INSERT
+
+@key_left=左键←
+@key_up=上键↑
+@key_right=右键→
+@key_down=下键↓
+
+@key_shift=SHIFT
+@key_control=CTRL
+@key_menualt=菜单键/ALT
+@key_lshift=左SHIFT
+@key_rshift=右SHIFT
+@key_lctrl=左CONTROL
+@key_rctrl=右CONTROL
+@key_lmenu=左菜单建
+@key_rmenu=右菜单建
+@key_lwin=左WIN建
+@key_rwin=右WIN键
+
+@key_printscreen=PRINT SCR
+@key_pause=PAUSE
+@key_capital=CAPITAL
+@key_numlock=NUM LOCK
+@key_scrolllock=SCROLL LOCK
+
+@key_num0=小键盘0
+@key_num1=小键盘1
+@key_num2=小键盘2
+@key_num3=小键盘3
+@key_num4=小键盘4
+@key_num5=小键盘5
+@key_num6=小键盘6
+@key_num7=小键盘7
+@key_num8=小键盘8
+@key_num9=小键盘9
+@key_nummul=小键盘 *
+@key_numadd=小键盘 +
+@key_numsep=NUM SEPARATOR
+@key_numsub=小键盘 -
+@key_numdec=NUM DECIMAL
+@key_numdiv=小键盘 /
+
+@key_f1=F1
+@key_f2=F2
+@key_f3=F3
+@key_f4=F4
+@key_f5=F5
+@key_f6=F6
+@key_f7=F7
+@key_f8=F8
+@key_f9=F9
+@key_f10=F10
+@key_f11=F11
+@key_f12=F12
+
+@key_plus=PLUS

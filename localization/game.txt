@@ -1,0 +1,1014 @@
+#
+# IMPORTANT -22-
+# -Do not modify/localize %s, %d, %u or any other such constructs, leave them as they are.
+# -Do not modify \n (it moves the text following it to the next line).
+# -Text IDs ending in _ttip or _tooltip can be translated using any length, for all others try to keep the same length (though it depends from text to text).
+# -Keep every @id=text on one line
+#
+
+#
+# Units
+#
+@unit_rangers_name=游骑兵
+@unit_rangers_assault=突击兵
+@unit_rangers_marksman=精确射手
+@unit_rangers_support=支援兵
+@unit_rangers_grenadier=榴弹兵
+@unit_rangers_medic=医护兵
+@unit_rangers_description=游骑兵是一支能大规模部署强悍作战力量，能力\n全面的直接行动部队。
+
+@unit_cia_name=中情局
+@unit_cia_undercover=卧底队员
+@unit_cia_blackops=行动队员
+@unit_cia_description=由中情局特别行动处部署，执行敌后秘密任务的\n准军事行动人员。
+
+@unit_nowheraki_name=诺赫拉基特警
+@unit_nowheraki_assault=突击兵
+@unit_nowheraki_leader=指挥员
+@unit_nowheraki_sapper=工兵
+@unit_nowheraki_militia=民兵
+@unit_nowheraki_description=尽管缺乏现代化的装备和战术，但当地的特警将\n为他们的人民和他们的未来战斗到死。
+
+@class_rangers_assault=The bulk of Ranger squads. Armed with rifles and carbines,\n they handle anything from room clearing to all-out firefights. \n\nUse them to maneuver, dominate and gain vital ground.
+@class_rangers_marksman= Marksmen eliminate the enemy with precise hits at medium \nand long range, particularly when stabilized behind cover.\n\nPlace in vantage position and lock down targets with them.
+@class_rangers_support= Your support gunners can suppress or kill the enemy with sustained \nautomatic fire, and are extra-effective when placed behind cover.\n\nUse to fix the enemy in place or cut down enemy assaults. 
+@class_rangers_grenadier= Your instant High-Explosive force multiplier. Grenadiers are \nriflemen that can also lob deadly 40mm grenades at range.\n\nUse to engage groups of enemies, or pesky cover peekers.
+@class_rangers_medic=Ranger Medics can stabilize casualties and keep trooper wounds under control, but are armed and trained to fight with the squad when that's needed.\n\nCritical in keeping people from dying.  
+
+@class_cia_undercover= Masters of disguise and concealment, Undercovers blend \nwith the locals but also rock'n'roll if needed.\n\nInfiltrate, bypass, strike decisevely, blend out.
+@class_cia_blackops=Clandestine Kill Team or deadly QRF in support of \nUndercovers, Black Ops can infil as locals but exfil in guns-out mode.\n\nUse Black Ops when your surgical ops turns up a big tumor.
+
+@class_nowheraki_leader=Brain of your assault. Boosts nearby Militia and applies\nspecialized firepower - grenade launchers and precision rifles.\n\nProtect but use as force multiplier. 
+@class_nowheraki_assaulter=Jack-of-all-trades, can handle rifles, LMGs, SMGs,\neven ballistic shields and breaching tools.\n\nUse as deadly tip of your force.
+@class_nowheraki_sapper=Explosive and demolition charge Specialist, can blow \nup walls, obstacles, and bad guys alike.\n\nOpens up new avenues of assault, explosively. 
+@class_nowheraki_militia=Volunteer fighters with minimal training and max enthusiasm.\nThey work best under Leader's influence.\n\nBoost your numbers as they only cost half a Deploy Point.
+
+
+#
+# Trooper Ranks
+#
+
+@trooper_rank_0=二等兵
+@trooper_rank_1=一等兵
+@trooper_rank_2=专业军士
+@trooper_rank_3=下士
+@trooper_rank_4=中士
+@trooper_rank_5=上士
+@trooper_rank_6=一等军士
+@trooper_rank_7=军士长
+@trooper_rank_8=第一军士长
+@trooper_rank_9=主任军士长
+@agent_rank_0=I 级外勤
+@agent_rank_1=II 级外勤
+@agent_rank_2=III 级外勤
+@agent_rank_3=I 级高级干员
+@agent_rank_4=II 级高级干员
+@agent_rank_5=III 级高级干员
+@agent_rank_6=I 级专家干员
+@agent_rank_7=II 级专家干员
+@agent_rank_8=III 级专家干员
+@agent_rank_9=顶级特工
+@nowheraki_rank_0=新兵
+@nowheraki_rank_1=巡警
+@nowheraki_rank_2=下士
+@nowheraki_rank_3=中士
+@nowheraki_rank_4=上士
+@nowheraki_rank_5=警士长
+@nowheraki_rank_6=高级警士长
+@nowheraki_rank_7=准尉
+
+
+#
+# Equipment (data/equipment/*.xml)
+#
+
+@grenade_smokesingle_name=1x 烟雾弹
+@grenade_smoke_name=2x 烟雾弹
+@grenade_smoke_desc=制式的军用烟雾弹，能产生直径5米的烟雾云，\n遮挡视线并制造恐慌，同时敌人也会发现异常。\n现实情况下在室内是会有害的，但游戏里没有此\n设定。\n\n使用烟雾弹掩护你的行动来获得优势。\n请注意烟雾是无法阻挡子弹的。\n\n引信时间：立即\n持续时间：14秒
+@grenade_flashbangsingle_name=1x 闪光弹
+@grenade_flashbang_name=2x 闪光弹
+@grenade_flashbang_kit_name=3x 闪光弹
+@grenade_flashbang_desc=非致命性的闪光弹能让爆点3米内的人员暂时眩\n晕，失明和失聪, 为你赢得几秒钟的安全。\n这不会影响你的队员，因为是艰苦训练的回报。\n（玩笑，游戏设定）\n\n使用闪光弹来分散守在人质身边和优势位置的\n坏蛋们的注意力。\n\n引信时间：立即\n作用范围：2米\n最大范围：3.5米
+@grenade_stingersingle_name=1x 刺痛手雷
+@grenade_stinger_name=2x 刺痛手雷
+@grenade_stinger_desc=一种非致命手雷，爆炸后会飞散出大量“无害”\n的橡胶球，刺痛人们迫使他们找地方躲起来——\n假如他们还能走路的话。\n\n可用来吓跑平民和搞事情的坏蛋，并清理火线，\n但不要扔向自己人。\n\n引信时间：1秒\n作用范围：4米\n伤害范围：1米
+@grenade_fragsingle_name=1x 破片手雷
+@grenade_frag_name=2x 破片手雷
+@grenade_frag_desc=能把人炸飞的制式手榴弹。致命的金属破片会射\n穿杀伤范围内的所有人。没有宽恕，没有怜悯。\n你还有什么顾虑吗？\n\n用手雷干掉藏在角落的敌人，但小心不要伤及无\n辜。\n\n引信时间：1秒\n致命范围：2米\n伤害范围：4米
+@grenade_molotov_name=1x 燃烧瓶
+@grenade_molotovimp_name=3x Spicy Molotov
+@grenade_molotov_desc=一瓶无害的鸡尾酒。有些东西被点着火时，没人\n会想要走过去。\n\n用它把敌人逼出掩体。\n\n引信时间: 1.5秒\n伤害范围: 3米
+@slap_charge_name=1x 破锁炸药
+@slap_charge_desc=一种可以炸掉门锁的小型自粘炸药。爆破产生的\n飞溅很少，所以通常都是安全的。\n\n用它出其不意的攻入房间，也能用来炸掉窗户。\n\n安装时间：2.5秒
+@nws_doorcharge_name=1x 破门炸药
+@nws_doorcharge_kit_name=4x 破门炸药
+@nws_doorcharge_desc=一种中等大小的炸药，能固定在门上，把门整个\n炸开。会在门后的区域炸出碎片并产生超压冲击\n波，所以在友军或非战斗人员附近使用是不安全\n的。\n\n安装时间: 5秒\n致命范围: 3.5米\n伤害范围: 7米
+@gear_torch_name=1x 热切棒
+@gear_torch_desc=A self-contained, disposable torch that literally burns through padlocks, metal doors and chainlink fences alike.\n\nWill create a light-and-sound show for the benefit of the enemy, so use only when stealth is not important.\n\nUse time: 3s\n\n*not a lightsaber!
+@slap_charge_kit_name=3x 破锁炸药
+@grenade_smoke_kit_name=3x 烟雾弹
+@grenade_frag_kit_name=3x 破片手雷
+@bombvest_name=自杀式炸弹背心
+@breaching_charge_name=1x 破墙炸药
+@breaching_charge_desc=把墙炸开个洞，优先发起出其不意地攻击。\n\n使用它可以清除墙壁以及后面的敌人，但小心别\n炸死了人质和无辜平民。\n\n安装时间：6秒\n致命范围：4米\n伤害范围：6米
+@nws_demo_charge_name=3 x 破拆炸药
+@nws_demo_charge_desc=工兵喜欢炸东西，毁墙是你的专长。工具包里有\n3个精心准备的炸药，每一个都足以粉碎部分墙\n壁。 爆炸的范围控制得很好，但超压仍然可能\n危及无辜。\n\n安装时间：3秒\n致命范围：2米\n伤害范围：5米
+@helmet_rangers_ach_name=低切头盔
+@helmet_rangers_ach_desc=低切头盔是诺赫拉基战役的陆军标准头盔，具有\nIIIA级防护，覆盖头部重要部位，不会影响瞄准\n或视野。\n\n有15%的几率阻挡手枪和冲锋枪的致命一击。
+@helmet_nws_ach_desc=来自美国陆军的多余头盔，在工兵训练场上方便\n地分配给你。\n有点重，但你的SWAT伙伴们仍然希望自己能得到\n一个。有14%的几率阻止手枪和冲锋枪的致命射击。
+@helmet_nws_achlow_desc=通过包括但不限于贿赂高层和拉关系的手段后，\n你的小队成员都拿到了库存过剩的头盔。\n\n虽然头盔有点重，也没有保存在最佳状态，但它\n们仍然有13%的几率阻挡冲锋枪和手枪的致命一\n击。
+@helmet_rangers_ihps_name=新一代头盔
+@helmet_rangers_ihps_desc=新一代头盔只进行了有限测试，它利用非常现代\n的技术，以最小的重量增加提供更大的防护区域\n和III级防护。\n\n有20%的几率阻挡敌方非穿甲武器（包括AK系列\n和类似武器）的致命一击。
+@helmet_rangers_fast_name=高切头盔
+@helmet_rangers_fast_desc=高切头盔是游骑兵团的新型头盔，牺牲一点防护\n性换取机动能力。\n\n防弹等级仅为II级，不过仍能阻挡大多数手枪和\n冲锋枪子弹。\n\n有10%的几率阻挡致命一击。
+@helmet_rangers_fastrf_name=防步枪高切头盔
+@helmet_rangers_fastrf_desc=此头盔是经过测试的高切头盔设计升级版，重量\n有所增加，可提供III级防弹能力。\n\n有10%的几率阻挡手枪、冲锋枪和敌方大部分自\n动武器的致命一击。
+@helmet_rangers_fastmandible_name=高切头盔+下颌防护
+@helmet_rangers_fastmandible_desc=模块化的高切头盔设计，附加可选的下颌防护。\n\n游戏设定不会影响瞄准或视野，但会略微降低机\n动性。\n\n最重要的是，它增大了II级防弹区，有14%的\n几率阻挡致命一击。
+@helmet_CIA_fast_name=防弹头盔
+@helmet_CIA_fast_desc=一款特种部队级别的头盔，用于防护子弹和爆炸\n破片威胁，但牺牲了一点机动性。\n\nIIIA级防弹板有机会阻挡手枪和冲锋枪的致命射\n击，还能安装夜视仪。
+@helmet_CIA_bump_name=防撞头盔
+@helmet_CIA_bump_desc=当你的头撞到什么东西时，戴上运动头盔是防止\n受伤的好方法。\n\n头盔轻便舒适，让你在运动中充满自信，还能方\n便地佩戴夜视仪。\n\n注意此头盔不防弹。
+@helmet_CIA_localhat_name=传统帽
+@helmet_CIA_localhat_desc=当地牧羊人和战士间流行的帽子款式。\n\n有助于你在下次Cosplay活动时融入其中。
+@helmet_CIA_basiccap_name=棒球帽
+@helmet_CIA_basiccap_desc=与当地人完美融合，看起来就像一个酷爱运动的\n年轻美国体育迷。
+@helmet_CIA_headband_name=丛林头带
+@helmet_CIA_headband_desc=在这种气候条件下并不完全有用，也无助于混入\n人群，但至少每个孩子都会知道你的行动比他们\n的行动更黑（秘密）。
+@helmet_NWS_basiccap_name=棒球帽
+@helmet_NWS_basiccap_desc=这款官方发行的SWAT时尚帽子不仅可以\n遮阳，还能防止碎屑和飞溅的黄铜进入您的眼睛。\n\n不提供防弹功能，但也不会减慢您的速度。
+@helmet_NWS_beret_name=军官贝雷帽
+@helmet_NWS_beret_desc=您珍贵的红色贝雷帽，是您参加为期一年的诺赫\n拉基军官特训班后获得的，而非赠送。
+@helmet_NWS_headband_name=血色头带
+@helmet_NWS_headband_desc=戴上诺赫拉基民兵的血色头带，展现你对这片土\n地和人民的赤子心。
+@hat_santa_name=圣诞帽
+@helmet_NWS_bandana_name=头巾
+@helmet_NWS_bandana_desc=这款采用环保有机棉的时尚头巾能让你更加\n凉爽，让你免受太阳的直射伤害。
+@hat_santa_desc=Ho, ho, ho？
+
+@nvg_rangers_pvs14_name=PVS-14 单目夜视仪
+@nvg_rangers_pvs14_desc=基本的单目头盔夜视仪利用第三代技术在黑暗中\n提供清晰的图像，但由于视野有限和缺乏深度感\n知而降低了机动性。\n\n允许你在黑暗中与敌人交战时隐藏自己——直到开\n火。
+@nvg_rangers_pvs31_name=PVS-31 双目夜视仪
+@nvg_rangers_pvs31_desc=先进的双目头盔夜视仪提供更大的视野和良好的\n深度感知，因此使用它时几乎不会损失机动性。\n\n允许你在黑暗中与敌人交战时隐藏自己——直到开\n火。
+@nvg_sc_pvs7_name=PVS-7 NVG Head-Rig
+@nvg_sc_pvs7_desc=Cyclops-like NVG.
+
+
+@armor_rangers_basicvest_name=游骑兵背心 / SAPI插板
+@armor_rangers_basicvest_desc=这就是你团发的插板背心。你还想要啥？海澜之\n家？\n\n前后都有III级防弹插板，其他部位也能阻挡一些\n手枪弹。\n\n记住，相信防弹衣只能碰碰运气，战术才是活下\n去的根本！
+@armor_rangers_levelIVaddon_name=游骑兵背心 / ESAPI插板
+@armor_rangers_levelIVaddon_desc=将背心中的硬质防弹插板换成更轻的ESAPI防\n弹插板，得到IV级防护，能更好的对抗穿甲弹\n和狙击弹。\n\n插板只覆盖前部和后部的重要区域，还有很多\n的人仅穿了优质防割布料。
+@armor_rangers_levelIVsides_name=全套ESAPI插板
+@armor_rangers_levelIVsides_desc=将ESAPI防弹插板装在团发背心的所有口袋中，\n包括前面、后面和大部分侧面。\n\n失去一些舒适感和灵活性，但受到大量穿甲弹威\n胁时，你最好系紧它。
+@armor_rangers_extended_name=扩展背心 / SAPI插板
+@armor_rangers_extended_desc=反地雷伏击车把你送到敌人门口时，轻装上阵就\n等于送死，每扇门后都可能被伏击！有很多理由\n需要穿着它。\n\n在背心上添加侧板、裙板、肩板和衣领保护，将\n机动性和快速穿插留给你同伴。\n\n这件背心擅长阻挡来自前方的步枪弹，但挡不住\n敌人的狙击弹或穿甲弹。
+@armor_rangers_jumpable_name=突击背心 / III级插板
+@armor_rangers_jumpable_desc=当你需要跑得比敌人的反应快，又需要一些对步\n枪弹的防护时，简单的插板背心是个不错选择。\n\n一对独立的III级防弹插板可以保护你的重要器官\n不受卡拉什尼科夫怒火的伤害，但侧翼完全没有\n防护。\n\n重复“保持隐蔽，行动果断，先发制人，保住性\n命”直到它变成你的习惯，保证每次能活下来。
+@armor_rangers_jump_swimmeriv_name=突击背心 / IV级插板
+@armor_rangers_jump_swimmeriv_desc=面向挑剔的用户，这款曲线切割的IV级防弹插板\n提供对狙击和穿甲弹的保护。在不牺牲太多机\n动性的同时，也改善了武器操控和整体舒适性。\n\n快速突击背心仍然只保护要害而没有侧面防护。\n假如你不幸中弹，最好希望敌人没打偏！
+@armor_rangers_noplates_name=软质防弹衣
+@armor_rangers_noplates_desc=取出背心中硬质插板，只保留IIIA级软体防弹衣,希望中士不会觉得你是个白痴。\n\n你肯定会更加敏捷，但记住，诺赫拉基的叛乱分\n子用的AK短管突击步枪能直接击穿这件背心。\n\n老兵们说不让敌人打中就是最好的防护，所以跑\n快点，避开敌人的准星和观察范围。
+@armor_cia_tacvestIII_name=战术背心 / III级插板
+@armor_cia_tacvestIII_desc=这款高端插板背心，提供了前面，后面和身体两\n侧的全方面III级防护。\n\n能可靠地阻挡常规AK子弹，但即便如此，保证\n机动性才是根本，要害保护的再好，你也是肉\n身。\n\n不要指望它能挡住特殊威胁，遇到狙击手，利\n用火力压制和机动来保住性命。
+@armor_cia_tacvestIV_name=战术背心 / IV级插板
+@armor_cia_tacvestIV_desc=当处境非常艰难，又有任务需要你时，全面的\nIV级保护可以是你的救命之物。\n\n能够阻挡多数特殊威胁，包括SVD狙击步枪和\nPK系列机枪可怕的7.62突缘弹，别被它欺骗，\n盲目产生安全感。背心保护了脖子以下，而头\n却暴露在危险中。
+@armor_cia_concealableII_name=II级软质防弹衣
+@armor_cia_concealableII_desc=一种轻薄隐蔽的防弹背心，穿在大多数衣服里面\n都没有违和感，让你在接近敌人时不会过早引起\n怀疑。\n\n干这一行，最好是别中枪，但用它阻挡普通手枪\n和冲锋枪的近距离射击的确是可以的。\n\n步枪和全尺寸冲锋枪（如MP5A）可以轻易\n击穿。
+@armor_cia_concealableIIIAlimited_name=IIIA级插板软质防弹衣
+@armor_cia_concealableIIIAlimited_desc=当进行卧底任务时，成功渗透和致命枪战之间的\n距离有时以秒为单位。枪战技能有助于生存，但\n良好的计划和一点盔甲也有助于生存。\n\n这件背心最大限度地提高了隐蔽性，同时在躯干\n前后固定一对IIIA级防弹插板，防止手枪和冲锋\n枪的威胁。
+@armor_cia_concealableIIIA_name=IIIA级软质防弹衣
+@armor_cia_concealableIIIA_desc=最厚的软体防弹背心，可以伪装自己并保护你安\n全脱身。 \n\n它对手枪弹的威胁提供了全方位的防护。在烈日\n炎炎的诺赫拉基穿起来过于温暖了。
+@armor_nws_frontplate_name=单块SAPI插板
+@armor_nws_frontplate_desc=向你没有名字的战术背心中装一块的防弹板，\n并始终保持正面朝向敌人。\n\n防弹板早在几年前就通过了SAPI认证，因此\n它能合理的阻挡来自AK和其他步枪的攻击。\n\n它对穿甲威胁不会有太大帮助，但在城市战争\n中，有一点盔甲总比没有好。
+@armor_nws_basicvest_name=SAPI 前插板 / 后插板
+@armor_nws_basicvest_desc=你很幸运，捡到了两块SAPI的插板，质量还算\n不错。\n\n这将阻挡前面和后面的步枪火力，但它不会保\n护你的侧面，也不能阻挡狙击手和穿甲威胁。
+@armor_nws_extended_name=战斗工兵作战背心
+@armor_nws_extended_desc=战斗工兵课程补充说要时刻穿着这件扩展背心，\n因为你的工作性质是危险的。\n\n在前面和后面，背心提供了合理的步枪级别的防\n护，但侧面也有一定程度防护。\n\n背心牺牲了很多机动性，但工兵太值钱了，不能\n当兔子。
+@armor_nws_lvl4front_name=ESAPI / SAPI 组合插板
+@armor_nws_lvl4front_desc=防狙击手级别的保护是很难得到的，但你的美国\n顾问给你的团队提供了一些防弹板。\n\n前面有IV级防护阻挡装甲穿透火力，但后面仍然\n覆盖只有防普通步枪的保护。
+@armor_enemy_softarmor_name=隐蔽式软质防弹衣
+@armor_enemy_heavyarmor_name=简易插板携行具
+
+@shield_nws_lvl3_name=III级盾
+@shield_nws_lvl3_desc=一种简单的矩形盾牌，可以阻挡大部分来自前方\n的步枪火力，但不能阻挡穿甲威胁。\n\n盾牌在中东城市战争中并不常见，但可以帮助对\n抗设置封锁的枪手或穿越特定的危险区域。
+@shield_nws_lvl4_name=IV级盾
+@shield_nws_lvl4_desc=这是我们联盟教官特地提供，IV级护盾甚至可以\n阻挡可怕的穿甲SVD步枪。\n\n这样的保护会有很大的重量，所以盾的实际面积\n做得很小，你需要更加小心，不要让你的侧翼暴\n露在敌人的火力下。\n\n盾牌可以帮助你穿越危险区域或接近单一威胁，\n但永远不要忘记用额外的队员支援你侧翼。
+
+@support_gear_spy_camera_name=蛇眼摄像机
+@support_gear_spy_camera_desc=一个不显眼的摄像头，能适应大多数门缝（墙角\n也可使用！），可以让你洞察未知。\n\n你的士兵会自动转向检查那些“红色虚影”，也\n就是坏人们最后的已知位置。所以情报能帮助你\n更快更安全地清理房间，造成的附加伤害也会比\n较小。\n\n用它侦察房间和危险区，尤其是你有大把时间的\n时候。
+@support_gear_lockpic_name=撬锁工具
+@utility_pouch_lockpick_machine_name=开锁工具
+@utility_pouch_lockpick_machine_desc=中情局探员能在几乎完全安静的情况下撬锁，但\n这需要时间——因此，带上开锁工具吧。\n\n可以在4秒或更短的时间内打开大多数门！
+@utility_dynamic_hammer_name=冲击锤
+@utility_dynamic_hammer_desc=“他将锤头高举，召唤奥丁留下神启”（歌词）\n\n你对着门猛敲重金属音乐节拍的场景，可能看起\n来有点傻，抡着大锤冲上去是有道理的。\n\n它可以一下砸开锁着的门。\n特别提醒，你不能用它打肉搏战。
+@utility_bolt_cutter_name=断线钳
+@utility_bolt_cutter_desc=An old school, muscle-powered Bolt Cutter gets you through bars and chain without much commotion or collateral damage, and it never runs out of fuel!\n\nA good friend for stealthy adventures, particularly in the countryside.\n\nUse it to cut through chainlink fences, padlocked doors and even jail bars.
+@utility_breaching_kit_name=破拆工具包
+@utility_breaching_kit_desc=嗯，为什么不把冲击锤和断线钳都给同一个人。\n\n你知道是谁，对吗？我们都认识他，他应得的。
+
+@disguise_poncho_name=庞乔斗篷
+@disguise_poncho_desc=只要披上这块布，你就能成为无名之辈，也没有\n枪。它既温暖又有型，购买它还能促进当地经济\n发展，可能你也不想到处扔炸弹。\n\n隐藏武器以便于隐秘行动的同时还能增加5点隐\n匿值。\n\n一旦暴露身份，就无路可退。
+
+@support_gear_housekeys=房屋钥匙
+
+# Pistols
+@firearm_tt_33_name=TT-33 (7.62mmP / 8发)
+
+@firearm_mps45sup_name=M&P 45C 消音型
+
+
+@firearm_ppk_name=PPK 手枪
+@firearm_ppk_desc=作为邦德的经典手枪，PPK 经常被特工携\n带，因为它的隐蔽性非常好。短枪身使其\n很容易从枪套中拔出，但它在中距离的实\n际精度并不理想。\n\n弹匣中只有6发不太热门的.380 ACP子弹\n而且紧急换弹匣时很慢，所以约翰-威克\n不会选它。
+@firearm_ppksup_name=PPK 消音型
+@firearm_ppksup_desc=内螺纹设计有助于 PPK 在装有抑制器的情\n况下保持短枪身，.380 子弹自然也是无声\n的。这把枪是执行秘密行动的好选择，但要\n使用 "突袭 "来最大限度地提高你的 "击杀\n概率"，因为你所携带的子弹并不那么致命。\n\n枪声范围 3.5m
+
+
+@firearm_g19_name=G19 手枪
+@firearm_g19_desc=紧凑型G19的设计轻巧、隐蔽，但仍然可以作\n为战斗手枪使用。\n\n在拔枪时它的速度很快，并且保留了它大哥的优\n点：快速指向目标，射击迅速且可控。但中\n远程精度会受到扳机和视距问题的影响。
+@firearm_g19sup_name=G19 消音型
+@firearm_g19hp_desc=紧凑型G19轻巧、隐蔽，但仍可作为战斗手枪。\n\n保留了它大哥的优点：快速指向并快速开火。\n\n中情局增加了能适配抑制器的瞄具和枪管螺纹，\n只损失一点拔枪速度换取远射精度。
+@firearm_g19hpsup_desc=在G19上安装一个短抑制器。\n它不是最安静的9mm武器，但操控性弥补了这些，\n也足以迷惑敌人，如果他没忘乎所以。\n\n使用亚音速子弹能获得额外的潜行效果。\n\n枪声范围：7.5米
+@firearm_mk27m2_name=Mk27 Mod 2 Pistol
+@firearm_mk27m2sup_name=Mk27 Suppressed
+@firearm_mk27m2_desc=Just the small and handy G19 repackaged to SOCOM's no-nonsense specs: taller sights, red dot sights, threaded barrel for suppressor and enlarged slide release for faster reloads. Its just your secondary, but it works well as a combat pistol, backup gun or Hush Puppy sentinel remover.
+@firearm_mk27m2sup_desc=Mount a short suppressor to your G19. Its not the quietest 9mm out there, but it makes up for it by great maneuverability, and it works well enough to keep the enemy confused, if not oblivious.\n\nUse subsonic rounds for extra stealth effect.\n\nSound Travel Range: 7.5m
+
+@firearm_g19cust_name=G19 定制型
+@firearm_g19cust_desc=以简单紧凑和流行的G19为模板，添加5发子弹\n的扩容弹匣，更好的瞄具和扳机，带有后坐力补\n偿器的枪管，并为光学瞄具增加导轨。\n\n这是一种职业枪手用的手枪，具有良好的精度，\n最小的后坐，现代的瞄具，没有你不要的累赘。
+@firearm_g19x_name=G19X 手枪
+@firearm_g19x_desc=这是陆军服役手枪试射留下的库存，原版奥地利\n交叉型手枪：一个全尺寸的9mm枪体，与紧凑型\n兄弟的套筒和枪管相结合。\n\n出枪快速，重量轻，G19X不会牺牲弹匣容量和\n射击能力，但平庸的扳机会影响远射精度。
+@firearm_g17_name=G17 手枪
+@firearm_g17_desc=最初引领潮流的聚合物手枪，仍在保持领先并赢\n得战斗。\n\n低枪管轴线使其瞄准自然，这意味着它可以快速\n击中目标，并在你多次开火时保持位置——前提\n是你可以掌控原厂重型扳机。
+@firearm_g2240_name=G22 手枪
+@firearm_g2240_desc=不知何故，某些带手枪的机密特工认为9mm子弹\n缺少阻滞力，而.45后坐力过大。\n\nG22在.40 S&W子弹中找到一个令人满意的平衡\n——没有损失太多的装弹量。\n\n这是一支很棒的近程和中程手枪，但远距离的准\n确性有点不可靠。
+@firearm_m17_name=M17 手枪
+@firearm_m17_desc=这是新式军用手枪，全尺寸9mm口径，射击准确\n操控性强，能快速准确地命中目标、换弹和处理\n常见情况。\n\n但它的照门太大，影响了远距离瞄准速度。
+@firearm_m18_name=M18 手枪
+@firearm_m18_desc=M17的紧凑型，弹容量和射击效果相差无几，\n牺牲一些中程精度换取更快的拔枪和瞄准指向\n速度。\n\n如果你想要一把能快速瞄准的备用武器，这就\n是你想要的。
+@firearm_m9_name=M9 手枪
+@firearm_m9_desc=推动9mm口径在世界上占据主导位置的神枪之一\n，经久不衰——约翰·麦克莱恩的手枪肯定不会\n有问题，对吧？\n\nM9被用作为副武器和近距离武器使用，甚至还\n能精准的远距离射击。
+@firearm_m9sup_name=M9 消音型
+@firearm_m9sup_desc=当然，强大的火力固然好，但是你有没有试过用\n7.62mm子弹进行无声击杀？抑制器很大程度的抑制\n了声音扩散。\n\n你的M9能轻而易举的完成一些工作，但是照门太\n低容易丢失目标。\n\n枪声范围：7米
+@firearm_1911_pistol_name=1911 手枪
+@firearm_1911_pistol_desc=想找一支能当场结束战斗的备用武器？ 在团里\n托人找装着精品勃朗宁的被遗忘的箱子试试。\n\n虽然机瞄样式不好，弹匣也小，但危急时刻，什\n么都比不上一发.45子弹管用。
+@firearm_1911modern_pistol_desc=这不是你父亲的传家宝，也不是军队的违禁品，\n而是1911年定制的，由前部队军械师精心手工装\n配。\n\n优秀的精度和单动扳机使它成为一个打孔机，尽\n管它又大又重。考虑到它对坏人的威力，你会不\n断想念它。
+@firearm_hk45ct_pistol_name=Mk24 Mod0 手枪
+@firearm_hk45ctsup_pistol_name=Mk24消音型
+@firearm_hk45ct_pistol_desc=蛙人采用的最新.45型，但不随身携带。Mk24为\n您提供了极高的精度和阻滞力。\n\n高枪管轴线减慢了射速，过长的双动扳机拉力妨\n碍了第一枪的精度。但装上抑制器，这把枪就变\n得真正出色了，并为你扫清了道路。
+@firearm_hk45ctSup_pistol_desc=粗大低速的.45子弹是抑制器理想的搭配，没有\n超音速音爆来提醒敌人，通常第一枪就能完成任\n务。\n\n抑制器的重量有助于减小枪口跳动，有效提高\n中近距离射速。\n\n枪声范围：5.5米
+@firearm_hs45_pistol_name=HS-45 手枪
+@firearm_hs45_pistol_desc=在诺赫拉基部队的供应链上，HS-45似乎是不太\n合乎逻辑的采购，但它是精准的，可以给你13颗\n粗大的.45弹头来钉住坏人。\n\n问题是，弹药非常少，所以你的训练水平和实际\n射速会受到影响。
+
+
+@firearm_tss4_pistol_name=鲁格Mk IV 
+@firearm_tss4_pistol_desc=一支.22LR打靶手枪不太适合用于战斗，但适当\n地消音，你会得到一件静悄悄的武器。\n\n对于不知情的目标，在近距离内它可是致命的。\n但离开一点距离，它只对<叹息>看门狗有杀伤\n力。\n\n枪声范围：2米
+
+# Rifles
+@firearm_mk18_name=Mk18 卡宾型
+@firearm_mk18Sup_name=Mk18 消音型
+@firearm_mkl8_desc=Mk18最初是海军海豹突击队定制的，在近距离\n作战和车内使用的一款卡宾枪，但它很快就进\n入了陆军的装备箱。\n\n在门口和狭窄的空间里表现优秀，但低初速意\n味着它无法可靠地击倒15米外的目标。
+@firearm_mk18Sup_desc=抑制器可以减少射击时枪口火光和声音，并迷惑\n未警觉的敌人的判断。\n\n没有配备亚音速5.56子弹，所以并没有那么安静\n——但增加的重量有助于控制后坐力。\n\n枪声范围：45米
+@firearm_m4_carabine_name=M4 卡宾型
+@firearm_m4Sup_carabine_name=M4 消音型
+@firearm_m4urgi_name=M4 URG-I 卡宾型
+@firearm_m4urgiSup_name=M4 URG-I 消音型
+@firearm_m4_m203_name=M4/M203 GL
+@firearm_m4_m203Sup_name=M4/M203 消音型
+@firearm_mk18_m203_name=Mk18/M203 GL
+@firearm_mk18_m203Sup_name=Mk18/M203 消音型
+@firearm_m16a4_m203_name=M16/M203 GL
+@firearm_m4_carabine_desc=M4 从更大更长的 M16 手中接过了前线\n任务，但它也牺牲了一些出膛速度和准确度来换\n取机动性。\n\n其 14.5 英寸枪管的杀伤力在超过 30\n 米时会有所下降，但替换掉默认弹药后这种情\n况会有所改善。\n\n这是一款全能型主武器。
+@firearm_m4urgi_desc=URG-I 是最新配发的 556 卡宾枪，采用全长、\n纤细、轻便的导轨，提高了后坐力控制、机动性\n和交战速度。\n\n该枪的循环射速低于老式M4，装弹速度也略逊一\n筹，但对于中距离快速射击而言，其性能已达到\n竞技水平。
+@firearm_m4nws_desc=M4 从更大更长的 M16 手中接过了前线\n任务，但它也牺牲了一些出膛速度和准确度来换\n取机动性。\n\n其 14.5 英寸枪管的杀伤力在超过 30\n 米时会有所下降，但当战斗进入室内，需要精\n确清理房间时，它会给你带来优势。
+@firearm_m4Sup_carabine_desc=抑制器可以减弱枪口火和压低枪声，并迷惑听到\n一些声响但没有警觉的敌人。\n\n由于没有亚音速 5.56 子弹能使用，所以这种枪\n械并不是那么安静，但增加的重量有助于减轻后\n坐力。\n\n枪声范围： 40m
+@firearm_m4urgiSup_desc=抑制器可以减弱枪口火和压低枪声，并迷惑听到\n一些声响但没有警觉的敌人。\n\n由于没有亚音速 5.56 子弹能使用，所以这种枪\n械并不是那么安静，但增加的重量有助于减轻\n后坐力。\n\n枪声范围： 40m
+@firearm_m16a4_name=M16A4 自动步枪
+@firearm_m16a4_desc=越战时的“塑料玩具枪”——现在是面向21世纪\n战士改进的现代化、全导轨型号。\n\n在大多数射程都准确及致命，但并不适用于近距\n离作战——过长的枪管经常捅到门框或战友。\n\n别把它交给你的尖兵。
+@firearm_m16a4nws_desc=美国国防部从过时的库存中卖给你不再用的枪，\n但真的不赖。\n\n全尺寸的M16比你的AK更精准，在大多数射程都\n相当致命，对于近距离作战来说有点长了，但它\n可以让你安装西方制造的高级光学装置，获得交\n战速度和精准性。
+@firearm_m16a4mil_desc=来自美国陆军的剩余倾销，黑市购买或只是在附\n近看起来很酷的交换，谁知道你从哪里得到的？\n\n它比你的AK更精准，但是民兵没有受过充分使\n用它的训练，他们也没有光学瞄具。
+@firearm_m16a2_name=M16A2 自动步枪
+@firearm_m16a2_desc=<特警需要修改>越南时代的“塑料玩具枪”\n——现在是面向21世纪战士的现代化、全导轨型\n号。\n\n在大多数射程都准确及致命，但并不适用于近距\n离作战——枪管过长经常捅到门框或战友。\n\n别把它交给你的尖兵。
+@firearm_m1a_scout_name=M1A Scout Rifle
+@firearm_m1a_scout_desc=A shorter but accurized version of the classic M14, the M1A is a good general purpose rifle. It handles long distance well enough and hits hard with the 308 slugs, but doesn't bog you down like a true DMR. \n\nBonus - it looks just classic enough to pass for some repurposed hunting rifle. 
+
+@firearm_m249_name=M249 班用机枪
+@firearm_m249spw_name=M249 SPW
+@firearm_m249spwSup_name=M249 消音型
+@firearm_m249spw_desc=游骑兵依靠他们的机枪在小队机动时提供压倒性\n的火力支援。\n\nM249班用机枪设计轻便，甚至可以用于清理房\n间，但放在掩体上射击效果更好。
+@firearm_m249spwSup_desc=抑制器可以减少射击时枪口火光和声音，并迷惑\n未警觉的敌人的判断。\n\n没有配备亚音速5.56子弹，所以并没有那么安静\n——但增加的重量有助于控制后坐力。\n\n枪声范围：55米
+@firearm_m249nws_desc=Your US advisors insist on establishing a base of fire with the LMGs and maneuvering for the kill with the rifles. The surplus M249s are adequate for that, with high rate of fire and high capacity.\n\nLike all LMGs, they work better when firing from a cover position, and they give you access to the Suppress Area ability.
+@firearm_hk21e_name=HK21E MG
+@firearm_hk21e_desc=The proverbial German Over-engineering in Machine Gun form, the HK21 is surprisingly accurate and hits hard at all ranges.\n\nUnfortunately, your supply chain can barely provide even basic ammo for it, so your practical fire rate is diminished. And don't try to use it unsupported, its very heavy, cumbersome, and recoils a lot.
+@firearm_lamg_name=LAMG
+@firearm_lamgSup_name=LAMG Suppressed
+@firearm_lamg_desc=
+@firearm_lamgSup_desc=
+@firearm_m240l_name=M240L 通用机枪
+@firearm_m240l_desc=需要持续火力时，又大又重的M240相当亮眼，\n重型子弹可以轻松击倒坏人。\n\n别指望抱着这宝贝冲刺和端在腰部射击——放在\n固定的掩体上才更有效。
+@firearm_mg338_name=XM338 轻量化中型机枪
+@firearm_mg338Sup_name=XM338 消音型
+@firearm_mg338_desc=XMG338是一种轻量化中型机枪，可有效打击超\n远距离敌人。\n\n在需要.338口径机枪的时候带上XMG338。\n\n马格南子弹很重，后坐力很大，所以这宝贝只能\n使用短点射。
+@firearm_mg338Sup_desc=没有配备亚音速.338子弹，在任何环境都不能静\n音。\n敌人能判断出枪声，但抑制器能在夜间减少枪口\n火光。\n\n枪声范围：75米
+@firearm_m14ebr_name=M14 增强型战斗步枪
+@firearm_m14ebr_desc=越战时代久负盛名的M14步枪作为一支精确射手\n步枪被继续使用着，并保持着致命的声誉。\n\n通过可调节枪托改变高度，使射手舒适地埋伏在\n固定掩体，让7.62mm子弹能在有效距离百发百\n中。
+@firearm_m110a1_name=M110A1 班用精确步枪
+@firearm_m110a1Sup_name=M110A1 消音型
+@firearm_m110a1_desc=德国人的半自动狙击枪方案，M110A1在确保精\n准的同时也具备突击步枪的特色。\n\n从狙击到清理房间无所不能，尽管长度和重量表\n明它不是近距离作战首选。
+@firearm_m110a1Sup_desc=抑制器可以减少射击时枪口火光和声音，并迷惑\n未警觉的敌人的判断。\n\n没有配备亚音速7.62x51子弹，所以并没有那么\n安静，但增加的重量有助于控制后坐力。\n\n枪声范围：47米
+@firearm_m16a4dmr_name=班用精确步枪
+@firearm_m16a4dmr_desc=这把班用精确步枪可不是你战友拿的M16，而是\n它的高精度表亲。它有竞赛级扳机、带凹槽的自\n由浮动式枪管和脚架——最重要的是——游戏开\n发组给了它更好的数据。\n\n射击速度和频率不如普通的M16，但杀伤力更强，\n后坐力也比7.62mm步枪更小。
+@firearm_mk48_name=Mk48 Mod 1 轻机枪
+@firearm_mk48Sup_name=Mk48 消音型
+@firearm_mk48_desc=当你扩展本就可靠的M249时会得到什么？\n一挺便携式7.62mm班用轻机枪！\n\n轻不一定是好事——更多重量有助于控制后坐力。\n最好将脚架放在固定的掩体上，对目标长点射。
+@firearm_mk48Sup_desc=抑制器可以减少射击时枪口火光和声音，并迷惑\n未警觉的敌人的判断。\n\n没有配备亚音速7.62x51子弹，所以并没有那么\n安静。\n\n枪声范围：60米
+@firearm_mk20ssr_name=Mk20 狙击支援步枪
+@firearm_mk20ssrSup_name=Mk20 消音型
+@firearm_mk20ssr_desc=Mk17长枪管型做不到的，交给MK20就行。\n\nMk16/17枪族中最适合精确射手的步枪，狙击\n支援步枪会满足你对精准性的需求，只要记得\n正确的使用——支援而不是用来突击。
+@firearm_mk20ssrSup_desc=抑制器可以减少射击时枪口火光和声音，并迷惑\n未警觉的敌人的判断。\n\n没有配备亚音速7.62x51子弹，所以并没有那么\n安静，不过狙击支援步枪可以保持（相对）较低\n的枪声。\n\n枪声范围：37米
+
+@firearm_rattler_name=MCX RSAR
+@firearm_rattlerSup_name=MCX RSAR 消音型
+@firearm_rattler_desc=新采购的简化特征突击步枪在 PDW 尺寸的\n卡宾枪中提供了最大的火力。\n\nRSAR 专为隐蔽和近距离任务而设计，在正\n确的位置配备了正确的控制装置，其口径可\n在实际作战范围内为您提供出色的性能。
+@firearm_rattlerSup_desc=RASR的长度较短，即使安装了抑制器也很短，\n而.300 Blackout口径正是围绕消音和亚音速\n性能设计的。\n\n声音传播范围： 5m
+
+@firearm_mk17_cqc_name=Mk17 近战型
+@firearm_mk17_cqcSup_name=Mk17 近战型消音型
+@firearm_mk17_cqc_desc=Mk17近战型使用短枪管，所以它没有足够控制\n7.62mm子弹后坐力的重量。\n\n然而，在近距离作战时，有时没有考虑的余地\n——或者没机会开第二枪，而且他们也很少需\n要这样的机会。
+@firearm_mk17_cqcSup_desc=抑制器可以减少射击时枪口火光和声音，并迷惑\n未警觉的敌人的判断。\n\n没有配备亚音速7.62x51子弹，所以并没有那么\n安静，尤其是在近距离作战时——但抑制器有助\n于控制后坐力。\n\n枪声范围：50米
+@firearm_mk17_std_name=Mk17 卡宾型
+@firearm_mk17_stdSup_name=Mk17 卡宾型消音型
+@firearm_mk17_std_desc=旧的不去，新的不来，对吧？\nMk17结合了M16系列的操作性，可靠的内部\n结构和战斗步枪级子弹。\n\n还有什么不满意？\n后坐力更大？弹匣容量减少？重量增加？
+@firearm_mk17_stdSup_desc=抑制器可以减少射击时枪口火光和声音，并迷惑\n未警觉的敌人的判断。\n\n没有配备亚音速7.62x51子弹，所以并没有那么\n安静，但增加的重量有助于控制后坐力。\n\n枪声范围：48米
+@firearm_mk17_lb_name=Mk17 长枪管型
+@firearm_mk17_lbSup_name=Mk17 长枪管型消音型
+@firearm_mk17_lb_desc=Mk17长枪管型不是一款真正的精确射手步枪，\n但性能相似，足以愚弄叛乱分子和中士。\n\n7.62mm子弹可以狠狠的命中并击倒他们，而类似AR\n的使用和尺寸使其具有足够的操控性，可以勉\n强参与一些房间清理工作。
+@firearm_mk17_lbSup_desc=抑制器可以减少射击时枪口火光和声音，并迷惑\n未警觉的敌人的判断。\n\n没有配备亚音速7.62x51子弹，所以并没有那么\n安静，但增加的重量有助于控制后坐力。\n\n枪声范围：40米
+@firearm_m4_m203_desc=带上你可靠的伙伴——在枪管下挂一个榴弹发射\n器——适合所有M4。\n\n你会失去一些机动性和瞄准速度，获得将倒霉蛋\n从掩体后炸飞的能力，并波及他的朋友。
+@firearm_mk18_m203_desc=Mk18足够轻便，可以承受M203榴弹发射器的额\n外重量，同时保持一定的近距离瞄准性能。\n\n需要射击更远目标时，40mm破片榴弹难以抵挡\n，弥补了使用5.56子弹在短枪管上的糟糕表现。
+@firearm_m16_m203_desc=中士说，两个长又重的枪管总比一个好，谁还\n要冲刺呢？\n\n用5.56子弹的中距离精确火力控制战场上单个\n目标，用40mm榴弹开一场更大的派对。
+@firearm_mk17_std_eglm_name=MK17/榴弹发射器增强型
+@firearm_mk17_std_eglm_desc=
+
+@firearm_AT4_name=M136 AT4 火箭筒
+@firearm_AT4enemy_name=M136 AT4 (84mm 高爆穿甲弹)
+@firearm_AT4_desc=一次性火箭发射器，可以炸碎一群坏人、门和墙\n或者其他东西。\n\n在考虑减小附带伤害的场合，它并不是一种明智\n之选，而且开火需要花费点时间。\n\n但如果哪天开发组想开了往游戏里加一些看起来\n特别强大的敌方载具，你就有了充分准备。\n\n部署时间：4秒\n爆炸范围：3米
+@firearm_MK14_name=MK14 Mod 0 榴弹发射器
+@firearm_MK14enemy_name=MK14 榴弹发射器 (40mm / 6发)
+@firearm_MK14_desc=还没有描述，制作中的武器。
+@firearm_M320cia_name=M320 榴弹发射器
+@firearm_M320cia_desc=在高速低阻行动中，下挂榴弹发射器是不合礼法\n的，会引起很多人的注意，但有时你只需在远处\n掩体中砰的一声，而不用把房子砸到他身上。\n\n无论您携带的是什么主弹药，您都可以根据需要\n使用背在背上的发射器发射致命的 40 毫米\n炮弹。
+@firearm_M79lttawr_name=M79 High-Explosive
+@firearm_M79lttawrdual_name=M79 Buckshot / HE
+@firearm_M79_name=M79 GL (40mm / 1 rd)
+
+
+# SMGs
+@firearm_mp5k_name=MP5K
+@firearm_mp5kSup_name=MP5K 消音型
+@firearm_mp5k_desc=移除MP5上的所有不必要的部件，你将得到比它\n更短的枪——擅长秘密行动。\n\n它像手枪很容易隐藏，在近距离射击中具有良好\n的精准性，但没有枪托，在快速和自动射击时无\n法控制后坐力。
+@firearm_mp5kSup_desc=MP5系列短小、易于操控，装配抑制器增加的重\n量有助于控制后坐力。\n\n常规9mm子弹是超音速的，所以选用亚音速子弹\n，能更好的减弱枪声。\n\n枪声范围：9米
+@firearm_mp5kpdw_name=MP5K PDW
+@firearm_mp5kpdwSup_name=MP5K PDW 消音型
+@firearm_mp5kpdw_desc=MP5的短款折叠枪托型为了隐蔽而减少一切，这\n也使得近距离作战非常方便。\n\n一旦你投入战斗，它能在坏人要害打洞，但不能\n距离太远，对付软质防弹衣也力不从心。
+@firearm_mp5kpdwSup_desc=MP5系列短小、易于操控，装配抑制器增加的重\n量有助于控制后坐力。\n\n常规9mm子弹是超音速的，所以选用亚音速子弹\n能更好的减弱枪声。\n\n枪声范围：8米
+@firearm_mp5a_name=MP5A5 冲锋枪
+@firearm_mp5aSup_name=MP5A5 消音型
+@firearm_mp5a_desc=MP5作为80年代经典的反恐武器，早已被其他卡\n宾枪和中距离性能更好的单兵自卫武器夺走了宝\n座。\n\n在近距离作战中MP5短小、快速和精准，是执行\n解救人质任务的绝佳武器，但装起弹来仿佛活\n在上个世纪——很慢! 
+@firearm_mp5aSup_desc=MP5系列短小、易于操控，装配抑制器增加的重\n量有助于控制后坐力。\n\n常规9mm子弹是超音速的，所以选用亚音速子弹\n能更好的减弱枪声。\n\n枪声范围：8米
+@firearm_mp5sd_name=MP5SD6 冲锋枪
+@firearm_mp5sd_desc=使用非常精准的MP5，更换枪管将子弹初速降到\n亚音速，再加上一个抑制器——你得到了什么？\n\n一个安静到只能听到子弹撞击的死亡机器，一种\n在致命时刻拯救生命的工具。\n\n枪声范围：2.5米
+@firearm_mp7_name=MP7A1 PDW
+@firearm_mp7Sup_name=MP7A1 消音型
+@firearm_mp7_desc=MP7短而隐蔽，射出类似步枪弹头的小口径子弹\n，这意味着后坐力很小，即使在中距离也能快速\n准确地命中。\n\n根据使用的弹药，这种枪可以很好地击穿软质防\n弹衣，但每发子弹的阻滞力和杀伤力略有不足。
+@firearm_apc9k_name=APC9 K 
+@firearm_apc9kSup_name=APC9 K 消音型
+@firearm_apc9k_desc=瑞士设计的APC-K短、方便、操控性强，更像是\n单兵自卫武器而不是前线作战的武器，但足以胜\n任近距离作战任务。\n\n它在中短程距离也足够精确，可以使用光学瞄具\n来射击更远的目标。
+
+# Shotguns
+@firearm_m500pp_name=M500-MEK 霰弹枪
+@firearm_m500pp_desc=诺赫拉基人通常不会在作战行动中使用霰弹枪，但\n他们从战区外轮驻的海军陆战队那里得到了一些。\n\nM500很方便，在近距离内也很有威力，但你缺乏破\n门和远程子弹的弹药供应。
+@firearm_m1014_name=M1014 霰弹枪
+@firearm_m1014_desc=如今，战斗霰弹枪不是游骑兵的常规武器，但军\n械库中还剩下一些。\n\nM1014是一种可靠的半自动杀戮机器，但在使用\n破门弹时不能自动退膛，而且对于清理房间的任\n务来说太长了。
+@firearm_breacher_name=破门霰弹枪
+@firearm_breacher_desc=一把安装手枪握把的短款易握持型霰弹枪，专门\n装填了特种破门弹。\n\n这种武器的特殊设计有利于对门锁的破坏力最大\n化，以最大限度地减少跳弹和附加伤害发生的风\n险。\n\n不幸的是，你不能拿它直接射击敌人。
+@firearm_shotguntango_name=莫斯伯格500 巡逻车霰弹枪 (12GA / 5发)
+@firearm_huntingshotgun_name=平式双管猎枪 (12GA / 2 rds)
+@firearm_sawnoff_name=短管霰弹枪
+@firearm_sawnoff_desc=市场上买来的并排霰弹枪，你可以把枪管锯短来\n提高隐蔽性。\n\n用这把霰弹枪不用刻意瞄准，抬手就打，而且距\n离越远散布越大，所以除了近距离射击外，不要\n指望它能做其他任何事情。\n\n记住-开两枪就出局。
+@firearm_cruisershottie_name=巡逻车霰弹枪
+
+
+# Enemy weapons
+@weapon_melee_name=Melee Weapon
+
+
+@firearm_rpk74lmg_name=RPK-74 轻机枪 (5.45mm / 45发)
+@firearm_rpk16slmg_name=RPK-16 轻机枪 (5.45mm / 95发)
+@firearm_rpklmg_name=RPK 轻机枪 (7.62mm / 75发)
+@firearm_rpknws_name=RPK 轻机枪
+@firearm_rpknws_desc=AKM的长管轻型机枪(LMG)版本，在射程内提供\n精准度和对敌人施放压制火力的能力，——所有\n这些都没有增加很多的重量。\n\n虽然它很轻，但是RPK对于近距离作战来说太长\n了，所以把它放在掩体上来获得稳定性。请记住\n缩小后的弹匣尺寸!
+@firearm_rp46mg_name=RP46 轻机枪 (7.62mmR / 200发)
+@firearm_pkpmg_name=PKP 轻机枪 (7.62mmR / 100发)
+@firearm_m249wm_name=M249 SAW (5.56mm / 200 rds)
+@firearm_m240wm_name=M240B LMG (7.62mm / 100 rds)
+
+@firearm_pkpmgcia_name=PKP 佩切涅格轻机枪
+@firearm_pkpmg_desc=俄罗斯PKM的特种部队型，佩切涅格很轻，\n便于“俄式”手持射击。\n使用全威力7.62mm子弹，杀伤力强、有效距离\n远，在需要时很容易压制一片区域。\n\n别忘记使用掩体支撑提高稳定性。
+
+
+
+@firearm_pm63_name=PM-63 (9mm / 25发)
+@firearm_pm63cia_name=PM-63 RAK PDW
+@firearm_pm63cia_desc=PM-63是华约组织驾驶员和乘员使用的一款老式\n个人防御武器，很容易在黑市上搞到，而且看起\n来很像普通手枪。\n\n精度不高，射击时瞄具会随着套筒后坐，严格\n来说是只一款近距离武器。但在便携式全自动\n武器中，它相当独特。
+@firearm_mp40_name=MP 40 (9mm / 32 rds)
+@firearm_miniuzi_name=迷你乌兹 (9mm / 32发)
+@firearm_miniuzitango_name=迷你乌兹消音型 (9mm / 32发)
+@firearm_apc9Ksupp_name=APC9K消音型 / 红点瞄准镜 (9mm / 20发)
+@firearm_miniuzicia_name=迷你乌兹冲锋枪
+@firearm_miniuzicia_desc=迷你乌兹在需要随性射击和全自动武器的场合非\n常受欢迎。但是沉重的全钢结构显得有些过时，\n开放式枪机也导致单发精度不足。\n\n因为重心在使用者手上，装填速度很快，全自动\n射击时易于控制，使得它在近距离作战时表现出\n色。
+@firearm_miniuzinws_desc=无枪托的迷你乌兹牺牲了杀伤力和后坐力控制来\n换取操控性，允许单手持握——使用盾牌。\n\n它肯定不能精准射击，但作为一种能扫射和被信\n任的手枪替代品，它确实有一些优点。
+@firearm_m16wm_name=M16A2 (5.56mm / 30 rds)
+@firearm_m16lrwm_name=M16A2 / 4x (5.56mm / 30 rds)
+@firearm_m14wm_name=M14 (7.62mm / 20 rds)
+@firearm_mk17wm_name=SCAR-H / 1-4x (7.62mm / 20 rds)
+@firearm_mk17glwm_name=SCAR-H / GL (7.62mm / 20 rds)
+@firearm_augssi_name=AUG SD / 1.5x (.300BLK / 42 rds)
+@firearm_auglrssi_name=AUG SD / 3x (.300BLK / 30 rds)
+@firearm_mp5kwm_name=Mp5K (9mm / 30 rds)
+@firearm_p90ssi_name=P90 SD / Holo (5.7mm / 50 rds)
+@firearm_fs57ssi_name=FS57 / Dot (5.7mm / 20 rds)
+@firearm_fs57sdssi_name=FS57 SD / Dot (5.7mm / 20 rds)
+@firearm_SVUssi_name=SVU-A / 4x (7.62mmR / 20 rds)
+@firearm_m4tango_name=M4 / 4x (5.56mm / 30发)
+@firearm_type56_name=AK-47S (7.62mm / 30发)
+@firearm_akm_name=AK-47 (7.62mm / 30发)
+@firearm_akmkobra_name=AKM / 红点瞄准镜 (7.62mm / 30 发)
+@firearm_type56cia_name=AK-47 折叠枪托型
+@firearm_type56cia_desc=AK47的下折式枪托型更容易隐藏，但它的准确\n性潜力因糟糕的贴腮性所阻碍。\n\n枪托妨碍了瞄准镜的安装，但令人惊讶的近距离\n自动火力，使这把枪很难被击败。
+@firearm_type56nws_desc=AK47的下折式枪托型略微轻一些，但它的准确\n性潜力被糟糕的贴腮性所阻碍。\n\n枪托妨碍了瞄准镜的安装，但涉及到你死我活的\n近距离战斗时，这不会有太大的区别。
+@firearm_akmcia_name=AKM 自动步枪
+@firearm_akmcia_desc=全世界叛乱分子的标准战斗步枪，无论你对它做\n了什么，都能继续工作。\n\n它的远距离射击不是特别精准和快速，装弹速度\n相对较慢，但它能做到最重要的事情——融入诺\n赫拉基繁忙的街道。
+@firearm_akmnws_desc=这几年来，AKM一直是你最熟悉和信任的武器。\n\n固定式枪托提供了良好的贴腮，并允许中等距离\n的精确射击，但瞄准不是非常快，装弹速度相对\n较慢。\n\n而且，它有点重。
+@firearm_akm_gl_name=AKM/GP34 GL
+@firearm_akm_gl_desc=这是久经考验的AKM，但有一个下置榴弹发射器\n，这是你领导团队并在需要时施加强大火力的主\n要工具。\n\n40毫米榴弹可以很好地将敌人逼出掩体，尽管\n苏联设计的榴弹比美国的装药量少。
+@firearm_aks74u_name=AKS-74U (5.45mm / 30 发)
+@firearm_aks74uemir_name=AKS-74U (5.45mm / 45 发)
+@firearm_aks74ucia_name=AKS-74U 卡宾型
+@firearm_aks74uciaSup_name=AKS-74U 消音型
+@firearm_aks74ucia_desc=为“冷酷”的苏联军队设计的单兵自卫武器，整\n个中东地区身份的象征，AKSU是一款便携的小\n型突击步枪。\n\n它非常适合近距离作战的需求，但过短的枪管和\n瞄准基线，牺牲了远距离精度和阻滞力。
+@firearm_aks74uciaSup_desc=由于没有5.45mm亚音速子弹，你无法真正的减小\n枪声，但抑制器可以减少射击时枪口火光来迷惑\n敌人，并在快速射击时控制后坐力。
+@firearm_arm14_name=AK-47M 特战卡宾型
+@firearm_arm14_desc=特战卡宾枪是为适应你的7.62x39供应链而制造\n的AKS-U复制品，非常适合快速移动和近距离战\n斗。\n\n过短枪管和瞄准基线牺牲了远距离精度，所以装\n备战斗光学瞄具向远处猛射。
+@firearm_vulcan_name=火神突击步枪
+@firearm_vulcanSup_name=火神消音型
+@firearm_vulcan_desc=东欧AK内核的无托式型号，火神提供了与其他部\n队相同的弹药和弹匣，但缩短步枪的长度，使它\n非常方便的近距离战斗任务。你可以安装美国制\n造的光学瞄具!\n\n装弹仍然很缓慢，所以不要被发现有空的弹匣。
+@firearm_vulcanSup_desc=火神还是AK，所以你没有亚音速弹药。\n\n好消息是，即使装了抑制器，火神还是很短，很\n适合近距离战斗。
+@firearm_vulcanSup_desc=The Vulcan is still an AK, so you don't have any subsonic ammo available.\n\nThe good news is, even with the suppressor on, the Vulcan is short, handy, and great for Close Quarters Combat.
+@firearm_ak105alpha_name=AK-105 阿尔法 (5.45mm / 30 发)
+@firearm_ak105tango_name=AK-105 / 1-6x (5.45mm / 30 发)
+@firearm_ak105alphacia_desc=阿尔法紧跟俄罗斯SOF的服务商最新趋势设计，\n进行西方化改装，它保留了AK的内部结构，添加\n了可折叠枪托和导轨，以安装你的资本主义光学\n瞄具。\n\n这把枪会激怒“正统主义者”，对于中等长度的\nAK来说有点重，但弹道平直，它能提供快速致\n命的中距离火力。
+@firearm_ak105alphaciaSup_desc=由于没有5.45mm亚音速子弹，你无法真正的减小\n枪声，但抑制器可以减少射击时枪口火光来迷惑\n敌人。至于控制后坐力，阿尔法的前端本来就很\n重，所以这并没有真正的帮助。
+@firearm_ak105alphacia_name=AK-105 阿尔法
+@firearm_ak105alphaciaSup_name=AK-105 消音型
+@firearm_sr3m_name=SR3-M (9mm 穿甲弹 / 20 发)
+@firearm_fal_name=FAL (7.62mm / 20 发)
+@firearm_falnws_name=FAL 步枪
+@firearm_falmil_desc=被称为 "自由世界的右臂 "的比利时FAL步枪作\n为一种黑市武器广为流传，但要正确使用需要\n技巧。\n\n它可以打得又狠又远，可以成为民兵类型的精\n确射手步枪，但你缺乏弹药或光学瞄具，无法\n使它在射程内真正有效。
+@firearm_smlemk3_name=SMLE Mk.III (.303 British / 10 rds)
+@firearm_smlemk3hwk_name=SMLE Mk.III Sniper
+@firearm_ak104lttawr_name=AK-104 Tawr Special
+
+@firearm_RPG7_name=RPG-7 (93mm 破甲弹)
+@firearm_RPG7nws_name=RPG-7 火箭筒
+@firearm_RPG7nws_desc=RPG-7 火箭筒
+@firearm_RPG26_name=RPG-26 (72.5mm 破甲弹)
+@firearm_RPG26cia_name=RPG-26 火箭筒
+@firearm_RPG26cia_desc=单发的RPG26比你的AT4选择更轻、更小、\n更不显眼，但也射出更小和更慢的弹头。\n\n可以在墙壁、门和任何不幸的敌人上打洞。\n\n而且它很配你的当地服装。\n\n部署时间：3秒\n爆炸范围：2米
+@firearm_RPG26nws_desc=RPG26是款轻型一次性火箭发射器，从建军节\n起就为大家所熟悉。\n\n可以在墙壁、门和任何不幸的敌人上打洞，也\n许还有你的任务目标。\n\n部署时间： 2.5秒\n爆炸范围：2米
+@firearm_SVD_name=SVD-63 (7.62mmR / 10 发)
+@firearm_SVDcia_name=SVD-63 德拉贡诺夫
+@firearm_SVDcia_desc=俄罗斯军队的精确步枪在这些街道上并不少见，\n所以你在当地行动时，它不会引起太多注意。\n\n它长而重，但并不笨拙，精确到足以在有效射程\n里获得良好的命中率——子弹杀伤力强，能穿透\nIII级防弹衣。
+@firearm_SVDnws_desc=俄罗斯陆军神射手步枪是你的首选精确武器，但\n大多数士兵不知道如何有效使用它。\n\n它很长，射出的子弹威力大，所以放在掩体上可\n以适当地稳定它，你的特殊训练就开始了，将它\n的有效射程扩大到近50米。
+@firearm_SVUnws_name=SVU-A 无托型
+@firearm_SVUnws_desc=SVU是对SVD神枪手步枪的重新设计，它更\n短，更适合城市作战但由于枪管较短，失去了一\n些远距离的准确性。\n\n这个变种还增加了自动火力功能，并采用了枪口\n制退器来帮助消除后坐力，但有限的弹容量使它\n除了紧急使用外不太实用。
+@firearm_VSS_name=VSS (9mm 穿甲弹 微声/ 10 发)
+@firearm_VSScia_name=VSS 绞丝机
+@firearm_VSScia_desc=VSS是苏联为秘密行动而设计的，它使用非常重\n的亚音速步枪弹和一体式抑制器，能在中距离提\n供微声精确射击。\n\n如果遇到意外的麻烦，它也能切到全自动模式！\n\n枪声范围：3.5米
+
+@mountedweap_dshk_name=DShK (12.7mm AP / 50 rds)
+
+@firearm_ak47_rifle_name=AK-47 突击步枪 (半自动 / 7.62mm)
+@firearm_ak47_drum_name=AK-47 弹鼓版 (全自动 / 7.62mm)
+
+@firearm_sniper_rifle_name=SniperRifle
+
+@firearm_caliber_22lr_name=.22 Long Rifle
+@firearm_caliber_38special_name=.38 特种弹
+@firearm_caliber_380_name=.380 ACP
+@firearm_caliber_9x18_name=9x18mm PM
+@firearm_caliber_9x19_name=9x19mm
+@firearm_caliber_9x39_name=9x39mm
+@firearm_caliber_9x39AP_name=9x39mm 穿甲淡
+@firearm_caliber_9x19subsonic_name=9x19mm 亚音速
+@firearm_caliber_9x39subsonic_name=9x39mm 亚音速
+@firearm_caliber_357mag_name=.357 马格南
+@firearm_caliber_40sw_name=.40 S&W
+@firearm_caliber_40swsubsonic_name=.40 S&W 亚音速
+@firearm_caliber_44mag_name=.44 马格南
+@firearm_caliber_45acp_name=.45 ACP
+@firearm_caliber_46x30_name=4.6x30mm
+@firearm_caliber_545x39_name=5.45x39mm
+@firearm_caliber_57x28_name=5.7x28mm
+@firearm_caliber_556x45_name=5.56x45mm
+@firearm_caliber_556GL40_name=5.56x45mm/40mm 高爆弹
+@firearm_caliber_556GL40_shortname=5.56x45mm/40mm
+@firearm_caliber_76239GL40_name=7.62x39mm/40mm 高爆弹
+@firearm_caliber_762GL40_name=7.62x51mm/40mm 高爆弹
+@firearm_caliber_6x35_name=6x35mm
+@firearm_caliber_6x25_name=6.5x25mm
+@firearm_caliber_762x25_name=7.62x25mm
+@firearm_caliber_762x39_name=7.62x39mm
+@firearm_caliber_762x51_name=7.62x51mm
+@firearm_caliber_762x54_name=7.62x54mmR
+@firearm_caliber_338NM_name=.338 诺玛马格南
+@firearm_caliber_300BLK_name=.300 BLK
+@firearm_caliber_300BLKsubsonic_name=.300 BLK 亚音速
+@firearm_caliber_303_name=.303 British
+@firearm_caliber_127x108_name=12.7x108mm
+@firearm_caliber_12gauge_name=12号霰弹
+@firearm_caliber_40mm_name=40mm 低速弹
+@firearm_caliber_72mmHEAT_name=72.5mm 破甲弹
+@firearm_caliber_84mmHEAT_name=84mm 破甲弹
+@firearm_caliber_93mmHEAT_name=93mm 破甲弹
+@firearm_caliber_bzzzt_name=bzzzt
+@firearm_operation_doubleactionrev_name=双动
+@firearm_operation_doubleactiononly_name=单动 
+@firearm_operation_semiauto_name=半自动
+@firearm_operation_semi3rdburst_name=半自动，3连发
+@firearm_operation_mp5navy_name=半自动，点射，全自动
+@firearm_operation_semifull_name=半自动，全自动
+@firearm_operation_fullauto_name=全自动
+@firearm_operation_fullauto2burst_name=全自动，2连发
+@firearm_operation_fullauto3burst_name=全自动，3连发
+@firearm_operation_boltaction_name=栓动
+@firearm_operation_pumpaction_name=泵动
+@firearm_operation_breakopen_name=中折式
+@firearm_operation_singleshot_name=单发
+@firearm_operation_singleshotthrow_name=单发，一次性
+
+#Ammo
+@ammo_918FMJ_name=57-N-181S Steel Core
+@ammo_918FMJ_desc=9mm钢芯弹。\n\n9x18标准弹，性能良好，有效射程可达50米。
+@ammo_545FMJ7N10_name=7N10 56gr FMJ
+@ammo_545FMJ7N10_desc=56格令 全金属被甲弹。\n\n标准军用AK74弹，穿甲和后效的良好平衡。
+@ammo_545FMJ7N10Sup_desc=56格令 全金属被甲弹。\n\n标准军用AK74弹，穿甲和后效的良好平衡。\n\n枪声范围：46米
+@ammo_545FMJ7N10AlphaSup_desc=56格令 全金属被甲弹。\n\n标准军用AK74弹，穿甲和后效的良好平衡。\n\n枪声范围：43米
+@ammo_545FMJ7N24_name=7N24 57gr Super-AP
+@ammo_545FMJ7N24_desc=
+@ammo_545FMJ7N39_name=7N39 53gr Black Ring
+@ammo_545FMJ7N39_desc=
+@ammo_545HP_name=55gr Hollow Point
+@ammo_545HP_desc=55格令 空尖弹。\n\n牺牲穿甲能力换取阻滞力。超过射程就失去子弹\n的膨胀效果和相关的优势。
+@ammo_545HPSup_desc=55格令 空尖弹。\n\n牺牲穿甲能力换取阻滞力。超过射程就失去子弹\n的膨胀效果和相关的优势。\n\n枪声范围：44米  
+@ammo_545HPAlphaSup_desc=55格令 空尖弹。\n\n牺牲穿甲能力换取阻滞力。超过射程就失去子弹\n的膨胀效果和相关的优势。\n\n枪声范围：42米 
+@ammo_545FMJ7U1_name=7U1 80gr 亚音速
+@ammo_545FMJ7U1Sup_desc=80格令 苏联时代的超重型静音亚音速弹。\n\n只有在安装了抑制器的情况下才能自动循环。\n\n近距离阻滞力不错，中远距离阻滞力较弱。\n\n枪声范围：6米 
+@ammo_545FMJ7U1AlphaSup_desc=80格令 苏联时代的超重型静音亚音速弹。\n\n只有在安装了抑制器的情况下才能自动循环。\n\n近距离阻滞力不错，中远距离阻滞力较弱。\n\n枪声范围：4米 
+@ammo_939FMJSP5_name=SP-5 259gr FMJ
+@ammo_939FMJSP5_desc=259格令 全金属被甲弹。\n\n中距离使用的标准型亚音速精准狙击弹。\n\n枪声范围：3.5米
+@ammo_939APSP6_name=SP-6 241gr AP
+@ammo_939APSP6_desc=241格令 穿甲弹。\n\n提高穿甲能力，能有效穿透软质防弹衣和III级\n防弹背心。\n\n枪声范围：5米
+@ammo_762FMJM43_name=M43 123gr FMJ
+@ammo_762FMJM43_desc=123格令 全金属被甲弹。\n\n苏联剩余弹药，精度平庸，但有可靠的杀伤力。
+@ammo_762FMJM43Sup_desc=Soviet surplus ammo, does mediocre but reliable damage in random hits.\n\nSound Travel Range: 40m
+@ammo_762397N23AP_name=7N23 Armor Piercing
+@ammo_762397N23AP_desc=Russian Armor Piercing ammo, will go through level III vests at distances up to 30m.
+@ammo_762397N23APSup_desc=Russian Armor Piercing ammo, will go through level III vests at distances up to 30m.\n\nSound Travel Range: 40m
+@ammo_762R7N1_name=7N1 152gr FMJ
+@ammo_762R7N1_desc=152格令 全金属被甲弹。\n\n前苏联时代的狙击弹。\n精准且致命，但在对抗任何类型的防弹衣时都效\n果不佳。
+@ammo_762RAP7N13_name=7N13 145gr AP
+@ammo_762RAP7N13_desc=145格令 特种穿甲弹。\n\n能穿透III级防弹背心。
+@ammo_762R7N14_name=7N14 151gr FMJ
+@ammo_762R7N14_desc=151格令 全金属被甲弹。\n\n俄罗斯新型穿甲弹，非常精准，可以在近距离穿\n透III级防弹背心。
+@ammo_762R57N323_name=57N323 148gr FMJ
+@ammo_762R57N323_desc=148格令 全金属被甲弹。\n\n俄罗斯新型机枪弹。\n狠狠地打他们，让他们不敢露头。
+@ammo_762R203_name=203gr Soft Point
+@ammo_762R203_desc=203格令 软尖弹。 \n\n这是一种从运动用品商店拿到的大型狩猎子弹，\n命中率很高，但不能很好地应对防弹衣。
+
+
+@ammo_46HPLE_name=LE 31gr Hollow Point
+@ammo_46HPLE_desc=31格令 空尖弹。\n\n当不需要对付防弹衣时使用的空尖弹。\n\n弹头能可靠的膨胀，在15米内提高阻滞力。 
+@ammo_46HPLESup_desc=当不需要对付防弹衣时使用的空尖弹。\n\n弹头能可靠的膨胀，在15米内提高阻滞力。\n\n枪声范围：35米 
+@ammo_46DM11AP_name=DM11 31gr AP
+@ammo_46DM11AP_desc=31格令 穿甲弹。\n\nMP7的标准军用弹，针对速度和穿甲能力进行\n优化。\n\n能在近距离穿透III级防弹衣和软质防弹衣。
+@ammo_46DM11APSup_desc=MP7的标准军用弹，针对速度和穿甲能力进行\n优化。\n\n能在近距离穿透III级防弹衣和软质防弹衣。\n\n枪声范围：35米
+@ammo_46SUBS77_name=77gr 亚音速
+@ammo_46SUBS77_desc=77格令 亚音速弹。\n\n重型亚音速弹，最大限度抑制声音。 
+@ammo_46SUBS77Sup_desc=77格令 亚音速弹。\n\n重型亚音速弹，最大限度抑制声音。 \n\n枪声范围：3米
+@ammo_46HE40FMJ_name=High-E 40gr FMJ
+@ammo_46HE40FMJ_desc=40格令 全金属被甲弹。\n\n较重的全金属被甲弹，在近距离将更多能量传递\n到目标身上，提高了阻滞力。\n\n也能穿透软质防弹衣。
+@ammo_46HE40FMJSup_desc=40格令 全金属被甲弹。\n\n较重的全金属被甲弹，在近距离将更多能量传递\n到目标身上，提高了阻滞力。\n\n也能穿透软质防弹衣。\n\n枪声范围：30米
+
+@ammo_22LR40GR_name=SG 40gr FMJ
+@ammo_22LR40GR_desc=40格令 全金属被甲弹。\n\n标准的.22LR小型比赛弹。
+@ammo_556FMJM855_name=M855 62gr Green Tip
+@ammo_556FMJM855_desc=62格令 绿尖弹。\n\n基本的军用钢芯弹，杀伤力可靠。
+@ammo_556FMJM855A1_name=M855A1 62gr EPR
+@ammo_556FMJM855A1_desc=62格令 性能强化弹。\n\n新型军用弹，针对M4短枪管优化了伤害。
+@ammo_556FMJMk318_name=Mk318 62gr SOST Ball
+@ammo_556FMJMk318_desc=62格令 特种弹。\n\n这种开尖船尾弹更适合在短枪管上使用。
+@ammo_556FMJMk262_name=Mk262 77gr Match
+@ammo_556FMJMk262_desc=77格令 竞赛弹。\n\n这种开尖弹是专为远距离精度而设计。
+
+@ammo_300BLK220GRSUBS_name=220gr 亚音速
+@ammo_300BLK220GRSUBS_desc=亚音速子弹是 300 Blackout 和\n RASR 的 "存在理由"，在短距离内命\n中率高，但在中距离内性能下降。\n\n最好按照设计使用抑制器。
+@ammo_300BLK220GRSUBSsup_desc=亚音速子弹是 300 Blackout 和\n RASR 的 "存在理由"，在短距离内命\n中率高，但在中距离内性能下降。\n\n声音传播范围: 5m
+@ammo_300BLK125GROTM_name=125gr 开尖弹
+@ammo_300BLK125GROTM_desc=超音速开尖弹，专为提高精确度和中距离性能而\n设计，与亚音速子弹相比，它能让你在更远的距\n离上命中要害。
+@ammo_300BLK125GROTMsup_desc=超音速开尖弹，专为提高精确度和中距离性能而\n设计，与亚音速子弹相比，它能让你在更远的距\n离上命中要害，但消声效果不佳。\n\n枪声范围 40m
+
+@ammo_338FMJXM338_name=XM338 300gr FMJ
+@ammo_338FMJXM338_desc=In testing with SOCOM's new MG, offers reliable extreme range performance.
+
+@ammo_762FMJM80_name=M80 147gr FMJ
+@ammo_762FMJM80_desc=147格令 全金属被甲弹。\n\n标准军用全金属被甲弹，用于7.62mm口径\n武器。
+@ammo_762FMJM80A1_name=M80A1 130gr Steel Tip
+@ammo_762FMJM80A1_desc=
+@ammo_762FMJM118LR_name=M118LR 175gr Match
+@ammo_762FMJM118LR_desc=Specifically designed for Match-like performance in your Marksman rifles, the M118 Long Range improves your accuracy but loses a bit of Kill Probability. 
+@ammo_762APM993_name=M993 128gr AP
+@ammo_762APM993_desc=Hard to source Armor Piercing ammo for your 7.62 weapons, it trades some damage to reliably pierce level III vests all all practical ranges. 
+@ammo_762APXM1158_name=XM1158 ADVAP
+@ammo_762APXM1158_desc=The Army's new and shiny Advanced Armor Penetration ammo, lets your 7.62mm weapons penetrate level IV plates.
+@ammo_12GAM1030_name=破门弹
+@ammo_12GAM1030_desc=
+@ammo_45FMJM1911_name=M1911 230gr FMJ
+@ammo_45FMJM1911_desc=230格令 全金属被甲弹。\n\n与你爷爷用来阻止日本人在奥斯汀山上冲锋使用\n的重型子弹一样。\n\n技术水平低但很有效。
+@ammo_45FMJM1911_nwsdesc=The only ammo you could reliably source to feed the shiny HS45 is forgotten US Army Inventory. Old tech, but some of your advisors swear these hammer down targets like nothing else.\n\nJust don't drop a full mag on your toes.
+@ammo_45FMJM1911Sup_desc=The same heavy slugs your grandpa used to stop charging Japanese on Mount Austen. Low-tech but effective, and very slow hence perfect for suppressing.\n\nSound Travel Range: 5.5m
+@ammo_45JHP230GR_name=230gr JHP
+@ammo_45JHP230GR_desc=
+@ammo_45JHP185GR_name=185gr JHP
+@ammo_45JHP185GR_desc=.45子弹现代版，185格令 被甲空尖弹。\n\n让你在近距离有额外的阻滞力，但较轻的弹头重\n量损失了中距离威力。
+@ammo_45JHP185GRSup_desc=.45子弹现代版，185格 被甲空尖弹。\n\n让你在近距离有额外的阻滞力，但较轻的弹头重\n量损失了中距离威力。\n\n枪声范围：6.5米
+@ammo_45JHP160GR_name=+P 160gr HP
+@ammo_45JHP160GR_desc=160格令 空尖弹。\n\n高初速空尖弹像锤子一样击中目标，能在近距离\n轻松击倒坏人，还能对付一些软质防弹衣。\n\n后坐力大大增加，会损失一些射速。
+@ammo_45JHP160GRSup_desc=160格令 空尖弹。\n\n高初速空尖弹像锤子一样击中目标，能在近距离\n轻松击倒坏人，还能对付一些软质防弹衣。\n\n超音速飞行的弹头会吵醒你的邻居。\n\n后坐力大大增加，会损失一些射速。\n\n枪声范围：14米
+
+@ammo_380JHP90GR_name=LE 90gr JHP
+@ammo_380JHP90GR_desc=作为一种深受执法人员喜爱的子弹，90 格令\n的空尖弹在近距离内具有不错的阻滞力，但它对\n任何类型的装甲都无效。
+@ammo_380JHP90GRsup_desc=作为一种深受执法人员喜爱的子弹，90 格令\n的空尖弹在近距离内具有不错的阻滞力，但它对\n任何类型的装甲都无效。这种子弹也是亚音速的\n因此在使用抑制器时相当安静。\n\n枪声范围: 3.5m
+@ammo_380EHP70GR_name=HV 70gr EHP
+@ammo_380EHP70GR_desc=高速、外空尖弹具有更低的后坐力和更高的杀伤\n概率，但由于无法真正膨胀到撕裂组织，因此不\n能造成永久性损伤。
+@ammo_380EHP70GRsup_desc=高速、外空尖弹具有更低的后坐力和更高的杀伤\n概率，但由于无法真正膨胀到撕裂组织，因此不\n能造成永久性损伤。子弹的边界速度为超音速，\n因此声音抑制效果更差。\n\n枪声范围: 10m
+
+
+
+@ammo_919FMJM882_name=M882 124gr FMJ
+@ammo_919FMJM882_desc=124格令 全金属被甲弹。\n\n久经考验的军用弹——平庸但阻滞力可靠。
+@ammo_919FMJM882_NWSdesc=The standard 9mm rounds available everywhere, mostly as they're being phased out by your American allies. Make standard holes in crazed Jihadis.
+@ammo_919FMJM882shortsup_desc=124格令 全金属被甲弹。\n\n久经考验的军用弹——平庸但阻滞力可靠。\n\n枪声范围：7.5米
+@ammo_919FMJM882sup_desc=124格令 全金属被甲弹。\n\n久经考验的军用弹——平庸但阻滞力可靠。\n\n枪声范围：7米
+@ammo_919FMJM882sup_NWSdesc=The standard 9mm rounds available everywhere, mostly as they're being phased out by your American allies. Make standard holes in crazed Jihadis.\n\nSound Travel Range: 7m
+@ammo_919FMJM882Sup1_desc=The tried-and-true Army-issue rounds - average but reliable stopping power.\n\nSound Travel Range: 8m
+@ammo_919FMJM882Sup2_desc=The tried-and-true Army-issue rounds - average but reliable stopping power.\n\nSound Travel Range: 9m
+@ammo_919FMJM882Sup2_NWSdesc=The standard 9mm rounds available everywhere, mostly as they're being phased out by your American allies. Make standard holes in crazed Jihadis.\n\nSound Travel Range: 9m
+@ammo_919FMJM882SupSD_desc=The tried-and-true Army-issue rounds - average but reliable stopping power.\n\nSound Travel Range: 2.5m
+@ammo_919FMJM1152_name=M1152 115gr FMJ
+@ammo_919FMJM1152_desc=115格令 全金属被甲弹。\n\n由于增加了初速，新型平头全金属被甲弹弹道更\n平直，但后坐力略有增加。
+@ammo_919FMJM1152shortsup_desc=115格令 全金属被甲弹。\n\n新型平头全金属被甲弹弹道更平直，但后坐力略\n有增加。高初速不利于控制后坐力。\n\n枪声范围：10米
+@ammo_919FMJM1152sup_desc=115格令 全金属被甲弹。\n\n新型平头全金属被甲弹弹道更平直，但后坐力略\n有增加。高初速不利于控制后坐力。\n\n枪声范围：8.5米 
+@ammo_919FMJM1152Sup1_desc=115格令 全金属被甲弹。\n\n新型平头全金属被甲弹弹道更平直，但后坐力和\n声音略有增加。\n\n枪声范围：11米
+@ammo_919FMJM1152Sup2_desc=115格令 全金属被甲弹。\n\n新型平头全金属被甲弹弹道更平直，但后坐力和\n声音略有增加。\n\n枪声范围：12米 
+@ammo_919FMJM1152SupSD_desc=115格令 全金属被甲弹。\n\n新型平头全金属被甲弹弹道更平直，但后坐力和\n声音略有增加。\n\n枪声范围： 5.5米
+@ammo_919JHPM1153_name=M1153 147gr JHP
+@ammo_919JHPM1153_desc=147格令 被甲空尖弹。\n\n重型亚音速空尖弹增加了伤害，但失去远距离精\n度。
+@ammo_919JHPM1153_NWSdesc=Subsonic Hollow Points obtained with great effort from your coalition partners. These increase damage but lose long range accuracy.
+@ammo_919JHPM1153shortsup_desc=Heavy, subsonic Hollow Points increase damage and lower sound signature as they eliminate the supersonic bullet crack.\n\nSound Travel Range: 4.5m
+@ammo_919JHPM1153Sup1_desc=Heavy, subsonic Hollow Points increase damage and lower sound signature as they eliminate the supersonic bullet crack.\n\nSound Travel Range: 4.5m
+@ammo_919JHPM1153Sup2_desc=Heavy, subsonic Hollow Points increase damage and lower sound signature as they eliminate the supersonic bullet crack.\n\nSound Travel Range: 5.5m
+@ammo_919JHPM1153_suphgdesc=Subsonic Hollow Points increase damage and drop the shot sound range even further.\n\nSound Travel Range: 3.5m
+@ammo_919JHPM1153_suphgNWSdesc=Subsonic Hollow Points increase damage and drop the shot sound range even further.\n\nSound Travel Range: 3.5m
+@ammo_919JHPM1153SupSD_desc=Subsonic Hollow Points increase damage and drop the shot sound range even further.\n\nSound Travel Range: 2.5m
+@ammo_919FMJ108GRHP_name=108gr FMJ HP
+@ammo_919FMJ108GRHP_desc=108格令 高性能全金属被甲弹。\n\n高性能弹损失一点阻滞力换取速度，能在近距离\n穿透所有软质防弹衣。
+@ammo_919FMJ108GRHPshortsup_desc=108格令 高性能全金属被甲弹。\n\n高性能弹会损失一点阻滞力换取速度，能在近距\n离穿透所有软质防弹衣。但就算使用抑制器也并不\n是那么安静。\n\n枪声范围：12米
+@ammo_919FMJ108GRHPSup1_desc=108格令 高性能全金属被甲弹。\n\n高性能弹会损失一点阻滞力换取速度，能在近距\n离穿透所有软质防弹衣。但就算使用抑制器也并不\n是那么安静。\n\n枪声范围：14米
+@ammo_919FMJ108GRHPSupSD_desc=108格令 高性能全金属被甲弹。\n\n高性能弹会损失点阻滞力换取速度。Mp5SD使速\n度下降到亚音速， 所以子弹有点跑偏了。\n\n枪声范围：8米
+@ammo_40FMJ180GR_name=180gr FMJ
+@ammo_40FMJ180GR_desc=这是一种标准的全金属被甲弹，与 9 mm手\n枪相比火力更强，还能对付一些软装甲。 
+@ammo_40JHP180GR_name=180gr JHP
+@ammo_40JHP180GR_desc=用于 40 毫米手枪的重型空尖弹，在近距离\n内命中率很高，但超过近战范围后，它的杀伤力\n和致死率会有所下降。
+@ammo_40JHP165GR_name=165gr JHP
+@ammo_40JHP165GR_desc=这是一种更轻、更快的空尖弹，可以对付目标上\n的一些软装甲，并能在一定程度上降低射击距离\n射速会略有提高。
+@ammo_12GA00BUCK_name=M162 9 PEL 00 Buckshot
+@ammo_12GA00BUCK_desc=军队配发的标准9颗弹丸的00号鹿弹。\n\n适用于15米内的两脚兽。  
+@ammo_12GA00BUCK8_name=8 PEL 00 Buckshot 
+@ammo_12GA00BUCK8_desc=美国警方配发的8颗弹丸的00号鹿弹，作为联盟\n当局的援助，它可以在射程内获得更高的阻滞力，\n但增大了后座力，且降低了射速。
+@ammo_12GANO4BUCK_name=M257 No.4 Buck
+@ammo_12GANO4BUCK_desc=M257是一种鹿弹，曾被用于越战时期的丛林作\n战，它可以向目标发射24颗弹丸，只要目标处于\n近距离范围，其效果就非常好。\n\n不建议用于大于房间距离范围的作战。
+
+
+#Scopes
+@scope_ironsights_name=机械瞄具
+@scope_ironsights_desc=附带的机瞄足以命中目标。\n\n但随着射程的增加，瞄准速度和暴击率会降低。
+@scope_ironsightspistol_desc=用附带的机瞄就行。\n\n保持简单——迅速出枪！
+@scope_ironsightspistolnochoice_desc=你只能使用附带的机瞄。\n\n幸好它只是你的备用武器。
+@scope_ironsightspistol1911_desc=你只能使用附带的机瞄。\n\n它太低了，没多大用处。
+@scope_ironsightspistolm17_desc=这把手枪设计预留了漂亮的红点瞄准器。\n\n但单位预算说你只能使用机瞄。
+@scope_ironsightspistolm17_desc=This pistol is drilled for fancy Red Dot sights, but the unit armorer keeps all the actual devices locked, not approved for use.
+@scope_ironsightsAKAlpha_desc=说真的，如果你认为是步枪就好，只用机瞄，\n为什么不选AKM呢？
+@scope_ironsightsAKAlpha_desc=Seriously, if you think "rifle is fine" with just irons, why not get an AKM instead?
+@scope_ironsightsso_name=无瞄具
+@scope_ironsightsso_desc=这把霰弹枪上曾经有一个瞄准镜，但现在大部分\n枪管上都没有了。
+@scope_rangersholo_name=全息瞄准镜 1x
+@scope_rangersholo_desc=神奇地在目标上投射一个十字线。\n\n也能调整出于中距离射击的瞄准点。
+@scope_pistolreddot_name=微型红点瞄准镜 1x
+@scope_pistolreddot_desc=红点瞄准镜能改善第一枪的瞄准时间。\n\n这个瞄准镜非常小，甚至可以放在手枪导轨上。
+@scope_pistolreddotMk27_desc=The red dot that came pre-packaged with your Mk27 pistol, it should help improve your first shot aim time and accuracy at range, at the expense of slight draw speed.
+@scope_pistolreddotM17_desc=Improve your first shot aim time with a red dot sight so small it can even fit on pistol slides.\n\nIf you can pull some clout to get the optics approved for mission use, that is.
+@scope_rangersM68reddot_name=M68 红点瞄准镜 1x
+@scope_rangersM68reddot_desc=简单地在目标上投射一个红点。\n\n在中近距离快速而准确。
+@scope_rangersspecterdr_name=双倍率光学瞄准镜 1/4x
+@scope_rangersspecterdr_desc=适合中近距离的优秀光学系统，虽然有点重。
+@scope_rangersM150acog_name=先进战斗光学瞄准镜 4x
+@scope_rangersM150acog_desc=简单易用的中距离光学放大瞄准镜，很轻。
+@scope_rangerslpvo6x_name=低倍可变倍瞄准镜 1-6x
+@scope_rangerslpvo6x_desc=一种低倍可变光学瞄具。\n\n适用于25米甚至更远距离。
+@scope_rangerslpvo8x_name=低倍可变倍瞄准镜 1-8x
+@scope_rangerslpvo8x_desc=一个不错的全方位光学瞄具。\n\n适用于25米以外距离。
+@scope_lromk6_3_18_name=远距离光学瞄准镜 3-18x
+@scope_lromk6_3_18_desc=用于在25至50米范围内射击的专业瞄准镜。\n\n在其他距离也能满足需求。
+@scope_lromk4_name=远距离光学瞄准 3.5-10x
+@scope_lromk4_desc=轻便的入门级远程光学瞄准镜。\n\n适用于所有距离。
+@scope_lropm5_25_name=远距离光学瞄准镜 5-25x
+@scope_lropm5_25_desc=一款笨重的光学瞄准镜。\n\n可在25米外提供最大的精度。
+
+@scope_pkas_name=PK AS 1x
+@scope_pkas_desc=俄制AK系列红点瞄准镜，能提高中近距离瞄准速\n度和准确度。\n\n在更远距离也能提高精度，但瞄准速度会受不良\n的贴腮影响。
+@scope_pkav_name=PK AV 1x
+@scope_pkav_desc= 
+@scope_kobra_name=Kobra Multi-Reticle 1x
+@scope_kobra_desc= 
+@scope_po35_name=PO 3.5x
+@scope_po35_desc=AK系列非常重的中距离光学瞄准镜，宽敞的视野\n极大提高了快速射击能力。\n\n测距十字线也提高了远距离精度。
+@scope_nspum2_name=NSPU-2 3.5x Night Vision
+@scope_nspum2_desc=A late Soviet-era Night Vision Scope for the AK family of weapons, the NSPU-2 is made out of Unobtanium and kept to Squad Leaders only.\n\nThe scope is heavy, much too large, and its field of view is only conductive to engaging distant targets, not searching and definitely not room clearing.  
+@scope_pso1_name=PSO-1 4x
+@scope_pso1m2_name=PSO-1M2 4x
+@scope_pso1_desc=标准的俄制精确射手瞄准镜，通过其简单但有效\n的测距线，提高了中远距离精度，但缺少远程射\n击的放大倍数。\n\n此型号是为SVD步枪的固定系统和弹道设计的。
+@scope_pso1m2_desc=标准的俄制精确射手瞄准镜，通过其简单但有效\n的测距线，提高了中远距离精度，但缺少远程射\n击的放大倍数。\n\n此型号安装在AK系列和VSS步枪上。
+@scope_pso39_name=PSO 3-9x
+@scope_pso39_desc=Russian-made Long Range Optic with an integrated rangefinder reticle, its a bit heavy and cumbersome but gets you right on target everytime, just not very fast.
+
+@scope_rangersMGO240_name=MG Optic 6x
+@scope_rangersMGO240_desc=Dominate the 25-to-50m battlespace with this rugged but heavy Machinegun optic.
+@scope_rangersMGOM145_name=M145 MG Optic 3.4x
+@scope_rangersMGOM145_desc=Gain a little precision at medium range while keeping target transition very fast.
+
+
+
+#
+# Entities
+#
+
+@entity_door_tooltip=门
+@entity_door_strong_tooltip=加固的门
+@entity_door_strong_locked_tooltip=加固的门（锁住）
+@entity_door_flimsy_tooltip=薄弱的门
+@entity_door_glass_tooltip=玻璃门
+@entity_door_flimsy_locked_tooltip=薄弱的门（锁住）
+@entity_door_gate_tooltip=铁皮门
+@entity_door_gate_locked_tooltip=金属门（锁住）
+@entity_door_metal_tooltip=金属板门
+@entity_door_metal_locked_tooltip=金属板门 (锁住)
+@entity_door_gate_large_tooltip=大门
+@entity_door_shortgate_tooltip=矮门
+@entity_door_grating_tooltip=格栅门
+@entity_door_grating_locked_tooltip=格栅门（挂锁）
+@entity_door_elevator_tooltip=电梯门
+@entity_door_sliding_tooltip=滑动门
+@entity_door_sliding_tooltip2=滑动门
+@entity_window=窗户
+@entity_drapes=窗帘
+@entity_glass_wall=玻璃幕墙
+@entity_window_blocker=窗户阻挡器
+@entity_window_grating=窗户栅栏
+@entity_chainlink_fence=铁网围栏
+@entity_fence=围栏
+@entity_rescuezone_tooltip=营救区域：将人质带到此处完成营救
+@entity_evaczone_tooltip=撤离区：完成目标后将部队带到这里。
+@entity_hvtescape=高价值目标(HVT)撤离区：如果高价值目标逃到这里，您的任务将宣告失败。 
+@entity_timebomb_tooltip=定时炸弹
+@entity_ied_tooltip=Improvised Explosive Device
+@entity_fusebox=配电箱
+@entity_destroyed_fusebox=被破坏的配电箱
+@entity_generator=Generator
+
+#
+# Mounted Weapons
+#
+
+
+@entity_mountedweaps_dshk=德什卡重机枪 (可用)
+
+
+
+#
+# Humans
+#
+
+@entity_human_vip=敌对高价值目标
+@entity_human_vip2=HVT "屠夫"
+@entity_human_vip3=HVT "小东西"
+@entity_human_vip4=HVT "高乔"
+@entity_human_hostage=人质
+@entity_human_hostagemayor=市长（人质）
+@entity_human_civilian=平民
+@entity_human_civilian_vis_1=打电话来的平民
+@entity_human_suicidebomber=自杀式炸弹
+@entity_human_executioner=侩子手
+@entity_human_tuffnutsdude=焦虑不安的圣战者
+@entity_human_traitormilitia=叛变的民兵
+@entity_human_rabblefighter=叛军新兵
+@entity_human_gruntbasic=普通叛军
+@entity_human_rocketinsurgent=叛军RPG手
+@entity_human_gruntblackhead=叛军精英
+@entity_human_veteran=叛军老兵
+@entity_human_sniperinsurgent=叛军狙击手
+@entity_human_machinegunner=叛军机枪手
+@entity_human_foreignadvisor=外籍顾问
+@entity_human_advisorfanatical=狂热信徒
+@entity_human_emir=穆斯林酋长
+@entity_human_ritualist=献祭者
+@entity_human_privatesecurity=私人保镖
+@entity_human_securityqrf=安保快反部队
+@entity_human_securityheavy=安保重装部队
+
+@entity_human_warlordmilitia=非正规军士兵
+@entity_human_warlordsergeant=非正规军中士
+@entity_human_warlordmachinegunner=非正规军机枪手
+@entity_human_warlordgrenadier=非正规军投弹手
+@entity_human_warlordguard=女武神守卫
+@entity_human_warlordelite=警卫队
+
+@entity_human_ssimarksman=SSI Sharpshooter
+@entity_human_ssiassassin=SSI Covert Ops
+@entity_human_ssipointman=SSI Spec Ops
+@entity_human_ssiasssaulter=SSI Spec Ops
+@entity_human_ssileader=SSI Spec Ops
+
+@entity_human_ONUexpert=代号'山下先生'
+@entity_human_unaware=代号'萨蒂波'
+@entity_human_friendly_vip=友方VIP
+@entity_human_friendly_vip_2=敌方叛逃者
+@entity_human_agent01=“叫我菲姬就行”
+@entity_human_friendly_vipfem=家属
+@entity_human_friendly_vipfem2=VIP的妻子
+@entity_human_ogamarksman=盟军狙击手
+@entity_human_ogaassaulter=盟军突击手
+@entity_human_ogabreacher=盟军爆破手
+@entity_human_ogagrenadier=盟军榴弹手
+@entity_human_ogamachinegunner=盟军机枪手
+
+@entity_human_jtacdracon=JTAC Dracon
+@entity_human_lttawr=Lieutenant Tawr
+@entity_human_militiamanpyro=Pyro
+@entity_human_militiamanhawkeye=Hawkeye
+@entity_human_randy01=Assett Clarice
+@entity_human_randy02=Assett Tanto
+@entity_human_randy03=Old Man Billy
+@entity_human_randy04=Chic Ric
+
+@tooltip_enemy_vip=Mission Objective. Detain and bring to the Evac Zone.
+@tooltip_civilian=People live here. Good guys don't get them killed.
+@tooltip_civilian_visible_1="Discovered the bomb while hiding from insurgents."
+@tooltip_friendly_vip=Mission Objective. Make contact to gain direct control.
+@tooltip_friendly_militia=Make contact to gain direct control.
+@tooltip_friendly_vip_phone=Mission Objective.\nUnder Direct control now.
+@tooltip_hostage=Recover and escort safely to the Evac Zone.
+@tooltip_hostage_civ=Ordinary people taken hostage. Their life is your priority.
+@tooltip_hostage=解救并护送到撤离区域。
+@tooltip_hostage_civ=被扣为人质的平民。\n他们的生命是你的首要任务。
+@tooltip_hostage_mayor=拯救并安全护送至疏散区。
+
+#
+# Non-Human Objectives and Assets
+#
+
+@tooltip_destroyableasset=任务目标。破坏或拆除。
+@tooltip_fusebox=配电箱。可以关灯。
+@tooltip_cameraroom=监控室，入侵系统以获得控制权。
+@tooltip_cameraroom_disabled=安防监控控制终端（没电）
+@tooltip_survcamera=安防摄像头
+@tooltip_survcamera_disabled=安防摄像头（没电）
+
+#
+# Hardcoded texts
+#
+
+# scenario
+@scenario_type_none=NONE
+@scenario_type_clear=消灭敌人
+@scenario_type_hostage=营救人质
+@scenario_type_bomb=拆除炸弹
+@scenario_type_abduction=抓捕头目
+@scenario_type_execution=阻止行刑
+@scenario_type_vip_escort=护送VIP
+@scenario_type_vip_extract=撤出VIP
+@scenario_type_stronghold_raid=突袭据点
+
+#Note: these may look identical, but there is a different number of empty spaces left at the end of their names. This is for editor purposes, where they need to be unique strings
+@scenario_type_qrf_survivors=快速反应部队
+@scenario_type_qrf_sabotage=快速反应部队 
+@scenario_type_qrf_survivors_sabotage=快速反应部队  
+
+@scenario_conditions_clear=消灭所有恐怖分子
+@scenario_conditions_hostage=人质必须存活(或获救)\n消灭所有恐怖分子（可选）
+@scenario_conditions_bomb=拆除所有炸弹\n消灭所有恐怖分子（可选）
+@scenario_conditions_abduction=保护并活捉重要目标\n消灭所有恐怖分子（可选）
+@scenario_conditions_execution=阻止刽子手杀害人质\n消灭所有恐怖分子
+@scenario_conditions_vip_escort=将VIP护送至安全区\n消灭所有恐怖分子（可选）
+@scenario_conditions_vip_extract=搜寻并撤离VIP\n消灭所有恐怖分子（可选）
+@scenario_conditions_stronghold_raid=破坏敌人设备\n撤退到撤离点
+@scenario_conditions_qrf_survivors=拯救幸存者\n撤退到撤离点
+@scenario_conditions_qrf_sabotage=破坏设备\n撤退到撤离点
+@scenario_conditions_qrf_survivors_sabotage=拯救幸存者并摧毁设备\n撤退到撤离点
+
+# scenario win/lose texts
+@scenario_clear_win=All hostiles eliminated
+@scenario_hostage_win=Hostages rescued
+@scenario_hostage_win_all=All hostages were rescued
+@scenario_abduction_win=Target in custody
+@scenario_rescue_win=Asset successfully extracted
+@scenario_hostage_lose=A hostage was killed
+@scenario_hostage_lose_all=All hostages were killed
+@scenario_team_killed=Assault team eliminated
+@scenario_target_killed=Target was killed
+@scenario_target_fled=Target has escaped
+@scenario_bomb_win=Location secured
+@scenario_bomb_lose=The bomb went kaboom
+@scenario_raid_win=Target destroyed
+@scenario_raid_lose=Raid team eliminated
+
+@scenario_qrf_survivors_win=Survivors retrieved
+@scenario_qrf_survivors_sabotage_win=Objectives completed
+@scenario_qrf_survivors_lose=Failed to retrieve survivors
+@scenario_qrf_survivors_lose2=Rescue team eliminated
+
+@scenario_qrf_sabotage_win=Target destroyed
+@scenario_qrf_sabotage_lose=Team eliminated
+
+@scenario_force_quit=Sheepish retreat, mission lost
+
+@effect_suppressed=SUPPRESSED
+@effect_pinned=PINNED
+
+# game
+@game_reset_progress_line=Are you sure you want to reset all progress?\n(squad, unlocked items, map progress etc.)
+@game_endscreen_stats_killed=阵亡
+@game_fatigued=FATIGUED
+@game_injured=受伤
+@game_incapacitated=失去行动能力
+@game_incapacitated_short=失能.
+@game_healthy=健康
+@game_unarmed=Currently unarmed
+@game_loadingscreen_loading=载入中...
+@game_loadingscreen_generating=生成中
+@game_loadingscreen_longtime=这可能需要一段时间
+@game_loadingscreen_downloading=下载数据...
+@game_net_waiting_for_host_restart=等待主机重启...
+@game_net_waiting_for_host_mission=等待主机选择下一个任务...
+@game_powersaving_enabled=你的电脑处于省电模式或没有插电源，游戏运行\n效果会很差。\n\n插上电源，关闭省电模式，确保游戏使用独立显\n卡（如果有的话）。
+
+#
+# Texts used in textures. Texture must be manually localized by artist, using the .psd sources.
+#
+
+@game_title=DOOR KICKERS 2
+@game_texture_blowup=BLOW UP
+@game_texture_loading=LOADING...
+@game_texture_loading_workshop=UPDATING WORKSHOP...
+
+
+#
+# months in short form (ie Jan/Feb/Mar etc)
+#
+@game_date_month1=一月
+@game_date_month2=二月
+@game_date_month3=三月
+@game_date_month4=四月
+@game_date_month5=五月
+@game_date_month6=六月
+@game_date_month7=七月
+@game_date_month8=八月
+@game_date_month9=九月
+@game_date_month10=十月
+@game_date_month11=十一月
+@game_date_month12=十二月
+
+#
+# Trooper upgrades
+#
+@trooper_upgrade_offence=Offensive upgrade: +10% crit chance, +15% suppression applied
+@trooper_upgrade_defence=Defensive upgrade: +50% suppression recovery, +5% aim speed

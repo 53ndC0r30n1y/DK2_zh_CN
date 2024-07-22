@@ -1,0 +1,114 @@
+#
+# Campaign Descriptions / Briefings
+#
+
+@campaign_shrine=圣区
+@campaign_shrinedist_desc=位于诺赫拉基城的河畔工人阶级地区，经常受到宗派暴力、小规模起义和旨在制造麻烦的袭击的影响。大多数当地居民缺乏技能和资金，无法构成战略威胁，但黑头党也存在，尽管被许多人鄙视。
+
+@campaign_northern=北区
+@campaign_northernbelt_desc=环绕首都的地带是小城市、农田和工业区的混合体。各种叛乱组织隐藏在这里，积聚并向城市输送战士和武器。北部地区是已知的黑头党基地，但常规叛乱分子也接受了良好的训练和组织。
+
+@campaign_op_subjugator=征服者行动
+@campaign_op_subjugator_desc=电子情报预警显示，一场重大的叛乱/黑头党行动正在瞄准Lower Pard盆地的石油工业。他们可能想要接管或者只是进行破坏。无论如何，我们正在向选择的设施部署先遣队，并成立快速反应部队做好应对。
+
+@campaign_op_rajul=拉朱尔-卡比尔
+@campaign_op_rajul_desc=我们不那么友好的邻国军阀与邻国的情报机构联系，并策划了一次清剿行动。他离开了贫民窟，躲到了跨境的夏宫，但我们得到了追捕他的许可。进去，清理道路，抓住我们的人，然后撤出。
+
+@campaign_op_kerak=卡拉克城堡
+@campaign_op_kerak_desc: 十字军时代的城堡已被禁忌树团伙占领。他们在城堡内设有防御工事并扣押人质，同时利用城堡作为该地区的权力投射基地。我们必须进去消灭所有威胁，同时保护无辜的生命和古代文物。
+#
+# Various campaign-related texts that are hardcoded
+#
+
+@campaign_optional_map_invalidation= By taking up this mission you will no longer be able to play the available optional missions. \n Continue?
+
+
+#
+# UI from data/gui/campaign.xml
+#
+@menu_campaign_campaigns=战役模式
+@menu_campaign_tod=服役期
+@menu_campaign_op=行动
+@menu_campaign_squad_locked_header=这只小队被锁定在\n另一场战役中
+@menu_campaign_squad_locked_paragraph=(选择或创建一个新的)
+@menu_campaign_newload=新建/加载
+@menu_campaign_settings=战役设置
+@menu_campaign_history=历史
+@menu_campaign_history_title=历史战役
+@menu_campaign_history_playagain=再战一次
+@menu_campaign_choosesquad=选择小队
+@menu_campaign_delete_save_title=清除战役进度
+@menu_campaign_load_save=加载战役
+@menu_campaign_ironman_quit_confirmation=退出将被视为失败，小队将在当前任务中保留原样。.\n\n你确定要这样做吗?
+@menu_campaign_history_stats_days=任务天数
+
+@menu_campaign_ironman_mode=铁人模式
+@menu_campaign_ironman=铁人模式
+@menu_campaign_ironman_mode_on=铁人模式开启
+@menu_campaign_normal_mode=铁人模式关闭
+
+@menu_campaign_ironman_no_line1=无限重启
+@menu_campaign_ironman_no_line1_ttip=任务能重新开始。
+@menu_campaign_ironman_no_line2=老兵不死
+@menu_campaign_ironman_no_line2_ttip=战役完成后，阵亡的士兵将会复活。
+@menu_campaign_ironman_no_line3=普通奖励
+@menu_campaign_ironman_no_line3_ttip=在战役完成后，将会获得标准数量的星星、战斗荣誉和经验值。
+
+@menu_campaign_ironman_yes_line1=不能重启
+@menu_campaign_ironman_yes_line1_ttip=任务无法重新开始。
+@menu_campaign_ironman_yes_line2=永久死亡
+@menu_campaign_ironman_yes_line2_ttip=战役完成后，阵亡的士兵将会被新的新兵取代。
+@menu_campaign_ironman_yes_line3=双倍奖励
+@menu_campaign_ironman_yes_line3_ttip=战役完成后，星星、战斗荣誉和经验值奖励翻倍。
+
+@menu_campaign_ironman_ttip=坚持下去！铁人模式还继续吗？
+
+@menu_campaign_ironman_delete_confirmation=停止铁人模式战役并不能让阵亡士兵起死回生。\n\n确定要继续吗？
+@menu_campaign_lastplayed_time=上次游玩时间
+@menu_campaign_missionbriefing=任务简报
+ # this is currently the max length allowed
+@#menu_campaign_newday_title=新的一天，尽量活着。
+@#menu_campaign_newday_title=新的一天，欢迎来到地狱。
+@menu_campaign_newday_newmissions=有新任务解锁
+@menu_campaign_newday_txt1=* 可供部署的士兵数量：%d
+@menu_campaign_newday_txt2=* 由于受伤，失去行动能力的士兵数量：%d
+@menu_campaign_newday_txt3=* 已恢复行动能力的士兵数量：%d 
+@menu_campaign_newday_txt4=* 阵亡的士兵数量：%d
+@menu_campaign_newday_txt5=%s 已晋升为 %s
+@menu_campaign_newday_txt6=小队晋升至 %d 级，你有 %d 个新的条令点数可用。
+@menu_campaign_newday_txt7=晋升：
+@menu_campaign_status_report=状态报告
+@menu_campaign_day=天:
+@menu_campaign_days_remaining=剩余 %d 天
+@menu_campaign_intel_requires=需要情报
+@menu_campaign_intel_required=需要更多情报才能进行此任务
+@menu_campaign_intel_amount=可用情报 \n 一些任务需要情报方可进入
+@menu_campaign_mission_available=可用
+@menu_campaign_mission_available_on_day=可在第 %d 天开始
+@menu_campaign_days_expired=不再可用
+@menu_campaign_dayreport_ttip=每日报告
+@menu_campaign_brief_difficulty=难度
+@menu_campaign_brief_difficulty1=简单
+@menu_campaign_brief_difficulty2=普通
+@menu_campaign_brief_difficulty3=专家
+@menu_campaign_finished=已完成
+@menu_campaign_failed=失败
+@menu_campaign_playagain_err=该战役已不存在 :(
+@menu_campaign_new_troops_title=援军已到达
+@menu_campaign_battlehonors_ttip=每赢得7颗星星可获得一个战斗荣誉勋章（仅针对该小队）
+@menu_campaign_stars_ironman=铁人模式：星星数量已翻倍！
+@menu_campaign_show_map=显示地图
+
+@menu_campaign_bonusrewards=额外奖励
+@menu_campaign_reward_xp_amount=每位生还队员可获得 %d 点经验值
+
+@menu_campaign_eow=一周结束
+@menu_campaign_orders=您的命令是什么？
+@menu_campaign_current_intel=当前情报  %d
+@menu_campaign_eow_extend_tour=继续
+@menu_campaign_eow_extend_expl=再战7天
+@menu_campaign_eow_rest=休整
+@menu_campaign_eow_rest_expl=休整1周，损失 %d
+@menu_campaign_eow_retire=结束轮驻
+@menu_campaign_eow_retire_expl=结束轮驻，获得 %d
+@menu_campaign_eow_intel_req=情报不足

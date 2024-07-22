@@ -1,0 +1,200 @@
+﻿#
+# IMPORTANT
+# -Do not modify/localize %s, %d, %u or any other such constructs, leave them as they are.
+# -Do not modify \n (it moves the text following it to the next line).
+# -Text IDs ending in _ttip or _tooltip can be translated using any length, for all others try to keep the same length (though it depends from text to text).
+# -Keep every @id=text on one line
+#
+
+
+#
+# Single Player Mission Packs
+#
+
+@single_mispack_1_name=初来乍到
+@single_mispack_2_name=游骑兵做先锋
+@single_mispack_3_name=像三角洲一样
+@single_mispack_4_name=无影无踪
+@single_mispack_5_name=小麻烦
+@single_mispack_5x_name=小麻烦-2
+@single_mispack_5xx_name=小麻烦-3
+@single_mispack_5xxx_name=小麻烦-4
+@single_mispack_6_name=极限营救
+@single_mispack_6x_name=极限营救-2
+@single_mispack_6xx_name=极限营救-3
+@single_mispack_7_name=战乱地区
+@single_mispack_8_name=黑药红土
+@single_mispack_9_name=征服者行动
+@single_mispack_10_name=过往回忆
+@single_mispack_11_name=扑克通缉令
+@single_mispack_12_name=勇往直前
+@single_mispack_13_name=毫不留情
+@single_mispack_undisclosed_name=<高度机密>
+
+#
+# Maps from Mission Packs
+#
+
+# FNGs Welcome
+@map_pathtosuckless=菜鸟的成长之路
+@map_wooddoorsareeasy=踹开木门相当容易
+@map_practicemakesperfect=一网打尽
+@map_doorkickers=为何而战
+@map_rescueatdawn=黎明援救
+@map_thejihadiliveshow=圣战直播
+@map_killingtime=杀戮时刻
+
+
+# Lead the Way
+@map_gatecrashers=破门而入
+@map_vbiedsareus=我们就是汽车炸弹
+@map_aquaintlittleman=古怪的小个子
+@map_fireandmaneuver=掩护与机动
+@map_safehousestrike=奇袭安全屋
+@map_alhasanhasitall=哈桑的杰作
+@map_vipersnest=蝰蛇老巢
+@map_exterior05=交叉火力
+@map_opbase=胡桃夹子
+
+
+# Do it like Delta
+@map_duplex=联排住宅
+
+
+# Never See Never Bee
+@map_cia1=实习
+@map_breakin=破坏和摧毁
+@map_compound01=抢夺和抓捕
+@map_marketday=赶集日
+@map_thedealer=死亡贩子
+@map_abandoned=WIP ENTER THE SPECTRES
+
+
+# Tiny Troubles 1/2/3
+@map_noisyneighborsnuisance=吵闹烦人的邻居
+@map_theview=风景线
+@map_ratwork=卑劣行径
+@map_uninvitedguests=不速之客
+@map_doortodoor=送货上门
+@map_roomservice=客房服务
+@map_pincerspower=钳形攻势
+@map_lonelyabode=独栋住宅
+@map_extratrouble=小公寓大炸弹
+
+@map_hotroom=棘手的房间
+@map_knivesinthedark=黑暗中的刀
+@map_techsupport=技术支持
+@map_traphouse=陷阱屋
+@map_flatmates=合租人
+@map_scratchedcarpets=赔率不公
+@map_islandcafe=岛内打击
+@map_fuelstop=加油站
+@map_theritual=仪式
+
+@map_covereddebris=菜鸟时间
+@map_nightbird=夜莺
+@map_intervention=WIP THE INTERVENTION
+@map_factory=WIP DUSK DELIVERY
+@map_avtt6=WIP HARD CHOICES
+@map_tiny_modern_trouble=WIP MODERN TROUBLE
+@map_tiny_trouble_09=WIP TINY TROUBLE 9
+@map_tt10=WIP THE TROUBLE WITH DOORS
+@map_traitors=WIP TRAITORS
+
+
+#  Deck of Cards
+@map_living_large=红桃J
+@map_large_penthouse=方片Q
+@map_kingofspades=黑桃K
+@map_tenofclubs=梅花10
+@map_twoofspades=黑桃2
+@map_offlimits=红桃K
+@map_privatemuseum=WIP PRIVATE MUSEUM
+@map_coolpalace=鬼牌
+
+
+# Extreme Rescues 1/2
+@map_crisisonroutekilo=基洛公路危机
+@map_againsttheodds=迎难而上
+@map_embassysiege=大使馆围攻
+@map_maniacsmansion=疯子的豪宅
+@map_countrysidejackpot=乡间大奖
+@map_supermarket=会计是自己人
+@map_exchange=移交人质
+@map_fancyrestaurant=菲姬的派对惊喜
+@map_largeapartment=优势位置
+
+@map_cardealership=大甩卖
+@map_mazerunners=迷宫赛跑
+@map_speedislife=速度就是生命
+@map_nightcall=深夜来电
+@map_doublerush=双向奔赴
+@map_hallwayhell=地狱走廊
+@map_unaware=出敌不意
+
+
+# Indian Country
+@map_kamilpashamarket=卡米尔帕夏市场
+@map_inthesouk=露天市场
+@map_kingoftheslums=贫民窟之王
+@map_busdepot=炸弹威胁
+@map_urbanarea=身处险境的朋友
+
+
+# Red Earth
+@map_isolatedcompound=偏僻院落 
+@map_bakr=巴卡尔
+
+
+# Give No Quarter
+@map_foreigninfluencers=外国红人
+@map_universityassault=大学袭击
+@map_canyonambush=杀出重围
+@map_tinyswat=贵重货物
+@map_ghostcity=WIP GHOST CITY
+@map_surrounded=WIP SURROUNDED
+
+
+# Still Classified
+@map_museum=博物馆
+@map_xlsadrcity=大萨德尔城
+@map_diamondyard=菱形院子
+
+
+# Blast form the Past
+@map_beachhouse=常规清理
+@map_question=反问
+@map_isolatedcabin=猫头鹰之森
+@map_venicehill=午后暴风雨
+@map_grandavenuebank=信仰高于财富
+@map_withyourshield=保护或不保护
+@map_docks=码头和枪支
+@map_skypub=冲向天空
+@map_firebasenorth=北方火力点
+
+
+# All the Way
+@map_bridget=桥梁突击
+@map_tolltakers=收费员
+@map_raptordown=猛禽坠落
+
+
+# OPERATION Subjugator
+@map_phaseisurprise=阶段I: 出其不意
+@map_phaseiisafeguard=阶段II: 保护模式
+@map_phaseiiaggression=阶段II: 监视行动
+@map_phaseiiisecure=阶段III: 安全措施
+@map_phaseivsmash=阶段IV :全面打击
+
+
+# OPERATION Kerak
+@map_kerakIopt=卡拉克城堡: 康斯坦丝哨站
+@map_kerakI=卡拉克城堡: 十字军之门
+@map_kerakIIa=卡拉克城堡: 南墙任务
+@map_kerakIIb=卡拉克城堡: 主堡行动
+
+
+# DEVMAPS / CURRENTLY UNUSED
+@map_inthesouk=在市集中
+@map_itreallystinks=真是太糟糕了
+@map_rockyterrain=登高临远

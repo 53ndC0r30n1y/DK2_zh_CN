@@ -1,0 +1,30 @@
+<Fonts>
+	<Font name="paragraph_3" type="hybrid" size="18" file="data/fonts/FangZhengYouHeiJianTi-1.ttf"/>
+	<!-- 18 -->
+	<Font name="paragraph_2" type="hybrid" size="25" file="data/fonts/FangZhengYouHeiJianTi-1.ttf"/>
+	<!-- 25 -->
+	<Font name="paragraph_1" type="hybrid" size="38" file="data/fonts/FangZhengYouHeiJianTi-1.ttf"/>
+	<!-- 38 -->
+
+	<Font name="header_6" type="hybrid" size="20" file="data/fonts/FangZhengYouHeiJianTi-1.ttf"/>		
+	<!-- 20 -->
+	<Font name="header_5" type="hybrid" size="20" file="data/fonts/FangZhengYouHeiJianTi-1.ttf"/>	
+	<!-- 30 -->
+	<Font name="header_4" type="hybrid" size="36" file="data/fonts/FangZhengYouHeiJianTi-1.ttf"/>	
+	
+	<Font name="header_map" type="hybrid" size="30" file="data/fonts/FangZhengYouHeiJianTi-1.ttf"/>
+
+	<Font name="header_deploy_rangers" type="hybrid" size="36" file="data/fonts/Alibaba-PuHuiTi-Medium.ttf"/>	
+	<!-- 36 -->
+	<Font name="header_3" type="hybrid" size="50" file="data/fonts/Alibaba-PuHuiTi-Medium.ttf"/>
+	<!-- 64	-->
+	<Font name="header_2" type="hybrid" size="60" file="data/fonts/Alibaba-PuHuiTi-Bold.ttf"/>
+	<!-- 80 -->
+	<Font name="header_1" type="hybrid" size="130" file="data/fonts/FangZhengYouHeiJianTi-1.ttf"/>
+	<!-- 160 -->
+	<Font name="header_0" type="hybrid" size="45" file="data/fonts/FangZhengYouHeiJianTi-1.ttf"/>
+
+	<!-- size is not relevant, it can be changed by the editor -->
+	<Font name="editor" type="hybrid" size="4" file="data/fonts/FangZhengYouHeiJianTi-1.ttf"/>
+</Fonts>
+

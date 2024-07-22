@@ -1,0 +1,1080 @@
+<GUIItems>
+
+<EventActionBatch name="GAME_GUI_ENDSCREEN_WON">
+	<Action type="Show" target="Menu_Endscreen"/>
+	<Action type="Show" target="#Win"/>
+	<Action type="Show" target="#WinSmoke"/>
+	<Action type="Show" target="#WinGlow"/>
+	<Action type="Hide" target="#Lose"/>
+	<Action type="Hide" target="#LoseSmoke"/>
+	<Action type="Hide" target="#LoseGlow"/>
+</EventActionBatch>
+
+<EventActionBatch name="GAME_GUI_ENDSCREEN_LOST">
+	<Action type="Show" target="Menu_Endscreen"/>
+	<Action type="Hide" target="#Win"/>
+	<Action type="Hide" target="#WinSmoke"/>
+	<Action type="Hide" target="#WinGlow"/>
+	<Action type="Show" target="#Lose"/>
+	<Action type="Show" target="#LoseSmoke"/>
+	<Action type="Show" target="#LoseGlow"/>
+</EventActionBatch>
+
+<StaticText name="#DisabledResult" hidden="true" textColor="808080b0" />
+<StaticText name="#GoodResult" hidden="true" textColor="f0e3ccb0" />
+<StaticText name="#BadResult" hidden="true" textColor="f03020b0" />
+
+<Item name="Menu_Endscreen" origin="0 0" hidden="true">
+	<OnOpen>
+		<Action type="TriggerEvent" target="GUI_CAPTURE_INPUT"/>
+	</OnOpen>
+
+	<OnClose>
+		<Action type="TriggerEvent" target="GUI_RELEASE_INPUT"/>
+	</OnClose>
+
+	<OnKeyDown key0="27">
+		<Action type="Hide" target="Menu_Endscreen"/>
+	</OnKeyDown>
+
+	<StaticImage origin="0 0">
+		<RenderObject2D texture="data/textures/gui/bg_texture.dds" sizeX="7680" color="f0e3cc26" sizeY="1920" texRepeatX="3" texRepeatY="1"/>
+	</StaticImage>
+
+	<Item origin="0 0" sizeX="9999" sizeY="9999" blurBackground="true" blurColor="ffffff">
+	</Item>
+
+	<StaticImage name="ScreenBg" origin="0 0">
+		<RenderObject2D texture="data/textures/gui/square.tga" sizeX="2560" sizeY="9999" color="0c0b0bbf"/>
+		<StaticImage align="l" origin="-128 0">
+			<RenderObject2D texture="data/textures/gui/bg_edge.tga" flipX="true" />
+		</StaticImage>
+		<StaticImage align="r" origin="128 0">
+			<RenderObject2D texture="data/textures/gui/bg_edge.tga" flipY="true" />
+		</StaticImage>
+	</StaticImage>
+
+	<!-- title -->
+	<StaticImage origin="0 580">
+		<RenderObject2D texture="data/textures/gui/end_screen_title_status_mission.tga" sizeX="9999" sizeY="215"/>
+		<StaticImage name="#WinSmoke" origin="0 0" >
+			<RenderObject2D texture="data/textures/gui/bg_logo_smoke.dds" color="24a9dc80" scaleX="1.2" scaleY="1.4" />
+		</StaticImage>
+		<StaticImage name="#LoseSmoke" origin="0 0" >
+			<RenderObject2D texture="data/textures/gui/bg_logo_smoke.dds" color="a23d0080" hidden="true" scaleX="1.2" scaleY="1.4" />
+		</StaticImage>
+		<StaticText name="#Win"  origin="0 30" align="c" font="header_1" textColor="ffa300ff" text="@menu_m_missioncompleted" />
+		<StaticText name="#Lose" origin="0 30" align="c" font="header_1" textColor="ff4900" hidden="true" text="@menu_m_missionlost" />
+		<StaticText name="#Reason"  origin="0 -64" align="c" font="header_3" textColor="f0e3cc" text="The reason to start over new." />
+
+		<StaticImage name="#WinGlow" origin="0 -170">
+			<StaticImage origin="0 0">
+				<RenderObject2D texture="data/textures/fx/light_flare_long_01.dds" color="9e581533" blendMode="add_masked" scaleX="16" scaleY="2"/>
+			</StaticImage>
+			<StaticImage origin="0 0">
+				<RenderObject2D texture="data/textures/fx/light_flare_long_01.dds" color="ffa20280" blendMode="add_masked" scaleX="8" scaleY="4"/>
+			</StaticImage>
+		</StaticImage>
+		<StaticImage name="#LoseGlow" origin="0 -170" hidden="true">
+			<StaticImage origin="0 0">
+				<RenderObject2D texture="data/textures/fx/light_flare_long_01.dds" color="68000133" blendMode="add_masked" scaleX="16" scaleY="2"/>
+			</StaticImage>
+			<StaticImage origin="0 0">
+				<RenderObject2D texture="data/textures/fx/light_flare_long_01.dds" color="68000180" blendMode="add_masked" scaleX="8" scaleY="4"/>
+			</StaticImage>
+		</StaticImage>
+		<Item name="#NoStar" origin="0 -170" align="c" hidden="true">
+			<StaticImage origin="-128 0"> <RenderObject2D texture="data/textures/gui/endscreen_star_large_empty.dds"  color="ffffffcc"/> </StaticImage>
+			<StaticImage origin="0 0"> <RenderObject2D texture="data/textures/gui/endscreen_star_large_empty.dds"  color="ffffffcc"/> </StaticImage>
+			<StaticImage origin="128 0"> <RenderObject2D texture="data/textures/gui/endscreen_star_large_empty.dds"  color="ffffffcc"/> </StaticImage>
+		</Item>
+		<Item name="#3Star" origin="0 -170" align="c">
+			<StaticImage origin="-128 0"> <RenderObject2D texture="data/textures/gui/endscreen_star_large_full.dds"/> </StaticImage>
+			<StaticImage origin="0 0"> <RenderObject2D texture="data/textures/gui/endscreen_star_large_full.dds"/> </StaticImage>
+			<StaticImage origin="128 0"> <RenderObject2D texture="data/textures/gui/endscreen_star_large_full.dds"/> </StaticImage>
+		</Item>
+		<Item name="#2Star" origin="0 -170" align="c" hidden="true">
+			<StaticImage origin="-128 0"> <RenderObject2D texture="data/textures/gui/endscreen_star_large_full.dds"/> </StaticImage>
+			<StaticImage origin="0 0"> <RenderObject2D texture="data/textures/gui/endscreen_star_large_full.dds"/> </StaticImage>
+			<StaticImage origin="128 0"> <RenderObject2D texture="data/textures/gui/endscreen_star_large_empty.dds" color="fffff80"/> </StaticImage>
+		</Item>
+		<Item name="#1Star" origin="0 -170" align="c" hidden="true">
+			<StaticImage origin="-128 0"> <RenderObject2D texture="data/textures/gui/endscreen_star_large_full.dds"/> </StaticImage>
+			<StaticImage origin="0 0"> <RenderObject2D texture="data/textures/gui/endscreen_star_large_empty.dds" color="fffff80"/> </StaticImage>
+			<StaticImage origin="128 0"> <RenderObject2D texture="data/textures/gui/endscreen_star_large_empty.dds" color="fffff80"/> </StaticImage>
+		</Item>
+
+		<StaticImage name="#ImprovedStars" origin="240 -170" tooltip="@menu_m_stats_improved_result">
+			<RenderObject2D texture="data/textures/gui/improved_result.dds"/>
+		</StaticImage>
+	</StaticImage>
+
+	<!-- info -->
+	<StaticImage name="#Info" origin="0 300" align="t" sizeX="700" sizeY="740">
+		<RenderObject2D texture="data/textures/gui/square.tga" sizeX="700" sizeY="740" color="231f1fDA"/>
+
+		<StaticText name="#MapName" origin="0 -40" align="t" font="header_3" textColor="f97b03" text="CARTEL BEACH PARTY" />
+		<StaticImage origin="0 -110" align="t">
+			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="600" sizeY="4" color="f97b03"/>
+		</StaticImage>
+		<StaticImage name="#MapThumbnail" origin="0 -130" align="t">
+			<RenderObject2D texture="data/maps/countrysidejackpot_thumb.dds"  blendMode="add"/>
+		</StaticImage>
+
+		<StaticImage origin="0 -430" align="t">
+			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="512" sizeY="64" color="f97b0350"/>
+			<StaticText origin="20 0" align="l" text="@menu_m_stats_elapsed" 	font="header_4" textColor="f0e3cc"/>
+			<StaticText name="#Elapsed" origin="-20 0" align="r" text="??:??" 	font="header_4" textColor="f0e3cc"/>
+			<StaticImage name="#BestTimeTooltip" origin="-140 0" align="r" tooltip="@menu_m_stats_elapsed_best">
+				<RenderObject2D texture="data/textures/gui/customization/info_hover.tga" color="ffffff80"/>
+			</StaticImage>
+			<StaticImage name="#ImprovedTime" align="r" origin="80 0" tooltip="@menu_m_stats_improved_result">
+				<RenderObject2D texture="data/textures/gui/improved_result.dds"/>
+			</StaticImage>
+		</StaticImage>
+
+		<Item name="#NoBonusOrChallengesHeader" origin="0 35" align="t" sizeX="870" sizeY="70" hidden="false">
+			<OnOpen>
+				<Action type="Hide" target="#Challenges"/>
+				<Action type="Hide" target="#BonusRewards"/>
+				<Action type="SetOrigin" params="0 300" target="#Info"/>
+			</OnOpen>
+		
+			<!--
+			<Item name="TextBG" origin="0 30" align="c" hidden="false">
+				<Item name="Bg_Left" origin="0 0" align="r" sizeX="500" sizeY="100" clipChildren="true">
+					<StaticImage origin="840 0" align="rt" >
+						<RenderObject2D texture="data/textures/gui/menu_select.dds" scaleX="1.6" scaleY="1.8" color="231f1fDA"/>
+					</StaticImage>
+				</Item>
+				<Item name="Bg_Right" origin="0 0" align="l" sizeX="500" sizeY="100" clipChildren="true">
+					<StaticImage origin="-840 0" align="lt" >
+						<RenderObject2D texture="data/textures/gui/menu_select.dds" scaleX="1.6" scaleY="1.8" color="231f1fDA"/>
+					</StaticImage>
+				</Item>
+			</Item>
+			<StaticText origin="0 55" align="c" text="OBJECTIVE" font="header_4" textColor="f97b03"/>
+			-->
+
+			<Item name="RewardBG" origin="0 0" align="c" hidden="false">
+				<Item name="Bg_Left_Stroke" origin="4 0" align="r" sizeX="500" sizeY="60" clipChildren="true">
+					<StaticImage origin="420 0" align="r" >
+						<RenderObject2D texture="data/textures/gui/menu_select.dds" scaleX="1.1" scaleY="1.1" color="40392b"/>
+					</StaticImage>
+				</Item>
+				<Item name="Bg_Right_Stroke" origin="-4 0" align="l" sizeX="500" sizeY="60" clipChildren="true">
+					<StaticImage origin="-420 0" align="l" >
+						<RenderObject2D texture="data/textures/gui/menu_select.dds" scaleX="1.1" scaleY="1.1" color="40392b"/>
+					</StaticImage>
+				</Item>
+
+				<Item name="Bg_Left" origin="0 0" align="r" sizeX="500" sizeY="50" clipChildren="true">
+					<StaticImage origin="400 0" align="r" >
+						<RenderObject2D texture="data/textures/gui/menu_select.dds"  color="231f1fDA"/>
+					</StaticImage>
+				</Item>
+				<Item name="Bg_Right" origin="0 0" align="l" sizeX="500" sizeY="50" clipChildren="true">
+					<StaticImage origin="-400 0" align="l" >
+						<RenderObject2D texture="data/textures/gui/menu_select.dds"  color="231f1fDA"/>
+					</StaticImage>
+				</Item>
+				<Item name="Header" origin="0 0">
+					<StaticImage origin="-150 0">
+						<RenderObject2D texture="data/textures/gui/missions/pack_stars.tga" scaleX="0.8" scaleY="0.8" blendMode="normal" color="474031"/>
+					</StaticImage>
+					<StaticImage origin="-100 0">
+						<RenderObject2D texture="data/textures/gui/missions/pack_stars.tga" scaleX="0.8" scaleY="0.8" blendMode="normal" color="474031"/>
+					</StaticImage>
+					<StaticImage origin="-50 0">
+						<RenderObject2D texture="data/textures/gui/missions/pack_stars.tga" scaleX="0.8" scaleY="0.8" blendMode="normal" color="474031"/>
+					</StaticImage>
+					<StaticImage origin="0 0">
+						<RenderObject2D texture="data/textures/gui/missions/pack_stars.tga" scaleX="0.8" scaleY="0.8" blendMode="normal" color="474031"/>
+					</StaticImage>
+					<StaticImage origin="50 0">
+						<RenderObject2D texture="data/textures/gui/missions/pack_stars.tga" scaleX="0.8" scaleY="0.8" blendMode="normal" color="474031"/>
+					</StaticImage>
+					<StaticImage origin="100 0">
+						<RenderObject2D texture="data/textures/gui/missions/pack_stars.tga" scaleX="0.8" scaleY="0.8" blendMode="normal"color="474031" />
+					</StaticImage>
+					<StaticImage origin="150 0">
+						<RenderObject2D texture="data/textures/gui/missions/pack_stars.tga" scaleX="0.8" scaleY="0.8" blendMode="normal"color="474031" />
+					</StaticImage>
+				</Item>
+				<!--
+				<StaticText name="#MissionType" align="c" origin="0 0" text="ELIMINATE ALL HOSTILES" font="header_4" textColor="f0e3cc"/>-->
+			</Item>
+		</Item>
+
+		<Item name="#MapSeedContainer" origin="0 -80" align="b" sizeX="512" sizeY="80" hidden="true">
+			<StaticImage origin="0 0">
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="700" sizeY="80" color="231f1fDA"/>
+			</StaticImage>
+			<StaticImage origin="0 0" align="t">
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="512" sizeY="48" color="40392b"/>
+				<StaticText origin="20 0" align="l" text="@menu_m_missiongen_seed" font="header_4" textColor="f97b03" tooltip="@menu_m_missiongen_copy">
+					<OnCursorDown>
+						<Action type="TriggerEvent" target="GUI_GAME_RANDOMMAP_COPYSEED"/>
+					</OnCursorDown>
+				</StaticText>
+
+				<StaticText name="#MapSeed" origin="-20 0" align="r" text="0xBAADF00D" font="header_4" textColor="f97b03ff" tooltip="@menu_m_missiongen_copy">
+					<OnCursorDown>
+						<Action type="TriggerEvent" target="GUI_GAME_RANDOMMAP_COPYSEED"/>
+					</OnCursorDown>
+				</StaticText>
+
+			</StaticImage>
+
+		</Item>
+
+		<!-- Note: if you modify here, make sure to also modify in endscreen.xml / hud.xml /replays.xml, same structure for challenges, which is expected in code -->
+		<Item name="#Challenges" origin="0 35" align="t" sizeX="870" sizeY="70" hidden="true">
+			<OnOpen>
+				<Action type="Hide" target="#NoBonusOrChallengesHeader"/>
+				<Action type="SetOrigin" params="0 240" target="#Info"/>
+			</OnOpen>
+
+			<Item name="TextBG" origin="0 30" align="c" hidden="false">
+				<Item name="Bg_Left" origin="0 0" align="r" sizeX="500" sizeY="100" clipChildren="true">
+					<StaticImage origin="840 0" align="rt" >
+						<RenderObject2D texture="data/textures/gui/menu_select.dds" scaleX="1.6" scaleY="1.8" color="231f1fDA"/>
+					</StaticImage>
+				</Item>
+				<Item name="Bg_Right" origin="0 0" align="l" sizeX="500" sizeY="100" clipChildren="true">
+					<StaticImage origin="-840 0" align="lt" >
+						<RenderObject2D texture="data/textures/gui/menu_select.dds" scaleX="1.6" scaleY="1.8" color="231f1fDA"/>
+					</StaticImage>
+				</Item>
+			</Item>
+			<StaticText origin="0 55" align="c" text="@menu_m_challenge" font="header_4" textColor="f0e3cc"/>
+
+			<Item name="RewardBG" origin="0 0" align="c" hidden="false">
+				<Item name="Bg_Left_Stroke" origin="4 0" align="r" sizeX="500" sizeY="50" clipChildren="true">
+					<StaticImage origin="420 0" align="r" >
+						<RenderObject2D texture="data/textures/gui/menu_select.dds" scaleX="1.1" scaleY="1.1" color="40392b"/>
+					</StaticImage>
+				</Item>
+				<Item name="Bg_Right_Stroke" origin="-4 0" align="l" sizeX="500" sizeY="50" clipChildren="true">
+					<StaticImage origin="-420 0" align="l" >
+						<RenderObject2D texture="data/textures/gui/menu_select.dds" scaleX="1.1" scaleY="1.1" color="40392b"/>
+
+					</StaticImage>
+				</Item>
+			</Item>
+
+			<Item origin="0 0" align="c" sizeX="512" sizeY="48" hidden="false">
+
+				<StaticText name="#FailedColor" hidden="true" textColor="40392b"/>
+				<StaticText name="#CompletedColor" hidden="true" textColor="f97b03"/>
+				<Item name="#StartOrigin" origin="-100 0" hidden="true"/>
+
+				<Item origin="100 0" align="c">
+					<!-- name  matters, linked in code -->
+					<StaticImage>
+						<RenderObject2D texture="data/textures/gui/challenge_empty.dds"/>
+						<StaticImage name="#challenge_0" tooltip="@menu_m_challenge_singleplan_ttip">
+							<RenderObject2D texture="data/textures/gui/missions/challenge_oneplan.dds"/>
+						</StaticImage>
+					</StaticImage>
+
+					<StaticImage>
+						<RenderObject2D texture="data/textures/gui/challenge_empty.dds"/>
+						<StaticImage name="#challenge_1" tooltip="@menu_m_challenge_onetroop_ttip">
+							<RenderObject2D texture="data/textures/gui/missions/challenge_oneman.dds"/>
+						</StaticImage>
+					</StaticImage>
+
+					<StaticImage>
+						<RenderObject2D texture="data/textures/gui/challenge_empty.dds"/>
+						<StaticImage name="#challenge_2" tooltip="@menu_m_challenge_realtime_ttip">
+							<RenderObject2D texture="data/textures/gui/missions/challenge_nopause.dds"/>
+						</StaticImage>
+					</StaticImage>
+
+					<StaticImage>
+						<RenderObject2D texture="data/textures/gui/challenge_empty.dds"/>
+						<StaticImage name="#challenge_3" tooltip="@menu_m_challenge_stealth_ttip">
+							<RenderObject2D texture="data/textures/gui/missions/challenge_noalarm.dds"/>
+						</StaticImage>
+					</StaticImage>
+
+					<StaticImage>
+						<RenderObject2D texture="data/textures/gui/challenge_empty.dds"/>
+						<StaticImage name="#challenge_4">
+							<RenderObject2D texture="data/textures/gui/missions/challenge_clockrace.dds"/>
+							<Item name="#tooltip_keeper" tooltip="@menu_m_challenge_clockrace_ttip"/> <!-- custom handling of tooltip -->
+						</StaticImage>
+					</StaticImage>
+
+					<StaticImage>
+						<RenderObject2D texture="data/textures/gui/challenge_empty.dds"/>
+						<StaticImage name="#challenge_5" tooltip="@menu_m_challenge_cleanrun_ttip">
+							<RenderObject2D texture="data/textures/gui/missions/challenge_cleanrun.dds"/>
+						</StaticImage>
+					</StaticImage>
+				</Item>
+
+				<StaticImage name="#ImprovedChallenges" origin="80 0" align="r" tooltip="@menu_m_stats_improved_result">
+					<RenderObject2D texture="data/textures/gui/improved_result.dds"/>
+				</StaticImage>
+			</Item>
+		</Item>
+
+
+
+		<Item name="#BonusRewards" origin="0 35" align="t" sizeX="870" sizeY="70" hidden="true">
+			<OnOpen>
+				<Action type="Hide" target="#NoBonusOrChallengesHeader"/>
+				<Action type="SetOrigin" params="0 240" target="#Info"/>
+			</OnOpen>
+
+			<Item name="TextBG" origin="0 36" align="c" hidden="false">
+				<Item name="Bg_Left" origin="0 0" align="r" sizeX="500" sizeY="200" clipChildren="true">
+					<StaticImage origin="840 0" align="r" >
+						<RenderObject2D texture="data/textures/gui/menu_select.dds" scaleX="1.6" scaleY="1.8" color="231f1fDA"/>
+					</StaticImage>
+				</Item>
+				<Item name="Bg_Right" origin="0 0" align="l" sizeX="500" sizeY="200" clipChildren="true">
+					<StaticImage origin="-840 0" align="l" >
+						<RenderObject2D texture="data/textures/gui/menu_select.dds" scaleX="1.6" scaleY="1.8" color="231f1fDA"/>
+					</StaticImage>
+				</Item>
+			</Item>
+			<StaticText origin="0 70" align="c" text="@menu_campaign_bonusrewards" font="header_4" textColor="f0e3cc"/>
+
+			<Item name="RewardBG" origin="0 0" align="c" hidden="false">
+				<Item name="Bg_Left_Stroke" origin="4 0" align="r" sizeX="500" sizeY="100" clipChildren="true">
+					<StaticImage origin="420 0" align="r" >
+						<RenderObject2D texture="data/textures/gui/menu_select.dds" scaleX="1.1" scaleY="1.1" color="40392b"/>
+					</StaticImage>
+				</Item>
+				<Item name="Bg_Right_Stroke" origin="-4 0" align="l" sizeX="500" sizeY="100" clipChildren="true">
+					<StaticImage origin="-420 0" align="l" >
+						<RenderObject2D texture="data/textures/gui/menu_select.dds" scaleX="1.1" scaleY="1.1" color="40392b"/>
+
+					</StaticImage>
+				</Item>
+			</Item>
+
+			<Item name="#reward_stars">
+				<Item name="#reward_stars_3" origin="0 0" align="c" hidden="true">
+					<Item name="Bg_Left" origin="0 0" align="r" sizeX="500" sizeY="100" clipChildren="true">
+						<StaticImage origin="400 0" align="r" >
+							<RenderObject2D texture="data/textures/gui/menu_select.dds"  color="231f1fDA"/>
+							<StaticImage origin="20 0" align="l">
+								<ImageAnim type="pulse" speed="4"/>
+								<RenderObject2D texture="data/textures/gui/deploy/deploy_newbirth.dds" scaleX="1.5" scaleY="1.5" color="f0e3cc"/>
+							</StaticImage>
+						</StaticImage>
+					</Item>
+					<Item name="Bg_Right" origin="0 0" align="l" sizeX="500" sizeY="100" clipChildren="true">
+						<StaticImage origin="-400 0" align="l" >
+							<RenderObject2D texture="data/textures/gui/menu_select.dds"  color="231f1fDA"/>
+							<StaticImage origin="-20 0" align="r">
+								<ImageAnim type="pulse" speed="4"/>
+								<RenderObject2D texture="data/textures/gui/deploy/deploy_newbirth.dds" scaleX="1.5" scaleY="1.5" color="f0e3cc"/>
+							</StaticImage>
+						</StaticImage>
+					</Item>
+					<StaticImage origin="-100 0"> <RenderObject2D texture="data/textures/gui/endscreen_star_large_full.dds" scaleX="0.8" scaleY="0.8"/> </StaticImage>
+					<StaticImage origin="0 0"> <RenderObject2D texture="data/textures/gui/endscreen_star_large_full.dds" scaleX="0.8" scaleY="0.8"/> </StaticImage>
+					<StaticImage origin="100 0"> <RenderObject2D texture="data/textures/gui/endscreen_star_large_full.dds" scaleX="0.8" scaleY="0.8"/> </StaticImage>
+				</Item>
+
+				<Item name="#reward_stars_2" origin="0 0" align="c" hidden="true">
+					<Item name="Bg_Left" origin="0 0" align="r" sizeX="500" sizeY="100" clipChildren="true">
+						<StaticImage origin="450 0" align="r" >
+							<RenderObject2D texture="data/textures/gui/menu_select.dds"  color="231f1fDA"/>
+							<StaticImage origin="20 0" align="l">
+								<ImageAnim type="pulse" speed="4"/>
+								<RenderObject2D texture="data/textures/gui/deploy/deploy_newbirth.dds" scaleX="1.5" scaleY="1.5" color="f0e3cc"/>
+							</StaticImage>
+						</StaticImage>
+					</Item>
+					<Item name="Bg_Right" origin="0 0" align="l" sizeX="500" sizeY="100" clipChildren="true">
+						<StaticImage origin="-450 0" align="l" >
+							<RenderObject2D texture="data/textures/gui/menu_select.dds"  color="231f1fDA"/>
+							<StaticImage origin="-20 0" align="r">
+								<ImageAnim type="pulse" speed="4"/>
+								<RenderObject2D texture="data/textures/gui/deploy/deploy_newbirth.dds" scaleX="1.5" scaleY="1.5" color="f0e3cc"/>
+							</StaticImage>
+						</StaticImage>
+					</Item>
+					<StaticImage origin="-60 0"> <RenderObject2D texture="data/textures/gui/endscreen_star_large_full.dds" scaleX="0.8" scaleY="0.8"/> </StaticImage>
+					<StaticImage origin="60 0"> <RenderObject2D texture="data/textures/gui/endscreen_star_large_full.dds" scaleX="0.8" scaleY="0.8"/> </StaticImage>
+				</Item>
+
+				<Item name="#reward_stars_1" origin="0 0" align="c"  hidden="true">
+					<Item name="Bg_Left" origin="0 0" align="r" sizeX="500" sizeY="100" clipChildren="true">
+						<StaticImage origin="500 0" align="r" >
+							<RenderObject2D texture="data/textures/gui/menu_select.dds"  color="231f1fDA"/>
+							<StaticImage origin="20 0" align="l">
+								<ImageAnim type="pulse" speed="4"/>
+								<RenderObject2D texture="data/textures/gui/deploy/deploy_newbirth.dds" scaleX="1.5" scaleY="1.5" color="f0e3cc"/>
+							</StaticImage>
+						</StaticImage>
+					</Item>
+					<Item name="Bg_Right" origin="0 0" align="l" sizeX="500" sizeY="100" clipChildren="true">
+						<StaticImage origin="-500 0" align="l" >
+							<RenderObject2D texture="data/textures/gui/menu_select.dds"  color="231f1fDA"/>
+							<StaticImage origin="-20 0" align="r">
+								<ImageAnim type="pulse" speed="4"/>
+								<RenderObject2D texture="data/textures/gui/deploy/deploy_newbirth.dds" scaleX="1.5" scaleY="1.5" color="f0e3cc"/>
+							</StaticImage>
+						</StaticImage>
+					</Item>
+					<StaticImage origin="0 0"> <RenderObject2D texture="data/textures/gui/endscreen_star_large_full.dds" scaleX="0.8" scaleY="0.8"/> </StaticImage>
+				</Item>
+			</Item>
+
+			<Item name="#reward_battleHonors" origin="0 0" align="c"  hidden="false">
+				<Item name="Bg_Left" origin="0 0" align="r" sizeX="500" sizeY="100" clipChildren="true">
+					<StaticImage origin="500 0" align="r" >
+						<RenderObject2D texture="data/textures/gui/menu_select.dds"  color="231f1fDA"/>
+						<StaticImage origin="20 0" align="l">
+							<ImageAnim type="pulse" speed="4"/>
+							<RenderObject2D texture="data/textures/gui/deploy/deploy_newbirth.dds" scaleX="1.5" scaleY="1.5" color="f0e3cc"/>
+						</StaticImage>
+					</StaticImage>
+				</Item>
+				<Item name="Bg_Right" origin="0 0" align="l" sizeX="500" sizeY="100" clipChildren="true">
+					<StaticImage origin="-500 0" align="l" >
+						<RenderObject2D texture="data/textures/gui/menu_select.dds"  color="231f1fDA"/>
+						<StaticImage origin="-20 0" align="r">
+							<ImageAnim type="pulse" speed="4"/>
+							<RenderObject2D texture="data/textures/gui/deploy/deploy_newbirth.dds" scaleX="1.5" scaleY="1.5" color="f0e3cc"/>
+						</StaticImage>
+					</StaticImage>
+				</Item>
+				<StaticImage origin="0 0"> <RenderObject2D texture="data/textures/gui/campaign/endscreen_battlehonor_full.dds" scaleX="0.8" scaleY="0.8"/> </StaticImage>
+			</Item>
+
+			<Item name="#reward_xp" origin="0 0" align="ci" hidden="true"> <!-- note that size is necessary in order to show tooltip -->
+				<Item name="Bg_Left" origin="-435 0" align="r" sizeX="500" sizeY="100" clipChildren="true">
+					<StaticImage origin="500 0" align="r" >
+						<RenderObject2D texture="data/textures/gui/menu_select.dds"  color="231f1fDA"/>
+						<StaticImage origin="20 0" align="l">
+							<ImageAnim type="pulse" speed="4"/>
+							<RenderObject2D texture="data/textures/gui/deploy/deploy_newbirth.dds" scaleX="1.5" scaleY="1.5" color="f0e3cc"/>
+						</StaticImage>
+					</StaticImage>
+				</Item>
+				<Item name="Bg_Right" origin="435 0" align="l" sizeX="500" sizeY="100" clipChildren="true">
+					<StaticImage origin="-500 0" align="l" >
+						<RenderObject2D texture="data/textures/gui/menu_select.dds"  color="231f1fDA"/>
+						<StaticImage origin="-20 0" align="r">
+							<ImageAnim type="pulse" speed="4"/>
+							<RenderObject2D texture="data/textures/gui/deploy/deploy_newbirth.dds" scaleX="1.5" scaleY="1.5" color="f0e3cc"/>
+						</StaticImage>
+					</StaticImage>
+				</Item>
+				<StaticImage origin="0 0"> <RenderObject2D texture="data/textures/gui/campaign/reward_xp_large.dds" scaleX="1" scaleY="1"/> </StaticImage>
+			</Item>
+			
+			<Item name="#reward_intel" origin="0 0" align="ci" hidden="true"> <!-- note that size is necessary in order to show tooltip -->
+				<Item name="Bg_Left" origin="-435 0" align="r" sizeX="500" sizeY="100" clipChildren="true">
+					<StaticImage origin="500 0" align="r" >
+						<RenderObject2D texture="data/textures/gui/menu_select.dds"  color="231f1fDA"/>
+						<StaticImage origin="20 0" align="l">
+							<ImageAnim type="pulse" speed="4"/>
+							<RenderObject2D texture="data/textures/gui/deploy/deploy_newbirth.dds" scaleX="1.5" scaleY="1.5" color="f0e3cc"/>
+						</StaticImage>
+					</StaticImage>
+				</Item>
+				<Item name="Bg_Right" origin="435 0" align="l" sizeX="500" sizeY="100" clipChildren="true">
+					<StaticImage origin="-500 0" align="l" >
+						<RenderObject2D texture="data/textures/gui/menu_select.dds"  color="231f1fDA"/>
+						<StaticImage origin="-20 0" align="r">
+							<ImageAnim type="pulse" speed="4"/>
+							<RenderObject2D texture="data/textures/gui/deploy/deploy_newbirth.dds" scaleX="1.5" scaleY="1.5" color="f0e3cc"/>
+						</StaticImage>
+					</StaticImage>
+				</Item>
+				<StaticImage origin="0 0"> <RenderObject2D texture="data/textures/gui/campaign/reward_intel_large.dds" scaleX="1" scaleY="1"/> </StaticImage>
+			</Item>			
+		</Item>
+
+		<!-- stats -->
+		<StaticImage origin="0 -10" sizeX="512" sizeY="230" align="b">
+			<!-- <RenderObject2D texture="data/textures/gui/end_screen_bg_02.tga" sizeX="874" sizeY="284"/> -->
+			<StaticImage origin="0 5" align="t">
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="512" sizeY="205" color="08080880"/>
+			</StaticImage>
+
+			<StaticText origin="20 0"		align="lt" text="@menu_m_stats_casualties" 	 font="paragraph_2" textColor="f0e3cc"/>
+			<StaticText origin="20 -35" 		align="lt" text="@menu_m_stats_kills" 		 font="paragraph_2" textColor="f0e3cc"/>
+			<StaticText origin="20 -70"		align="lt" text="@menu_m_stats_hostageresult" font="paragraph_2" textColor="f0e3cc"/>
+			<StaticText origin="20 -105"		align="lt" text="@menu_m_stats_civcasualties" font="paragraph_2" textColor="f0e3cc"/>
+			<StaticText origin="20 -160"		align="lt" text="@menu_m_stats_xp" 			 font="paragraph_2" textColor="f0e3cc"/>
+
+			<StaticText name="#Casualties" 		origin="-20 0"		align="rt" text="0/5"	font="paragraph_2" textColor="f0e3cc"/>
+			<StaticText name="#Kills" 			origin="-20 -35" 	align="rt" text="30/32"	font="paragraph_2" textColor="f0e3cc"/>
+			<StaticText name="#Hostages"		origin="-20 -70"	align="rt" text="0/5"	font="paragraph_2" textColor="f0e3cc"/>
+			<StaticText name="#CivCasualties"	origin="-20 -105"	align="rt" text="0/5"	font="paragraph_2" textColor="f0e3cc"/>
+			<StaticText name="#XP" 				origin="-20 -160"	align="rt" text="4242" 	font="paragraph_2" textColor="f0e3cc"/>
+		</StaticImage>
+
+		<Item name="Extra Buttons" origin="-350 -270" align="t" hidden="false">
+			<StaticImage name="Replay Background" origin="0 0">
+				<RenderObject2D texture="data/textures/gui/square.tga" color="0c0b0b80" sizeX="76" sizeY="76"/>
+			</StaticImage>
+			<StaticImage name="Show Map Background" origin="0 80">
+				<RenderObject2D texture="data/textures/gui/square.tga" color="0c0b0b80" sizeX="76" sizeY="76"/>
+			</StaticImage>
+			<StaticImage name="Show Details Background" origin="0 -80">
+				<RenderObject2D texture="data/textures/gui/square.tga" color="0c0b0b80" sizeX="76" sizeY="76"/>
+			</StaticImage>
+			<Button name="Show Map" origin="0 80" sizeX="72" sizeY="72" tooltip="@menu_m_showmap_ttip">
+					<RenderObject2D texture="data/textures/gui/menu_showmap_normal.dds" blendMode="none"/>
+				<OnHover>
+					<RenderObject2D texture="data/textures/gui/menu_showmap_hover.dds" blendMode="none"/>
+				</OnHover>
+				<OnClick>
+					<RenderObject2D texture="data/textures/gui/menu_showmap_hover.dds" scaleX="0.95" scaleY="0.95" blendMode="none"/>
+					<Action type="Hide" target="Menu_Endscreen"/>
+				</OnClick>
+			</Button>
+			<Button name="Show Replay" origin="0 0" sizeX="72" sizeY="72" tooltip="@menu_m_viewreplay_ttip" acceptInput="true">
+				<RenderObject2D texture="data/textures/gui/menu_replay_normal.dds" blendMode="none"/>
+				<OnHover>
+					<RenderObject2D texture="data/textures/gui/menu_replay_hover.dds" blendMode="none"/>
+				</OnHover>
+				<OnClick>
+					<RenderObject2D texture="data/textures/gui/menu_replay_hover.dds" scaleX="0.95" scaleY="0.95" blendMode="none"/>
+					<Action type="TriggerEvent" target="GUI_GAME_REPLAY_VIEW_LAST"/>
+				</OnClick>
+			</Button>
+			<Button name="Show Details" origin="0 -80" sizeX="72" sizeY="72" tooltip="@menu_m_mapdetails_ttip">
+				<RenderObject2D texture="data/textures/gui/menu_details_normal.dds" blendMode="none"/>
+				<OnHover>
+					<RenderObject2D texture="data/textures/gui/menu_details_hover.dds" blendMode="none"/>
+				</OnHover>
+				<OnClick>
+					<Action type="Hide" target="Menu_Endscreen"/>
+					<Action type="Show" target="Menu_Endscreen_Detailed_Endscreen"/>
+					<RenderObject2D texture="data/textures/gui/menu_details_hover.dds" scaleX="0.95" scaleY="0.95" blendMode="none"/>
+				</OnClick>
+			</Button>
+		</Item>
+	</StaticImage>
+
+
+
+
+
+	<Item align="sv" origin="0 -688">
+		<StaticImage name="ScreenFooter" align="b" origin="0 -32">
+			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="9999" sizeY="120" color="211e1d"/>
+		</StaticImage>
+
+		<Button name="#Menu_Endscreen_Back" origin="-1200 -4" align="lb">
+			<ButtonText origin="20 0" text="@menu_m_backtomenu" align="l" font="header_2" textColor="f0e3cc"/>
+			<OnHover>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="f0e3cc" />
+				<ButtonText origin="20 0" text="@menu_m_backtomenu" align="l" font="header_2" textColor="40382b"/>
+			</OnHover>
+			<OnClick>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="40382b" />
+				<Action type="Hide" target="Menu_Endscreen"/>
+				<Action type="TriggerEvent" target="GUI_GAME_QUIT_TO_MAIN_MENU"/>
+			</OnClick>
+		</Button>
+
+		<Button name="#Menu_Endscreen_Restart" align="cb" origin="0 -4" acceptInput="true" hidden="false">
+			<ButtonText origin="0 0" text="@menu_generic_restart" align="c" font="header_2" textColor="f0e3cc"/>
+			<OnHover>
+				<RenderObject2D texture="data/textures/gui/menu_select.dds" flipX="false" color="f0e3cc" />
+				<ButtonText origin="0 0" text="@menu_generic_restart" align="c" font="header_2" textColor="40382b"/>
+			</OnHover>
+			<OnClick>
+				<RenderObject2D texture="data/textures/gui/menu_select.dds" flipX="false" color="40392b" />
+				<Action type="TriggerEvent" target="GUI_GAME_RESTART_MAP"/>
+			</OnClick>
+		</Button>
+
+		<!-- this is displayed when the screen shows up in the end of a replayed mission -->
+		<Button name="#Menu_Endscreen_ReplayMission" align="cb" origin="0 -4" acceptInput="true" hidden="false">
+			<ButtonText text="@menu_m_ingame_replay_mission" font="header_2" textColor="f0e3cc"/>
+			<OnHover>
+				<RenderObject2D texture="data/textures/gui/menu_select.dds" flipX="false" color="f0e3cc" />
+				<ButtonText text="@menu_m_ingame_replay_mission" font="header_2" textColor="211e1d"/>
+			</OnHover>
+			<OnClick>
+				<RenderObject2D texture="data/textures/gui/menu_select.dds" flipX="false" color="40392b" />
+				<Action type="TriggerEvent" target="GUI_GAME_RESTART_MAP"/>
+			</OnClick>
+		</Button>
+
+		<Button name="#Menu_Endscreen_Continue" origin="1200 -4" align="rb">
+			<ButtonText origin="-20 0" text="@menu_generic_continue" align="r" font="header_2" textColor="f0e3cc"/>
+			<OnHover>
+				<RenderObject2D align="l" texture="data/textures/gui/button_hover_01.tga" flipX="true" color="f0e3cc" />
+				<ButtonText origin="-20 0" text="@menu_generic_continue" align="r" font="header_2" textColor="40382b"/>
+			</OnHover>
+			<OnClick>
+				<RenderObject2D align="l" texture="data/textures/gui/button_hover_01.tga" flipX="true" color="40392b" />
+				<Action type="Hide" target="Menu_Endscreen"/>
+
+				<!-- next mission when playing SP/CoopQuick, opens MissionSelect when hosting in coop -->
+				<Action type="TriggerEvent" target="GUI_GAME_MISSIONEND_CONTINUE"/>
+			</OnClick>
+		</Button>
+	</Item>
+</Item>
+
+<Item name="Menu_Endscreen_Detailed_Endscreen" origin="0 0" hidden="true">
+	<OnOpen>
+		<Action type="Show" target="Menu_Endscreen_Detailed"/>
+	</OnOpen>
+
+	<OnClose>
+		<Action type="Hide" target="Menu_Endscreen_Detailed"/>
+		<Action type="Show" target="Menu_Endscreen"/>
+	</OnClose>
+</Item>
+
+
+<Item name="Menu_Endscreen_Detailed_Campaign" origin="0 0" hidden="true">
+	<OnOpen>
+		<!-- move to front before showing the endscreen, so that what we draw here is visible above the campaign map -->
+		<Action type="SetForeground" target="this"/>
+
+		<Action type="Hide" target="#Menu_Endscreen_Background"/>
+		<Action type="Show" target="#Menu_Endscreen_Detailed_ViewReplay"/>
+		<Action type="Show" target="Menu_Endscreen_Detailed"/>
+	</OnOpen>
+
+	<OnClose>
+		<Action type="Show" target="#Menu_Endscreen_Background"/>
+		<Action type="Hide" target="#Menu_Endscreen_Detailed_ViewReplay"/>
+		<Action type="Hide" target="Menu_Endscreen_Detailed"/>
+	</OnClose>
+
+	<!-- this is the same background as for the Menu_CampaignMissionBrief screen. However it looks kinda bad for the detailed stats screen. But if we use a different one, it will look inconsistent between brief/detailedstats -->
+	<StaticImage>
+		<RenderObject2D texture="data/textures/gui/square.tga" sizeX="9999" sizeY="9999" color="080808e6"/>
+	</StaticImage>
+</Item>
+
+<Item name="Menu_Endscreen_Detailed" origin="0 0" hidden="true">
+	<OnOpen>
+		<Action type="TriggerEvent" target="GUI_CAPTURE_INPUT"/>
+	</OnOpen>
+
+	<OnClose>
+		<Action type="TriggerEvent" target="GUI_RELEASE_INPUT"/>
+		<Action type="Hide" target="Menu_Endscreen_Detailed_Campaign"/>
+		<Action type="Hide" target="Menu_Endscreen_Detailed_Endscreen"/>
+	</OnClose>
+
+	<OnKeyDown key0="27">
+		<Action type="Hide" target="Menu_Endscreen_Detailed"/>
+	</OnKeyDown>
+
+	<Item origin="0 0" sizeX="9999" sizeY="9999" blurBackground="true">
+	</Item>
+
+	<Item name="#Menu_Endscreen_Background" origin="0 0">
+		<StaticImage>
+			<RenderObject2D texture="data/textures/gui/bg_texture.dds" sizeX="7680" color="f0e3cc26" sizeY="1920" texRepeatX="3" texRepeatY="1"/>
+		</StaticImage>
+		<StaticImage>
+			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="2560" sizeY="9999" color="0c0b0bbf"/>
+			<StaticImage align="l" origin="-128 0">
+				<RenderObject2D texture="data/textures/gui/bg_edge.tga" flipX="true" />
+			</StaticImage>
+			<StaticImage align="r" origin="128 0">
+				<RenderObject2D texture="data/textures/gui/bg_edge.tga" flipY="true" />
+			</StaticImage>
+		</StaticImage>
+	</Item>
+
+	<Item origin="0 0" sizeX="1760" sizeY="1440">
+		<StaticImage name="mission_details" align="t" origin="0 -20">
+			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="1760" sizeY="514" color="211e1dcc"/>
+
+			<StaticImage name="header" align="t" origin="0 0">
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="1760" sizeY="90" color="f97b03"/>
+
+				<StaticImage origin="6 0" name="#ScenarioTooltip" align="l">
+					<!-- replaced by the scenario texture, taken from #ScenarioImages in globals.xml  -->
+					<RenderObject2D texture="data/textures/gui/missions/mission_clear_hostiles.dds"/>
+
+					<StaticText align="l" origin="86 0" name="#MapName" text="Level Name"  font="header_2" textColor="211e1d"/>
+				</StaticImage>
+			</StaticImage>
+
+			<StaticImage name="#MapThumbnail" align="lb" origin="20 38">
+				<RenderObject2D texture="data/maps/countrysidejackpot_thumb.dds" blendMode="add" scaleX="1.25" scaleY="1.25"/>
+			</StaticImage>
+
+			<StaticImage name="mission_outcome" align="br">
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="1080" sizeY="424" color="0c0b0b80"/>
+
+				<StaticText align="tl" origin="24 -14" name="#Reason" text="All hostiles eliminated!" font="paragraph_1" textColor="f0e3cc" />
+
+				<Item origin="-200 -100" sizeX="680" align="tl">
+					<Item name="#NoStar" hidden="true">
+						<StaticImage origin="-80 0"> <RenderObject2D texture="data/textures/gui/end_screen_star_empty.tga"/> </StaticImage>
+						<StaticImage origin="0 0"> <RenderObject2D texture="data/textures/gui/end_screen_star_empty.tga"/> </StaticImage>
+						<StaticImage origin="80 0"> <RenderObject2D texture="data/textures/gui/end_screen_star_empty.tga"/> </StaticImage>
+					</Item>
+					<Item name="#3Star" hidden="true">
+						<StaticImage origin="-80 0"> <RenderObject2D texture="data/textures/gui/end_screen_star.tga"/> </StaticImage>
+						<StaticImage origin="0 0"> <RenderObject2D texture="data/textures/gui/end_screen_star.tga"/> </StaticImage>
+						<StaticImage origin="80 0"> <RenderObject2D texture="data/textures/gui/end_screen_star.tga"/> </StaticImage>
+					</Item>
+					<Item name="#2Star" hidden="false">
+						<StaticImage origin="-80 0"> <RenderObject2D texture="data/textures/gui/end_screen_star.tga"/> </StaticImage>
+						<StaticImage origin="0 0"> <RenderObject2D texture="data/textures/gui/end_screen_star.tga"/> </StaticImage>
+						<StaticImage origin="80 0"> <RenderObject2D texture="data/textures/gui/end_screen_star_empty.tga"/> </StaticImage>
+					</Item>
+					<Item name="#1Star" hidden="true">
+						<StaticImage origin="-80 0"> <RenderObject2D texture="data/textures/gui/end_screen_star.tga"/> </StaticImage>
+						<StaticImage origin="0 0"> <RenderObject2D texture="data/textures/gui/end_screen_star_empty.tga"/> </StaticImage>
+						<StaticImage origin="80 0"> <RenderObject2D texture="data/textures/gui/end_screen_star_empty.tga"/> </StaticImage>
+					</Item>
+					<StaticImage name="#ImprovedStars" origin="160 0" tooltip="@menu_m_stats_improved_result">
+						<RenderObject2D texture="data/textures/gui/improved_result.dds"/>
+					</StaticImage>
+
+					<!-- vertical ribbon
+					<StaticImage align="l" origin="490 -2">
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="4" sizeY="64" color="f97b03"/>
+					</StaticImage>
+					-->
+				</Item>
+
+				<!--
+				<Item name="#MapSeedContainer" align="tr" origin="0 -100" hidden="false">
+					<StaticImage origin="0 0" align="r" >
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="462" sizeY="48" color="40392b"/>
+
+						<StaticText origin="18 0" align="l" text="@menu_m_missiongen_seed" font="header_4" textColor="f97b03" tooltip="@menu_m_missiongen_copy">
+							<OnCursorDown>
+								<Action type="TriggerEvent" target="GUI_GAME_RANDOMMAP_COPYSEED"/>
+							</OnCursorDown>
+						</StaticText>
+
+						<StaticText name="#MapSeed" origin="-24 0" align="r" text="0xBAADF00D" font="header_4" textColor="f97b03ff" tooltip="@menu_m_missiongen_copy">
+							<OnCursorDown>
+								<Action type="TriggerEvent" target="GUI_GAME_RANDOMMAP_COPYSEED"/>
+							</OnCursorDown>
+						</StaticText>
+					</StaticImage>
+				</Item>
+				-->
+
+				<!-- Note: if you modify here, make sure to also modify in menus.xml / hud.xml / replays.xml, same structure for challenges, which is expected in code -->
+				<Item name="#Challenges" align="tr" origin="0 -100" hidden="true">
+					<StaticImage origin="0 0" align="r" >
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="462" sizeY="48" color="40392b"/>
+
+						<StaticText name="#FailedColor" hidden="true" textColor="40392b"/>
+						<StaticText name="#CompletedColor" hidden="true" textColor="f97b03"/>
+						<Item name="#StartOrigin" origin="-72 0" hidden="true"/>
+
+						<Item origin="162 0">
+							<!-- name  matters, linked in code -->
+							<StaticImage>
+								<RenderObject2D texture="data/textures/gui/challenge_empty.dds"/>
+								<StaticImage name="#challenge_0" tooltip="@menu_m_challenge_singleplan_ttip">
+									<RenderObject2D texture="data/textures/gui/missions/challenge_oneplan.dds"/>
+								</StaticImage>
+							</StaticImage>
+
+							<StaticImage>
+								<RenderObject2D texture="data/textures/gui/challenge_empty.dds"/>
+								<StaticImage name="#challenge_1" tooltip="@menu_m_challenge_onetroop_ttip">
+									<RenderObject2D texture="data/textures/gui/missions/challenge_oneman.dds"/>
+								</StaticImage>
+							</StaticImage>
+
+							<StaticImage>
+								<RenderObject2D texture="data/textures/gui/challenge_empty.dds"/>
+								<StaticImage name="#challenge_2" tooltip="@menu_m_challenge_realtime_ttip">
+									<RenderObject2D texture="data/textures/gui/missions/challenge_nopause.dds"/>
+								</StaticImage>
+							</StaticImage>
+
+							<StaticImage>
+								<RenderObject2D texture="data/textures/gui/challenge_empty.dds"/>
+								<StaticImage name="#challenge_3" tooltip="@menu_m_challenge_stealth_ttip">
+									<RenderObject2D texture="data/textures/gui/missions/challenge_noalarm.dds"/>
+								</StaticImage>
+							</StaticImage>
+
+							<StaticImage>
+								<RenderObject2D texture="data/textures/gui/challenge_empty.dds"/>
+								<StaticImage name="#challenge_4">
+									<RenderObject2D texture="data/textures/gui/missions/challenge_clockrace.dds"/>
+									<Item name="#tooltip_keeper" tooltip="@menu_m_challenge_clockrace_ttip"/> <!-- custom handling of tooltip -->
+								</StaticImage>
+							</StaticImage>
+
+							<StaticImage>
+								<RenderObject2D texture="data/textures/gui/challenge_empty.dds"/>
+								<StaticImage name="#challenge_5" tooltip="@menu_m_challenge_cleanrun_ttip">
+									<RenderObject2D texture="data/textures/gui/missions/challenge_cleanrun.dds"/>
+								</StaticImage>
+							</StaticImage>
+						</Item>
+
+						<StaticText origin="18 0" align="l" text="@menu_m_challenge" font="header_4" textColor="f97b03"/>
+
+						<StaticImage name="#ImprovedChallenges" align="r" origin="70 0" tooltip="@menu_m_stats_improved_result">
+							<RenderObject2D texture="data/textures/gui/improved_result.dds"/>
+						</StaticImage>
+					</StaticImage>
+				</Item>
+
+				<Item name="#BonusRewards" align="tr" sizeX="400" sizeY="200" origin="0 0" hidden="false">
+					<StaticImage origin="0 0" align="r" >
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="462" sizeY="48" color="40392b"/>
+					</StaticImage>
+					<StaticImage origin="-80 0" align="r" >
+						<RenderObject2D texture="data/textures/gui/button_hover_01.tga" flipX="true"  sizeY="48" color="40392b"/>
+					</StaticImage>
+					<StaticText origin="-40 0" align="l" text="@menu_campaign_bonusrewards" font="header_4" textColor="f97b03"/>
+
+					<Item name="#reward_stars">
+						<Item name="#reward_stars_3" origin="105 0" align="c" hidden="false">
+							<StaticImage origin="-50 0"> <RenderObject2D texture="data/textures/gui/end_screen_star.tga" scaleX="0.6" scaleY="0.6"/> </StaticImage>
+							<StaticImage origin="0 0"> <RenderObject2D texture="data/textures/gui/end_screen_star.tga" scaleX="0.6" scaleY="0.6"/> </StaticImage>
+							<StaticImage origin="50 0"> <RenderObject2D texture="data/textures/gui/end_screen_star.tga" scaleX="0.6" scaleY="0.6"/> </StaticImage>
+						</Item>
+
+						<Item name="#reward_stars_2" origin="130 0" align="c" hidden="true">
+							<StaticImage origin="-25 0"> <RenderObject2D texture="data/textures/gui/end_screen_star.tga" scaleX="0.6" scaleY="0.6"/> </StaticImage>
+							<StaticImage origin="25 0"> <RenderObject2D texture="data/textures/gui/end_screen_star.tga" scaleX="0.6" scaleY="0.6"/> </StaticImage>
+						</Item>
+
+						<Item name="#reward_stars_1" origin="155 0" align="c"  hidden="true">
+							<StaticImage origin="0 0"> <RenderObject2D texture="data/textures/gui/end_screen_star.tga" scaleX="0.6" scaleY="0.6"/> </StaticImage>
+						</Item>
+					</Item>
+
+					<StaticImage name="#reward_battleHonors" origin="155 0" align="c"  hidden="true">
+						<RenderObject2D texture="data/textures/gui/customization/unlock_bh.dds" scaleX="0.9" scaleY="0.9"/>
+					</StaticImage>
+
+					<StaticImage name="#reward_xp" origin="155 0" align="c"  hidden="true">
+						<RenderObject2D texture="data/textures/gui/campaign/reward_xp_small.dds" scaleX="0.9" scaleY="0.9"/>
+					</StaticImage>
+					
+					<StaticImage name="#reward_intel" origin="155 0" align="c"  hidden="true">
+						<RenderObject2D texture="data/textures/gui/campaign/intel_medium.dds" scaleX="0.9" scaleY="0.9"/>
+					</StaticImage>					
+
+				</Item>
+
+				<Item align="i" origin="0 38">
+					<Item name="time" origin="0 0" sizeX="1080">
+						<StaticText align="l" origin="24 0" text="@menu_m_stats_elapsed" font="header_3" textColor="f97b03"/>
+						<StaticText name="#Elapsed" align="r" origin="-24 0" text="00:00" font="header_3" textColor="f97b03"/>
+						<StaticImage name="#ImprovedTime" align="r" origin="70 0" tooltip="@menu_m_stats_improved_result">
+							<RenderObject2D texture="data/textures/gui/improved_result.dds"/>
+						</StaticImage>
+						<StaticImage name="#BestTimeTooltip" origin="-200 0" align="r" tooltip="@menu_m_stats_elapsed_best">
+							<RenderObject2D texture="data/textures/gui/customization/info_hover.tga" color="ffffff80"/>
+						</StaticImage>
+					</Item>
+
+					<StaticText origin="30 -60"		align="l" text="@menu_m_stats_casualties" 		font="paragraph_2" textColor="f0e3ccb0"/>
+					<StaticText origin="30 -100" 	align="l" text="@menu_m_stats_kills" 			font="paragraph_2" textColor="f0e3ccb0"/>
+					<StaticText origin="30 -140" 	align="l" text="@menu_m_stats_hostageresult" 	font="paragraph_2" textColor="f0e3ccb0"/>
+					<StaticText origin="30 -180" 	align="l" text="@menu_m_stats_civcasualties" 	font="paragraph_2" textColor="f0e3ccb0"/>
+					<StaticText origin="30 -220"	align="l" text="@menu_m_stats_xp" 				font="paragraph_2" textColor="f0e3ccb0"/>
+
+					<StaticText name="#Casualties" 		origin="-30 -60"	align="r" text="0/5"	font="paragraph_2" textColor="f0e3ccb0"/>
+					<StaticText name="#Kills" 			origin="-30 -100" 	align="r" text="30/32"	font="paragraph_2" textColor="f0e3ccb0"/>
+					<StaticText name="#Hostages" 		origin="-30 -140"	align="r" text="0/5"	font="paragraph_2" textColor="f0e3ccb0"/>
+					<StaticText name="#CivCasualties" 	origin="-30 -180"	align="r" text="0/5"	font="paragraph_2" textColor="f0e3ccb0"/>
+					<StaticText name="#XP" 				origin="-30 -220" 	align="r" text="4242" 	font="paragraph_2" textColor="f0e3ccb0"/>
+				</Item>
+			</StaticImage>
+		</StaticImage>
+
+		<StaticImage name="trooper_details_bg" align="t" origin="0 -550">
+			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="1760" sizeY="770" color="211e1dcc"/>
+
+			<StaticImage align="r" origin="0 0">
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="120" sizeY="770" color="211e1dcc"/>
+			</StaticImage>
+			<StaticImage align="r" origin="-120 0">
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="120" sizeY="770" color="211e1d0d"/>
+			</StaticImage>
+			<StaticImage align="r" origin="-240 0">
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="120" sizeY="770" color="211e1dcc"/>
+			</StaticImage>
+			<StaticImage align="r" origin="-360 0">
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="120" sizeY="770" color="211e1d0d"/>
+			</StaticImage>
+			<StaticImage align="r" origin="-480 0">
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="120" sizeY="770" color="211e1dcc"/>
+			</StaticImage>
+			<StaticImage align="r" origin="-600 0">
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="120" sizeY="770" color="211e1d0d"/>
+			</StaticImage>
+			<StaticImage align="r" origin="-720 0">
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="120" sizeY="770" color="211e1dcc"/>
+			</StaticImage>
+			<StaticImage align="r" origin="-840 0">
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="120" sizeY="770" color="211e1d0d"/>
+			</StaticImage>
+			<StaticImage align="r" origin="-960 0">
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="120" sizeY="770" color="211e1dcc"/>
+			</StaticImage>
+
+			<Item name="#trooper_list_template" align="c" origin="0 0" sizeX="1760" sizeY="96" hidden="true">
+				<StaticImage align="r" origin="0 0">
+					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="1700" sizeY="88" color="211e1dcc"/>
+					<StaticText align="l" origin="60 0" name="#Name" text="MMMMMMMMMMMMMMM" font="header_4" textColor="f97b03"/>
+					<StaticImage name="#RankIcon" origin="-1100 0" align="r">
+						<RenderObject2D texture="data/textures/gui/customization/trooper_rank_10.dds"/>
+					</StaticImage>
+					<StaticImage name="#promoted" origin="-1080 20" align="r" hidden="true">
+						<RenderObject2D texture="data/textures/gui/endscreen_promoted.dds" blendMode="normal" scaleX="1" scaleY="1">
+							<TextureAnimation frameWidth="48" frameHeight="48" startFrame="0" endFrame="29" animationTimeMS="1000" numLoops="-1"/>
+						</RenderObject2D>
+					</StaticImage>
+				</StaticImage>
+
+				<StaticImage name="portait_template" origin="-820 0">
+					<RenderObject2D name="bg" texture="data/textures/gui/deploy/deploy_trooperbackground_01.tga" />
+
+					<StaticImage name="#Portrait" origin="0 0">
+						<RenderObject2D texture="data/textures/portraits/ranger1.dds"/>
+
+						<StaticImage name="#TeamColorMarker">
+							<RenderObject2D texture="data/textures/gui/tooltip/tooltip_circle.dds"/>
+						</StaticImage>
+
+						<StaticImage name="#ClassIcon" origin="30 -8" align="b">
+							<RenderObject2D texture="data/textures/gui/deploy/class_icon_marksman.dds" />
+						</StaticImage>
+					</StaticImage>
+				</StaticImage>
+
+				<!-- Note that names are automatically filled from the ones in xp_tables, if they exist. Special cases are handled in code -->
+				<StaticText name="kills" origin="-140 0" text="00" font="header_5" textColor="f0e3ccb0"/>
+				<StaticText name="bulletsFired" origin="-20 0" text="00" font="header_5" textColor="f0e3ccb0"/>
+				<StaticText name="accuracy" origin="100 0" text="00%" font="header_5" textColor="f0e3ccb0"/> <!-- computed in code -->
+				<StaticText name="hitsTaken" origin="220 0" text="00" font="header_5" textColor="f0e3ccb0"/>
+				<StaticText name="explosivesUsed" origin="340 0" text="00" font="header_5" textColor="f0e3ccb0"/>
+				<StaticText name="doorsBroke" origin="460 0" text="00" font="header_5" textColor="f0e3ccb0"/> <!-- computed in code -->
+				<StaticText name="distanceWalked" origin="580 0" text="00" font="header_5" textColor="f0e3ccb0"/> <!-- computed in code -->
+				<StaticText name="injuriesText" origin="700 0" text="INJURED" font="header_5" textColor="f0e3ccb0"/> <!-- computed in code -->
+				<StaticText name="xp" origin="820 0" text="00" font="header_5" textColor="f0e3ccb0"/>
+			</Item>
+
+			<!-- used to preview the itemlist size
+			<StaticImage name="trooper_details_bg" align="t" origin="0 -100">
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="1760" sizeY="676" color="ff1e1dcc"/>
+				<StaticImage name="trooper_details_bg" align="t" origin="0 -550">
+					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="1760" sizeY="770" color="211e1dcc"/>
+				</StaticImage>
+			</StaticImage>
+			-->
+			<ItemList name="#trooper_list" align="t" origin="0 -94" sizeX="1760" sizeY="676" direction="y" clipChildren="true">
+				<ButtonGraphics align="r" origin="34 0">
+					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="32" sizeY="32" color="f97b0340"/>
+					<OnHover>
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="32" sizeY="32" color="f97b03ff"/>
+					</OnHover>
+					<OnClick>
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="32" sizeY="32" color="f97b03ff"/>
+					</OnClick>
+				</ButtonGraphics>
+			</ItemList>
+
+			<!-- these need to be on top, otherwise the list will get on top and disable their tooltips -->
+			<StaticImage align="rt" origin="-20 -8" tooltip="@menu_m_stats_xp_ttip">
+				<RenderObject2D texture="data/textures/gui/endscreen_xp.dds"/>
+			</StaticImage>
+			<StaticImage align="rt" origin="-140 -8" tooltip="@menu_m_stats_status_ttip">
+				<RenderObject2D texture="data/textures/gui/endscreen_status.dds"/>
+			</StaticImage>
+			<StaticImage align="rt" origin="-260 -8" tooltip="@menu_m_stats_distance_ttip">
+				<RenderObject2D texture="data/textures/gui/endscreen_walked.dds"/>
+			</StaticImage>
+			<StaticImage align="rt" origin="-380 -8" tooltip="@menu_m_stats_doors_ttip">
+				<RenderObject2D texture="data/textures/gui/endscreen_breaches.dds"/>
+			</StaticImage>
+			<StaticImage align="rt" origin="-500 -8" tooltip="@menu_m_stats_explosives_ttip">
+				<RenderObject2D texture="data/textures/gui/endscreen_explosives.dds"/>
+			</StaticImage>
+			<StaticImage align="rt" origin="-620 -8" tooltip="@menu_m_stats_hitstaken_ttip">
+				<RenderObject2D texture="data/textures/gui/endscreen_hits.dds"/>
+			</StaticImage>
+			<StaticImage align="rt" origin="-740 -8" tooltip="@menu_m_stats_accuracy_ttip">
+				<RenderObject2D texture="data/textures/gui/endscreen_accuracy.dds"/>
+			</StaticImage>
+			<StaticImage align="rt" origin="-860 -8" tooltip="@menu_m_stats_shots_ttip">
+				<RenderObject2D texture="data/textures/gui/endscreen_shots.dds"/>
+			</StaticImage>
+			<StaticImage align="rt" origin="-980 -8" tooltip="@menu_m_stats_kills_ttip">
+				<RenderObject2D texture="data/textures/gui/endscreen_kills.dds"/>
+			</StaticImage>
+		</StaticImage>
+	</Item>
+
+	<Item align="sv" origin="0 -688">
+		<StaticImage name="ScreenFooter" align="b" origin="0 -32">
+			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="9999" sizeY="120" color="211e1dff"/>
+		</StaticImage>
+
+		<Button origin="-1200 -4" align="lb">
+			<ButtonText origin="20 0" text="@menu_generic_back" align="l" font="header_2" textColor="f0e3cc"/>
+			<OnHover>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="f0e3cc" />
+				<ButtonText origin="20 0" text="@menu_generic_back" align="l" font="header_2" textColor="40382b"/>
+			</OnHover>
+			<OnClick>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="40382b" />
+				<Action type="Hide" target="Menu_Endscreen_Detailed"/>
+			</OnClick>
+		</Button>
+
+		<!--
+			This is displayed in the campaign progress, if there is a replay for this mission.
+			Same button params as #Replays_ButtonTemplate in replays.xml, make sure to change in both places if needed.
+		-->
+		<Button name="#Menu_Endscreen_Detailed_ViewReplay" align="cb" origin="0 -4" acceptInput="true" hidden="true">
+			<ButtonText text="@menu_m_viewreplay" font="header_2" textColor="f0e3cc"/>
+			<OnHover>
+				<RenderObject2D texture="data/textures/gui/menu_select.dds" flipX="false" color="f0e3cc" />
+				<ButtonText text="@menu_m_viewreplay" font="header_2" textColor="211e1d"/>
+			</OnHover>
+			<OnClick>
+				<RenderObject2D texture="data/textures/gui/menu_select.dds" flipX="false" color="40392b" />
+				<Action type="TriggerEvent" target="GUI_GAME_REPLAY_CLICKED"/>
+			</OnClick>
+
+			<Item name="#ReplayFileName" tooltip="replay file name" hidden="true"/>
+			<StaticImage name="#ReplayBackcompatible" hidden="true"/>
+			<StaticImage name="#ReplayIncompatible" hidden="true"/>
+		</Button>
+
+		<Item name="#MapSeedContainer" align="rb" origin="1200 30" hidden="false">
+			<StaticImage origin="0 0" align="r" >
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="700" sizeY="80" color="08080860"/>
+
+				<StaticText origin="18 0" align="l" text="@menu_m_missiongen_seed" font="header_3" textColor="928a7c" tooltip="@menu_m_missiongen_copy">
+					<OnCursorDown>
+						<Action type="TriggerEvent" target="GUI_GAME_RANDOMMAP_COPYSEED"/>
+					</OnCursorDown>
+				</StaticText>
+
+				<StaticText name="#MapSeed" origin="-24 0" align="r" text="0xBAADF00D" font="header_3" textColor="928a7c" tooltip="@menu_m_missiongen_copy">
+					<OnCursorDown>
+						<Action type="TriggerEvent" target="GUI_GAME_RANDOMMAP_COPYSEED"/>
+					</OnCursorDown>
+				</StaticText>
+			</StaticImage>
+		</Item>
+	</Item>
+</Item>
+
+</GUIItems>

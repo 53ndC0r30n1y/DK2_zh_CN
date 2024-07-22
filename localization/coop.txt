@@ -1,0 +1,36 @@
+# added for the cooperative mode update
+@menu_m_coop=在线合作
+@menu_m_coop_quickmission=快速匹配
+@menu_m_coop_host=建立主机
+@menu_m_coop_search=正在搜索玩家...
+@menu_m_coop_search_in_background=后台搜索主机中...
+@menu_m_coop_search_background=后台搜索主机中...
+@menu_m_coop_host_wait=正在等待玩家%d/%d
+@menu_m_coop_waiting_host=正在等待主机...
+@menu_m_coop_friendsonly=仅限好友
+@menu_m_coop_players=玩家
+@menu_m_coop_pausetype=暂停方式
+@menu_m_coop_pause_full=同步
+@menu_m_coop_pause_full_ttip=任何玩家都可以随时暂停，但也必须全部玩家取消暂停才能继续游戏
+@menu_m_coop_pause_realtime=实时
+@menu_m_coop_pause_realtime_ttip=按下暂停时间不会停止，你控制的士兵原地待命
+@menu_m_coop_invite=邀请好友
+@menu_m_coop_invite_disabled=这个选项需要使用 Steam 悬浮窗功能。你仍然可以通过在桌面版 Steam 应用程序中右键单击他们来邀请好友，或者可以重新启用悬浮窗功能。
+@menu_m_coop_join=加入
+
+@menu_coop_peer_disconnected='%s'\n 离开游戏！
+@menu_coop_server_timedout=主机超时 :(
+@menu_coop_lobby_join_failed=加入房间失败
+@menu_coop_lobby_create_failed=创建房间失败
+@menu_coop_map_not_found=没有此地图,\n 或是版本不一致。
+
+@menu_coop_mods_detected=你已启用模组！\n你只能与拥有相同模组的玩家进行游戏！\n关闭所有模组更容易找到游戏房间
+@menu_coop_mods_detected_warning=你已经启用了改变游戏玩法的MOD！\n除非其他玩家拥有相同的mods，\n否则游戏将无法正常运行。
+@menu_coop_mods_enabled_title=已启用的模组:
+@menu_coop_commands_ttip=按住 Q 开启在线合作模式下的快速无线电指令
+@coop_quickmsg0=需要\n协助
+@coop_quickmsg1=好
+@coop_quickmsg2=同步行动
+@coop_quickmsg3=当心！
+@coop_quickmsg4=不
+@coop_quickmsg5=明白

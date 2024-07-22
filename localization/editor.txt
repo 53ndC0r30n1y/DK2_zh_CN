@@ -1,0 +1,460 @@
+#
+# IMPORTANT
+# -Do not modify/localize %s, %d, %u or any other such constructs, leave them as they are.
+# -Do not modify \n (it moves the text following it to the next line).
+# -Text IDs ending in _ttip or _tooltip can be translated using any length, for all others try to keep the same length (though it depends from text to text).
+# -Keep every @id=text on one line
+#
+
+@ed_file=文件
+@ed_new=新建...
+@ed_open=打开...
+@ed_open_ttip=打开
+@ed_save=保存
+@ed_save_ttip=保存
+@ed_run=游玩地图
+@ed_exit=退出地图编辑器
+@ed_toggle=切换编辑器
+@ed_edit=编辑
+@ed_publish=发布到创意工坊
+@ed_radius=半径
+
+@ed_too_may_entities_err=地图有太多对象，\n 尝试删除其中一些。\n（允许的最大值为 %d，为获得最佳性能保持在 4000 以下，请参阅地图统计信息）
+
+@ed_mapsettings=地图设置...
+@ed_mapsettings_ttip=更改当前地图的设置
+@ed_mapsettings_mapname=地图名字
+@ed_mapsettings_xmlname=XML文件名
+@ed_mapsettings_mapwidth=地图宽度 (米)
+@ed_mapsettings_mapheight=地图高度 (米)
+@ed_mapsettings_mapscenario=地图场景
+@ed_mapsettings_challenges=挑战
+@ed_mapsettings_othersettings=其他设置
+@ed_mapsettings_othersettings_wintime=时间挑战参考时间 (毫秒)
+@ed_mapsettings_othersettings_novisualintel=无可视情报
+@ed_mapsettings_briefinginfo=简报信息
+@ed_mapsettings_showfolder=在文件夹中显示
+@ed_mapsettings_changenotes=更改说明
+@ed_mapsettings_author=作者
+@ed_mapsettings_nightmission=夜间任务
+@ed_mapsettings_description=简介
+@ed_mapsettings_disablemusic=Disable default game music
+
+# some of these need to work for both maps AND mods, so I avoided calling them 'maps' or 'mods' in some places
+@ed_workshop_publish_dialog_title=发布地图
+@ed_workshop_update_dialog_title=更新地图
+@ed_workshop_publishing=地图发布中...
+@ed_workshop_updating=地图更新中...
+@ed_workshop_publish_success=地图已发布！
+@ed_workshop_publish_success_eula=地图已发布！您需要先接受创意工坊用户许可协议，然后才能看到它。
+@ed_workshop_publish_fail=地图发布失败，\n 请再次尝试。
+@ed_workshop_update_success=地图已更新!
+@ed_workshop_update_fail=地图更新失败，\n 请再次尝试。
+@ed_workshop_unreachable=创意工坊服务器没有响应，\n 请重试。
+@ed_workshop_publish=发表
+@ed_workshop_update=更新
+@ed_workshop_title=Title
+@ed_workshop_unlisted=Publish as Unlisted
+
+#these will be comma-separated, so don't add any commas
+#   each of them have hard-coded equivalents in code and in Steam Workshop, changing them here only affects how they're seen in the editor, but not in workshop
+@ed_maptag_tags=标签
+@ed_maptag_night=夜间模式
+@ed_maptag_size_s=小型
+@ed_maptag_size_m=中型
+@ed_maptag_size_l=大型
+@ed_maptag_size_xl=超大型
+@ed_maptag_type_clear=消灭敌人
+@ed_maptag_type_hostage=人质救援
+@ed_maptag_type_bomb_defusal=拆除炸弹
+@ed_maptag_type_abduction=逮捕HVT
+@ed_maptag_type_execution=阻止处决
+@ed_maptag_type_vip_rescue=拯救VIP
+@ed_maptag_type_raid=突袭
+@ed_maptag_type_qrf=快速反应部队
+@ed_maptag_deploy_1=1 人
+@ed_maptag_deploy_2_4=2-4 人
+@ed_maptag_deploy_5_8=5-8 人
+@ed_maptag_deploy_9plus=9 人及以上
+
+#these will be comma-separated, so don't add any commas
+#   each of them have hard-coded equivalents in code and in Steam Workshop, changing them here only affects how they're seen in the editor, but not in workshop
+@ed_modtag_units=Playable Units
+@ed_modtag_enemies=Enemies
+@ed_modtag_equipment=Equipment
+@ed_modtag_sound_fx=Sound Effects
+@ed_modtag_music=Music
+@ed_modtag_ui=UI
+@ed_modtag_campaign_operation=Campaign: Operation
+@ed_modtag_campaign_tod=Campaign: Tour of Duty
+@ed_modtag_mission_pack=Mission Pack
+@ed_modtag_prefab_entities=Prefabs & Entities
+@ed_modtag_rmg=RMG
+@ed_modtag_translation=Translation
+@ed_modtag_moddedmission=Modded Mission
+@ed_modtag_tc=Total Conversion
+@ed_modtag_other=Other
+
+@ed_view=视图
+@ed_toolbar=工具条
+@ed_grid_dec=减小网格大小
+@ed_grid_dec_ttip=减小网格大小
+@ed_grid_inc=增大网格大小
+@ed_grid_snap=对齐
+@ed_grid_snap_ttip=对齐到网格(切换)
+@ed_grid_show=显示
+@ed_grid_show_ttip=显示网格 (切换)
+@ed_grid=网格:
+@ed_show_walkable=显示无法到达的区域 (切换)
+@ed_show_collisions=显示碰撞箱 (切换)
+@ed_toggle_cc=切换颜色校正/夜视仪视觉效果 （切换）
+@ed_hide_layers=显示图层栏 (切换)
+@ed_paste_grouped=将复制粘贴的对象分组（切换）
+@ed_selection_mode=选择模式
+@ed_selection_mode_box=盒子
+@ed_selection_mode_origin=原点
+@ed_targets_mode=对象连接线
+@ed_targets_mode_alts=可替代出生点
+@ed_targets_mode_others=其它
+@ed_select=选择
+@ed_select_single=选择单个
+@ed_select_parent=选择父项
+@ed_deselect_single=取消选择单个
+@ed_undo=撤销
+@ed_redo=重做
+@ed_copy=复制
+@ed_paste=粘贴
+@ed_brushestool=油漆刷
+@ed_brushestool_ttip=刷地板
+@ed_soundefxtool=音效
+@ed_soundefxtool_ttip=音效
+@ed_particlestool=粒子编辑器
+@ed_particlestool_ttip=粒子编辑系统
+@ed_mapgfxtool=图形效果
+@ed_mapgfxtool_ttip=地图图形
+@ed_mapgentool=地图生成器
+@ed_mapgentool_ttip=预览随机地图
+@ed_rotate90=地图旋转 90°
+@ed_rotate180=地图旋转 180°
+@ed_rotate270=地图旋转 270°
+@ed_ok=OK
+@ed_cancel=离开
+@ed_name=名字
+@ed_prefab_create=创建预制件
+@ed_zoom=推近或拉远相机
+@ed_entities_showing=显示 %d个实体，共 %d个实体
+@ed_entities_hidden=(%d 个被过滤器隐藏)
+@ed_entities_selection_do=进行选择:
+@ed_entities_prefab_create=创建预制件
+@ed_entities_prefab_delete=删除预制件
+@ed_entities_group=组合
+@ed_entities_ungroup=取消组合
+@ed_entities_remove_from_group=从组合中移除
+@ed_wall_split=在选定节点处拆分墙体
+@ed_wall_smooth=平滑（不完整/测试中，仅适用于非分支墙）
+@ed_hotkey=快捷键
+@ed_delete=删除
+@ed_delete_node=删除节点
+@ed_search=搜索
+@ed_clear_search=清除搜索
+@ed_rotation=旋转
+@ed_rotation_ttip=单击并拖动以旋转\n快捷方式：\n在 Y 轴上旋转 5 度：Shift + 鼠标滚轮\n围绕 Y 轴旋转 45 度：Shift + Ctrl + 鼠标滚轮\n对于其他轴，在使用鼠标滚轮时也按住 X/Z\nR - Y轴随机旋转
+@ed_rotation_reset=重置旋转
+@ed_scale=比例尺
+@ed_scale_ttip=Ctrl+单击编辑\n快捷键：CTRL + 鼠标滚轮
+@ed_tools=工具
+@ed_canvas_only=仅显示画布
+@ed_canvas_only_ttip=快捷键: Space
+@ed_layers=图层
+@ed_layers_follows=按类别筛选
+@ed_layers_hotkeytip=提示：按住 shift 可进行单独切换。
+@ed_layers_set_current=将选定实体移动到当前编辑的图层
+@ed_filters=筛选器
+@ed_addtarget=添加对象
+@ed_targets=对象
+@ed_addaltspawn=添加替代出生点
+@ed_convertaltspawn=将替代出生点转换为实体
+@ed_convertaltspawn_ttip=将选定的替代出生点更改为实体，保留连结对象并进行分组。
+@ed_copypoly=从...复制形状
+@ed_stats=地图状态
+@ed_fonts=字体
+@ed_fonts_size=字体大小
+@ed_small=小号字体
+@ed_medium=中号字体
+@ed_large=大号字体
+@ed_warn_noundo=WARNING: No undo!
+
+@ed_panel_object=对象
+@ed_panel_object_ttip=
+@ed_panel_decal=贴纸
+@ed_panel_decal_ttip=
+@ed_panel_light=光线
+@ed_panel_light_ttip=
+@ed_panel_house=建筑
+@ed_panel_house_ttip=
+@ed_panel_human=人类
+@ed_panel_human_ttip=
+@ed_panel_prefab=预制件
+@ed_panel_prefab_ttip=
+@ed_panel_sound=声音
+@ed_panel_sound_ttip=
+@ed_panel_gameplay=游戏性
+@ed_panel_gameplay_ttip=
+@ed_panel_rmg=随机地图生成器
+@ed_panel_rmg_ttip=
+
+@ed_brushes_mode=编辑节点
+@ed_brushes_mode_height=高度
+@ed_brushes_mode_paint=粉刷
+@ed_brushes_mode_pick=拾起
+@ed_brushes_mode_ttip=鼠标左键 = 绘制+ 或高度+（按住Alt键）或拾取（按住Ctrl键）\n鼠标右键 = 绘制- 或高度-（按住Alt键）或拾取（按住Ctrl键）
+@ed_brushes_materials=材料
+@ed_brushes_material_ttip=快速选择: 按数字键 1/2/3/4\n显示上下文菜单: 鼠标右键
+@ed_brushes_shapes=形状
+@ed_brushes_brush=刷子
+@ed_brushes_opacity=不透明度
+@ed_brushes_spacing=间距
+@ed_brushes_size=尺寸
+@ed_brushes_size_ttip=快捷键: Shift + 鼠标滚轮\n快捷键: [ 或 ]
+@ed_brushes_replace_with=替换为...
+@ed_brushes_add_material_ttip=添加材料
+@ed_brushes_terrain_copied=地形已复制!\n您甚至可以将其粘贴到其它地图上 :)
+
+@ed_mapgfx_title=地图图形设置
+@ed_mapgfx_fogcolor=颜色
+@ed_mapgfx_fogdensity=浓度
+@ed_mapgfx_fognew=使用新的雾
+@ed_mapgfx_windspeed=风速
+@ed_mapgfx_winddirection=风向
+@ed_mapgfx_waterclarity=水透明度
+@ed_mapgfx_clouddensity=云层透明度
+@ed_mapgfx_terrainnormals=正常宽度
+@ed_mapgfx_terrainsharpness=混合锐度
+@ed_mapgfx_gossao=AO（环境光遮蔽）
+@ed_mapgfx_gossao_strength=强度 (对象)
+@ed_mapgfx_gossao_strengthterrain=强度 (地形)
+@ed_mapgfx_gossao_directional=方向遮挡
+@ed_mapgfx_gossao_levelsmin=Levels (最小)
+@ed_mapgfx_rain=雨
+@ed_mapgfx_enablesnow=雪
+@ed_mapgfx_terrain=地形
+@ed_mapgfx_weather=天气
+@ed_mapgfx_fog=雾
+@ed_mapgfx_LUT=色校正
+
+@ed_properties_group=组属性
+@ed_properties_basic=基础属性
+@ed_properties_light=光线属性
+@ed_properties_particle=粒子属性
+@ed_properties_traits=AI 设置
+
+@ed_origin=原点
+@ed_origin_ttip=单击并拖动以移动\n双击以编辑\n快捷键:\n方向键\nY + 鼠标滚轮 改变高度
+@ed_autoheight=自动调节 Y 轴
+@ed_autoheight_ttip=当移动实体时, 实体将会自动放置在其下方的物体之上（Y轴）\n快捷键: 使用 Ctrl + Y 打开/关闭
+@ed_noenveffects=禁用雪效果
+@ed_noenveffects_ttip=必须启用 GFX->Snow 才能使用它
+@ed_tooltip=提示框
+@ed_tooltip_ttip=鼠标悬停在物体上方时显示。\n 用于描述一些人类 (平民, VIPs 和 需要被拯救的部队)。\n 对于触发器，它在编辑器中显示为它们的名称。
+@ed_entity_type_properties=properties
+@ed_physicalparams_movement_block=mblock
+@ed_physicalparams_vision_block=vblock
+@ed_physicalparams_cover=cover
+@ed_physicalparams_solid=solid
+@ed_physicalparams_physics=physics
+@ed_physicalparams_readonly=read-only, change from template entity
+@ed_destructible_bullet=destruct: bullet
+@ed_destructible_grenade=destruct: grenade
+@ed_destructible_explosive=destruct: explosive
+@ed_destructible_none=destruct: none
+
+@ed_effect=效果
+@ed_preset=预设
+
+@ed_particlesize=尺寸
+@ed_particlesize_ttip=出生区域的大小。仅用于 \"矩形\" 发射器。蓝色盒子。
+@ed_particletarget=对象
+
+@ed_lightradius=半径
+@ed_lightangle=角度
+@ed_lightintensity=强度
+@ed_lightindoors=适用于室内
+@ed_lightlimits=限制盒
+@ed_lightlimits_ttip=右键单击自动设置选项。
+@ed_lightlimits_auto=Auto All
+@ed_lightlimits_left=Auto Left
+@ed_lightlimits_right=Auto Right
+@ed_lightlimits_up=Auto Up
+@ed_lightlimits_down=Auto Down
+@ed_lightlimits_none=无
+@ed_lightdisabled=已禁用
+@ed_lightanim=动画
+@ed_lightanimtype=类型
+@ed_lightanimfreq=频率
+@ed_lightanimrnd=随机开始时间
+
+@ed_color=颜色
+@ed_color_ttip=提示: 鼠标右键用于颜色选择\n提示: 鼠标右键用于颜色拾取
+
+@ed_rescueVIP=需要被救援
+@ed_rescueVIP_ttip=选中这一项该单位将无法被玩家直接控制，除非其它友军部队与其接触。
+@ed_human_deploymode=部署点
+@ed_human_deploymode_ttip='auto' 假如可玩部队被放置到部署槽上，玩家可以在任务开始前自定装备\n'always' 将强制部署为编辑器中的那些友军单位, 玩家将不能使用自己的小队 。
+@ed_human_deploymode_auto=部署: 自动
+@ed_human_deploymode_always=部署: 总是
+@ed_human_id_name=名称
+@ed_human_expendable=Expendable
+@ed_human_expendable_ttip=When true, human dying doesn't count as a casualty.\nYou won't lose stars or the mission if they die.
+
+@ed_trait_aggressiveness=侵略性
+@ed_trait_chanceToInvestigate=调查的可能性
+@ed_trait_chanceToThrowGrenade=投掷手雷的可能性
+@ed_trait_chanceToAmbush=伏击的可能性
+@ed_trait_chanceToBlindFire=盲目射击的可能性
+@ed_trait_investigateMaxDistance=调查的最大距离（米）
+@ed_trait_execution_stoptime=行刑倒计时（毫秒）
+@ed_trait_hvt_escape_delay=逃跑倒计时（毫秒）
+@ed_trait_roamAround=四处晃悠
+@ed_trait_roamAround_ttip=会四处晃悠，与范围内的 POI 对象互动\n在巡逻路径上时，他们会环顾最近的巡逻点寻找 POI\n仅在未收到警报时
+@ed_trait_roamRange=晃悠的范围
+@ed_trait_roamRange_ttip=影响人类寻找 POI 对象以与之交互的区域\nCtrl+单击可输入更大的数字
+
+@ed_sound_trg_when=何时播放声音
+@ed_sound_trg_always=总是
+@ed_sound_trg_before=战斗开始时播放
+@ed_sound_trg_after=战斗结束时播放
+@ed_sound_trg_trigger=仅在触发时（由触发器）
+@ed_sound_minattenuationdistance=最小衰减距离
+@ed_sound_maxattenuationdistance=最大衰减距离
+@ed_sound_count=重放次数
+@ed_sound_count_ttip=0 = 无限循环，否则播放指定次数
+@ed_sound_volume=音量
+@ed_sound_start_chance=开始机会 %, 重新评估整个循环
+@ed_sound_chance_timer=循环之间的秒数
+@ed_sound_chance_timer_ttip=如果为负数，它将覆盖声音持续时间。
+@ed_sound_disable_fx=禁用效果区
+@ed_sound_disable_fx_ttip=如果禁用，声音将不再被其所在的音效区域设定所影响。(通常用于远处的声音与音乐)
+@ed_sound=声音
+@ed_sound_ttip=从游戏的声音库中选择任何声音
+@ed_sound_category=类别
+@ed_sound_category_all=全部类别
+@ed_sound_category_music=音乐
+@ed_sound_category_game=游戏
+@ed_sound_category_ambient=环境
+
+
+@ed_quit_nosave1=地图未保存！
+@ed_quit_nosave2=您确定要退出而不保存吗？
+
+@ed_sniper_firearm=枪
+@ed_sniper_distance=距离
+@ed_sniper_fov=视野
+
+@ed_enabled=启用
+
+@ed_waypoints_time_min=等待时间最小值（毫秒）
+@ed_waypoints_time_max=等待时间最大值（毫秒）
+@ed_waypoints_chance=等待可能性
+
+@ed_timebomb_kaboomtime=倒计时 (秒)
+
+@ed_cannot_overwrite_stock_map=无法修改库存地图。\n因此，您需要将它们复制到用户文件夹。
+
+@ed_map_saved=地图已保存
+@ed_map_save_warning_mods=WARNING: The map uses modded entities. You will need to add those mods as required items to your map's Workshop entry.\n\nEntities added by mods: 
+
+@ed_spawner_create_for_group=选择实体并创建它的出生点
+@ed_spawner_create_for_group_ttip=用于为所有选定实体创建 出生点 + 触发器 的辅助工具，允许在运行时重新创建预制件。
+@ed_spawner_entity=生成实体
+@ed_spawner_ttip=当被触发器指向时将产生指定的实体
+@ed_spawner_select_to_clone=单击以选择要克隆的实体
+@ed_spawner_pick_clone=...或从实体库中选择：
+
+
+@ed_dmgarea_info=-当触发器指向它时将产生毁伤效果\n-只有在视野清晰时才能毁伤设定范围内的实体\n-将始终对指向的实体造成伤害\n-若要摧毁墙壁，请使用损坏>=100的炸药（或更大的炸药）\n    破坏墙壁的半径是指定半径的一半
+@ed_dmgarea_type=伤害类型
+@ed_dmgarea_type_ttip='Bullet' 会打破玻璃并影响人类。\n'Grenade' 会打破门和小物件。\n'Explosive' 可以摧毁大部分物体。\n'Melee' 还未被使用。\n'Destroy 100%%' 将删除目标并生成碎片（如果为该实体定义了碎片）。\n'Delete' 将删除目标而不会产生任何后果。
+@ed_dmgarea_damage=伤害
+@ed_dmgarea_ap=穿甲能力
+@ed_dmgarea_knockback=击退距离
+@ed_dmgarea_force=物理推动力
+@ed_dmgarea_suppression=压制效果调整
+@ed_dmgarea_stun=眩晕时间（毫秒）
+@ed_dmgarea_burn=燃烧时间（毫秒）
+@ed_dmgarea_screenshake=Screen shake amount
+@ed_dmgarea_screenshake_ttip= < 0 = auto, 0 = disabled, > 0 manual
+@ed_dmgarea_autotrigger=Auto trigger
+
+@ed_camerafocus_type=焦点类型
+@ed_camerafocus_default=自动 (移动到位置，缩放级别被选择为最适合游戏)
+@ed_camerafocus_origin=到实体位置（相机尝试移动到实体的原点，只要相机边界允许）
+@ed_camerafocus_fit=适合地图（在屏幕上适合整个地图，默认为开始视图）
+
+@ed_crop_menu=裁剪画布到可见地形遮罩
+@ed_crop_warning=这将裁剪地图画布以适应指定的地形遮罩（如果存在）。\此操作是不可逆的！\你确定吗？
+
+@ed_save_thumb_menu=保存高分辨率地图图像
+@ed_save_thumb_ttip=保存地图的清晰图像（以游戏的当前分辨率）
+@ed_save_thumb_open_folder=Open in folder?
+@ed_save_thumb_saved=SCREENSHOT SAVED
+
+@ed_doctrine_editor=Doctrine node editor...
+
+@ed_trigger_when_combat=when combat starts
+@ed_trigger_when_vip=when VIP is rescued or arrested
+@ed_trigger_when_goodguy=when a Goodguy enters area
+@ed_trigger_when_enabled=when enabled
+@ed_trigger_when_load=when mission loads (WARNING)
+@ed_trigger_when_badguy=when a Badguy enters area
+@ed_trigger_when_hostage=when a Hostage enters area
+@ed_trigger_when_civilian=when a Civilian enters area
+@ed_trigger_when_entity=when Entity (specify ID) enters area
+@ed_trigger_info=- Disabled triggers can be enabled by other triggers.\n    Target the disabled trigger with an enabled one to toggle it.\n    Targetting an enabled trigger will disable it.\n- You can also use Deploy slots which have been deployed upon to activate triggers.
+@ed_trigger_when_load_info=Warning: only works for triggering CameraFocusPoint entities, anything else is not tested and could cause issues.\nYou probably want to use 'when enabled' for the same purpose, with enabled checked at startup.
+@ed_trigger_when_enabled_info=If 'Enabled' is checked, we will trigger at the first Play action.\nOtherwise when another trigger will Enable us.
+@ed_trigger_target_entityID=Entity ID
+@ed_trigger_radius=Trigger radius
+@ed_trigger_delay=Delay after 'when' (msec)
+@ed_trigger_repeat_time=Repeat (msec)
+@ed_trigger_repeat_count=Repeat count
+@ed_trigger_effects_title=Effects
+@ed_trigger_effects_info=To spawn or control enemies, add a waypoint path as a target for this trigger, and choose enemy types to spawn and their numbers\nTo turn lights on, add them as target and make them disabled by default\nTo play sounds, target a sound emitter\nTo spawn a custom entity, target a Spawner
+
+@ed_trigger_effect_lights=Will toggle targetted Lights
+@ed_trigger_effect_sound=Will toggle targetted Sound Emitters
+@ed_trigger_effect_waypoints=Will send targeted humans on targetted Waypoints
+@ed_trigger_effect_trigger=Will enable/disable the targeted Trigger
+@ed_trigger_effect_camera=Will enable/disable the targeted Camera
+@ed_trigger_effect_roof=Will disable the lights under the targeted Roof
+@ed_trigger_effect_spawn=Will spawn from the targetted Spawner
+@ed_trigger_effect_damage=Will trigger DamageArea
+@ed_trigger_effect_mover=Will enable/disable the targeted Mover
+@ed_trigger_effect_destroy=Will destroy the targeted object (DEPRECATED - use DamageArea instead)
+@ed_trigger_effect_spawn_humans=Will spawn humans on targetted waypoints, starting around waypoint entity
+@ed_trigger_effect_spawn_humans_action=Human action
+@ed_trigger_effect_noise=Make noise
+@ed_trigger_effect_noise_sus=Noise is just suspicious
+@ed_trigger_effect_noise_sus_info=Suspicious noises do not trigger enemy combat behavior (ex: doors, trooper jumps, window breaking)
+@ed_trigger_effect_noise_circle=Draw circle
+@ed_trigger_effect_noise_circle_info=Will make a noise at trigger location, with given radius
+
+@ed_poi_anim_rnd=Will play a random idle animation when interacting
+@ed_poi_anim_custom=Will play a custom animation when interacting
+@ed_poi_single_user=Only allows a single user at a time
+@ed_poi_multiple_users=Generates points for multiple users
+@ed_poi_duration=Duration (msec)
+@ed_poi_look=Look
+@ed_poi_point=Point of interest
+
+@ed_mover_info_group=Target multiple entities to move as a group.
+@ed_mover_info_trigger= Movement will start once we're activated by a trigger.
+@ed_mover_info_waypoints=If you target a Waypoints entity, all targets will then move along the waypoints,\n otherwise they will rotate around the specified axis.
+@ed_mover_waypoints=Move along waypoints:
+@ed_mover_accel=movement acceleration
+@ed_mover_speed=movement speed
+@ed_mover_accel_rot=rotational acceleration
+@ed_mover_speed_rot=rotational speed
+@ed_mover_rot=rotate along
+@ed_mover_rot_info=Will rotate in the direction of the waypoints.
+@ed_mover_loop=loop
+@ed_mover_loop_info=After reaching the last waypoint, entities will move back to the first point and repeat.
