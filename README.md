@@ -1,6 +1,6 @@
 # Door Kickers 2 Simplified Chinese Translation
 
->[简体中文](https://github.com/53ndC0r30n1y/DK2_zh_CN/raw/master/ReadMe/README.zh_CN.md)
+>[简体中文](https://github.com/53ndC0r30n1y/DK2_zh_CN/blob/master/ReadMe/README.zh_CN.md)
 
 This is a public repository of Chinese translation for game Door Kickers 2.
 
