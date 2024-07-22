@@ -2,7 +2,7 @@
 
 >[简体中文](https://github.com/53ndC0r30n1y/DK2_zh_CN/blob/master/ReadMe/README.zh_CN.md)
 
-This is a public repository of Chinese translation for game Door Kickers 2.
+This is a public repository of Simplified Chinese translation for game Door Kickers 2.
 
 The aim of this translation mod is to make every text line and interface element appear in Chinese, without breaking any type of immersion the original language could generate. They might be not exact and differences between the languages may appear, yet it's been done for sake of a more understandable gameplay.
 
