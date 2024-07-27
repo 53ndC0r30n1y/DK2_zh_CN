@@ -99,7 +99,7 @@
 	</StaticImage>
 	-->
 
-	<StaticImage origin="0 380">
+	<StaticImage name="#MainMenuLogo" origin="0 380">
 		<RenderObject2D texture="data/textures/gui/dk2_logo.dds"/>
 	</StaticImage>
 
@@ -127,14 +127,14 @@
 		</StaticImage>
 		<Button origin="0 0" sizeX="320" sizeY="72">
 			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="320" sizeY="64" color="f0e3cc" blendMode="none"/>
-			<ButtonText text="版本信息" font="header_3" origin="0 0" align="c" textColor="40392b"/>
+			<ButtonText text="@menu_m_whatsnew" font="header_3" origin="0 0" align="c" textColor="40392b"/>
 			<OnHover>
 				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="320" sizeY="64" color="40392b" blendMode="none"/>
-				<ButtonText text="版本信息" font="header_3" origin="0 0" align="c" textColor="f0e3cc"/>
+				<ButtonText text="@menu_m_whatsnew" font="header_3" origin="0 0" align="c" textColor="f0e3cc"/>
 			</OnHover>
 			<OnClick>
 				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="314" sizeY="58" color="40392b" blendMode="none"/>
-				<ButtonText text="版本信息" font="header_3" origin="0 0" align="c" sizeX="0.9" sizeY="0.9" textColor="f0e3cc"/>
+				<ButtonText text="@menu_m_whatsnew" font="header_3" origin="0 0" align="c" sizeX="0.9" sizeY="0.9" textColor="f0e3cc"/>
 				<Action type="OpenURL" target="https://steamcommunity.com/app/1239080/allnews"/>
 			</OnClick>
 		</Button>
@@ -321,12 +321,16 @@
 
 		<Button name="Send Feedback" align="l" origin="-404 100" tooltip="@menu_m_sendfeedback_ttip">
 			<RenderObject2D texture="data/textures/gui/menu_feedback_normal.dds"/>
+			<ButtonText align="r" origin="-75 0" text="@menu_m_sendfeedback" font="header_3" textColor="40382b"/>
 			<OnHover>
 				<RenderObject2D texture="data/textures/gui/menu_feedback_hover.dds"/>
+				<ButtonText align="r" origin="-75 0" text="@menu_m_sendfeedback" font="header_3" textColor="f0e3cc"/>
 			</OnHover>
 			<OnClick>
 				<RenderObject2D texture="data/textures/gui/menu_feedback_hover.dds" scaleX="0.95" scaleY="0.95"/>
-				<!-- <Action type="OpenURL" target="https://inthekillhouse.com/contact"/> -->
+				<ButtonText align="r" origin="-75 0" text="@menu_m_sendfeedback" font="header_3" textColor="f0e3cc"/>
+				<Action type="Uncheck" target="#include_screenshot_replay"/>
+				<Action type="Hide" target="#include_screenshot_replay"/>
 				<Action type="Show" target="Menu_Feedback"/>
 			</OnClick>
 		</Button>
@@ -481,6 +485,9 @@
 		<StaticImage name="HowToPlay Background" origin="-80 0">
 			<RenderObject2D texture="data/textures/gui/square.tga" color="0c0b0b80" sizeX="76" sizeY="76"/>
 		</StaticImage>
+		<StaticImage origin="-160 0">
+			<RenderObject2D texture="data/textures/gui/square.tga" color="0c0b0b80" sizeX="76" sizeY="76"/>
+		</StaticImage>
 		<Button name="Options" origin="0 0" sizeX="72" sizeY="72" tooltip="@menu_m_optionsgame_ttip">
 				<RenderObject2D texture="data/textures/gui/menu_options_normal.dds" blendMode="none"/>
 			<OnHover>
@@ -499,6 +506,20 @@
 			<OnClick>
 				<RenderObject2D texture="data/textures/gui/menu_howto_hover.dds" scaleX="0.95" scaleY="0.95" blendMode="none"/>
 				<Action type="Show" target="howtoplay_ingame"/>
+			</OnClick>
+		</Button>
+		<Button origin="-160 0" tooltip="@menu_m_sendbugreport_ttip">
+			<RenderObject2D texture="data/textures/gui/menu_bug_normal.dds" blendMode="none"/>
+			<OnHover>
+				<RenderObject2D texture="data/textures/gui/menu_bug_hover.dds" blendMode="none"/>
+			</OnHover>
+			<OnClick>
+				<RenderObject2D texture="data/textures/gui/menu_bug_hover.dds" blendMode="none" scaleX="0.95" scaleY="0.95"/>
+
+				<Action type="Hide" target="Menu_Ingame"/>
+				<Action type="Check" target="#include_screenshot_replay"/>
+				<Action type="Show" target="#include_screenshot_replay"/>
+				<Action type="Show" target="Menu_Feedback"/>
 			</OnClick>
 		</Button>
 
@@ -2190,7 +2211,7 @@
 		
 		<Editbox name="#report_contents" align="lt" origin="10 -280" acceptNumbers="true" acceptLetters="true" forceUppercase="false" focusedTextColor="ffffffff" unfocusWhenEmpty="false" clipChildren="true">
 			<TextFormat origin="10 0" align="lt" font="header_4" text="" textColor="f0e3cc" wordWrap="true"/>
-			<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" color="0000005a" sizeX="980" sizeY="700"/>
+			<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" color="0000005a" sizeX="980" sizeY="670"/>
 			<ScrollButton align="r">
 				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="24" sizeY="32" color="f97b0340"/>
 				<OnHover>
@@ -2201,11 +2222,11 @@
 				</OnClick>
 			</ScrollButton>
 			<OnHover>
-				<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" color="0000007a" sizeX="980" sizeY="700"/>
+				<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" color="0000007a" sizeX="980" sizeY="670"/>
 			</OnHover>
 			<OnClick>
-				<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" color="0000007a" sizeX="980" sizeY="700"/>
-			</OnClick>			
+				<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" color="0000007a" sizeX="980" sizeY="670"/>
+			</OnClick>
 			<Cursor>
 				<RenderObject2D texture="data/textures/gui/editbox_cursor.tga" scaleY="1.5"/>
 			</Cursor>
@@ -2213,7 +2234,7 @@
 			<StaticText align="lt" origin="10 50" text="@menu_m_sendfeedback_msg" font="header_4" textColor="f0e3cc"/>
 		</Editbox>
 
-		<Checkbox name="#include_log" align="lb" origin="10 190" stealFocus="true" defaultState="CheckedState">
+		<Checkbox name="#include_screenshot_replay" align="lb" origin="10 230" stealFocus="true" defaultState="CheckedState">
 			<UncheckedState>
 				<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga"/>
 				<OnHover>
@@ -2227,11 +2248,29 @@
 					<RenderObject2D texture="data/textures/gui/menu_checkbox_checked_hover.tga"/>
 				</OnHover>
 			</CheckedState>
-			
+
+			<StaticText align="l" origin="64 0" text="@menu_m_sendfeedback_scrrepl" font="header_4" textColor="f0e3cc"/>
+		</Checkbox>
+
+		<Checkbox name="#include_log" align="lb" origin="10 170" stealFocus="true" defaultState="CheckedState">
+			<UncheckedState>
+				<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga"/>
+				<OnHover>
+					<RenderObject2D texture="data/textures/gui/menu_checkbox_empty_hover.tga"/>
+				</OnHover>
+			</UncheckedState>
+
+			<CheckedState>
+				<RenderObject2D texture="data/textures/gui/menu_checkbox_checked.tga"/>
+				<OnHover>
+					<RenderObject2D texture="data/textures/gui/menu_checkbox_checked_hover.tga"/>
+				</OnHover>
+			</CheckedState>
+
 			<StaticText align="l" origin="64 0" text="@menu_m_sendfeedback_log" font="header_4" textColor="f0e3cc"/>
 		</Checkbox>
-		
-		<Checkbox name="#include_crashdump" align="lb" origin="10 120" stealFocus="true" defaultState="UncheckedState">
+
+		<Checkbox name="#include_crashdump" align="lb" origin="10 110" stealFocus="true" defaultState="UncheckedState">
 			<UncheckedState>
 				<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga"/>
 				<OnHover>
@@ -2245,7 +2284,7 @@
 					<RenderObject2D texture="data/textures/gui/menu_checkbox_checked_hover.tga"/>
 				</OnHover>
 			</CheckedState>
-			
+
 			<StaticText align="l" origin="64 0" text="@menu_m_sendfeedback_crash" font="header_4" textColor="f0e3cc"/>
 		</Checkbox>
 

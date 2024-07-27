@@ -1,10 +1,12 @@
 #
-# IMPORTANT -22-
-# -Do not modify/localize %s, %d, %u or any other such constructs, leave them as they are.
-# -Do not modify \n (it moves the text following it to the next line).
-# -Text IDs ending in _ttip or _tooltip can be translated using any length, for all others try to keep the same length (though it depends from text to text).
-# -Keep every @id=text on one line
-#
+# IMPORTANT
+# - Do not modify %s, %d, %u, %1, %2 or any other such constructs, leave them as they are. They are replaced by the game with other strings.
+# - Do not modify \n (it moves the text following it to the next line).
+# - Keep every @id=text on one line
+# - Lines starting with '#' are comments and do not need to be translated.
+# - Lines starting with '@' define a '@token=localized text', and end on the same line. You can define new lines using the special \n character.
+# - Lines starting with '@@' define a multi-line localized text. They need to be terminated with a '@' character, eg @@token=text@
+# - Lines starting with '@#' define multiple texts for one single token name. The game will randomly pick one of the texts for a token.
 
 #
 # Units
@@ -346,8 +348,12 @@
 @firearm_m4_m203_desc=带上你可靠的伙伴——在枪管下挂一个榴弹发射\n器——适合所有M4。\n\n你会失去一些机动性和瞄准速度，获得将倒霉蛋\n从掩体后炸飞的能力，并波及他的朋友。
 @firearm_mk18_m203_desc=Mk18足够轻便，可以承受M203榴弹发射器的额\n外重量，同时保持一定的近距离瞄准性能。\n\n需要射击更远目标时，40mm破片榴弹难以抵挡\n，弥补了使用5.56子弹在短枪管上的糟糕表现。
 @firearm_m16_m203_desc=中士说，两个长又重的枪管总比一个好，谁还\n要冲刺呢？\n\n用5.56子弹的中距离精确火力控制战场上单个\n目标，用40mm榴弹开一场更大的派对。
+@firearm_mk17_cqc_eglm_name=Mk17 CQC/Mk13 EGLM
+@firearm_mk17_cqc_eglmSup_name=Mk17 CQC/Mk13 Suppressed
+@firearm_mk17_cqc_eglm_desc=The grenade-launcher equipped Mk17 is heavier and a pain to maneuver in Close Quarters, but at least the CQC version keeps the length shorter and balances better.\n\nOnce you're in combat, though, you can't argue with the lethality of 7.62x51 rounds backed by 40mm HE for those special pests. 
 @firearm_mk17_std_eglm_name=MK17/榴弹发射器增强型
-@firearm_mk17_std_eglm_desc=
+@firearm_mk17_std_eglmSup_name=Mk17/Mk13 Suppressed
+@firearm_mk17_std_eglm_desc=A solid 7.62 rifle and a faster firing 40mm launcher. Gives you great medium range performance and the ability to quickly thump gaggles of bad guys or those annoying pests that stay low in cover.\n\nThis combo is the opposite of light and maneuverable. Not for Door Kicking!   
 
 @firearm_AT4_name=M136 AT4 火箭筒
 @firearm_AT4enemy_name=M136 AT4 (84mm 高爆穿甲弹)
@@ -463,7 +469,6 @@
 @firearm_vulcanSup_name=火神消音型
 @firearm_vulcan_desc=东欧AK内核的无托式型号，火神提供了与其他部\n队相同的弹药和弹匣，但缩短步枪的长度，使它\n非常方便的近距离战斗任务。你可以安装美国制\n造的光学瞄具!\n\n装弹仍然很缓慢，所以不要被发现有空的弹匣。
 @firearm_vulcanSup_desc=火神还是AK，所以你没有亚音速弹药。\n\n好消息是，即使装了抑制器，火神还是很短，很\n适合近距离战斗。
-@firearm_vulcanSup_desc=The Vulcan is still an AK, so you don't have any subsonic ammo available.\n\nThe good news is, even with the suppressor on, the Vulcan is short, handy, and great for Close Quarters Combat.
 @firearm_ak105alpha_name=AK-105 阿尔法 (5.45mm / 30 发)
 @firearm_ak105tango_name=AK-105 / 1-6x (5.45mm / 30 发)
 @firearm_ak105alphacia_desc=阿尔法紧跟俄罗斯SOF的服务商最新趋势设计，\n进行西方化改装，它保留了AK的内部结构，添加\n了可折叠枪托和导轨，以安装你的资本主义光学\n瞄具。\n\n这把枪会激怒“正统主义者”，对于中等长度的\nAK来说有点重，但弹道平直，它能提供快速致\n命的中距离火力。
@@ -800,7 +805,9 @@
 @entity_evaczone_tooltip=撤离区：完成目标后将部队带到这里。
 @entity_hvtescape=高价值目标(HVT)撤离区：如果高价值目标逃到这里，您的任务将宣告失败。 
 @entity_timebomb_tooltip=定时炸弹
+@entity_timebombinactive_tooltip=Time Bomb (Inactive)
 @entity_ied_tooltip=Improvised Explosive Device
+@entity_detonator_tooltip=IED Detonator
 @entity_fusebox=配电箱
 @entity_destroyed_fusebox=被破坏的配电箱
 @entity_generator=Generator
@@ -824,6 +831,7 @@
 @entity_human_vip4=HVT "高乔"
 @entity_human_hostage=人质
 @entity_human_hostagemayor=市长（人质）
+@entity_human_hostagemayor=The Mayor (Hostage)
 @entity_human_civilian=平民
 @entity_human_civilian_vis_1=打电话来的平民
 @entity_human_suicidebomber=自杀式炸弹
@@ -891,6 +899,7 @@
 @tooltip_hostage=解救并护送到撤离区域。
 @tooltip_hostage_civ=被扣为人质的平民。\n他们的生命是你的首要任务。
 @tooltip_hostage_mayor=拯救并安全护送至疏散区。
+@tooltip_hostage_lttawr=Looks like our friend Tawr got himself into a bind...
 
 #
 # Non-Human Objectives and Assets
@@ -900,6 +909,7 @@
 @tooltip_fusebox=配电箱。可以关灯。
 @tooltip_cameraroom=监控室，入侵系统以获得控制权。
 @tooltip_cameraroom_disabled=安防监控控制终端（没电）
+@tooltip_cameraroom_disabled=Security Camera Control (No Power)
 @tooltip_survcamera=安防摄像头
 @tooltip_survcamera_disabled=安防摄像头（没电）
 

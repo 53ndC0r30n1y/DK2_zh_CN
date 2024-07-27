@@ -304,7 +304,7 @@
 			<Item align="t" sizeX="996" sizeY="400" origin="-512 -120">
 
 				<StaticImage align="t" origin="0 0">
-					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="996" sizeY="510" color="211e1dB3"/>
+					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="996" sizeY="450" color="211e1dB3"/>
 					<StaticImage align="t" origin="0 0">
 						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="996" sizeY="72" color="f97b03"/>
 						<StaticText text="@menu_options_game" align="lt" origin="20 0" font="header_3" textColor="201f1b" />
@@ -321,15 +321,17 @@
 					<StaticImage origin="0 -240">
 						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="996" sizeY="60" color="00000050"/>
 					</StaticImage>
+					<!--
 					<StaticImage origin="0 -360">
 						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="996" sizeY="60" color="00000050"/>
 					</StaticImage>
+					-->
 					<StaticText origin="16 0" text="@menu_options_language" align="l" font="paragraph_2" textColor="7f7f7f"/>
 					<StaticText origin="16 -60" text="@menu_options_gore_slider" align="l" font="paragraph_2" textColor="f0e3cc"/>
 					<StaticText origin="16 -120" text="@menu_options_scroll_speed" align="l" font="paragraph_2" textColor="f0e3cc"/>
 					<StaticText origin="16 -180" text="@menu_options_colored_plans" align="l" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="16 -240" text="@menu_options_reset_game_progress" align="l" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="16 -300" text="@menu_options_enablergb" align="l" font="paragraph_2" textColor="f0e3cc"/>
+					<StaticText origin="16 -240" text="@menu_options_enablergb" align="l" font="paragraph_2" textColor="f0e3cc"/>
+					<StaticText origin="16 -300" text="@menu_options_reset_game_progress" align="l" font="paragraph_2" textColor="f0e3cc"/>					
 					<!-- <StaticText origin="16 -360" text="@menu_options_send_analytics" align="l" font="paragraph_2" textColor="f0e3cc"/> -->
 				</Item>
 
@@ -427,20 +429,8 @@
 						</StaticImage>
 					</Item>
 
-					<!-- reset game progress -->
-					<Button origin="0 -240" tooltip="@menu_options_reset_game_progress_ttip">
-						<RenderObject2D texture="data/textures/gui/menu_resetprogress_normal.tga" color="ffffff"/>
-						<OnHover>
-							<RenderObject2D texture="data/textures/gui/menu_resetprogress_hover.tga"/>
-						</OnHover>
-						<OnClick>
-							<RenderObject2D texture="data/textures/gui/menu_resetprogress_hover.tga" color="ffffff8c"/>
-							<Action type="TriggerEvent" target="GUI_GAME_OPTIONS_RESET_PROGRESS"/>
-						</OnClick>
-					</Button>
-
 					<!-- disable RGB -->
-					<Checkbox name="Options_EnableRGB" origin="0 -300" stealFocus="true" defaultState="UncheckedState" tooltip="@menu_options_enablergb_ttip">
+					<Checkbox name="Options_EnableRGB" origin="0 -240" stealFocus="true" defaultState="UncheckedState" tooltip="@menu_options_enablergb_ttip">
 						<UncheckedState>
 							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga"/>
 							<OnHover>
@@ -455,6 +445,18 @@
 							</OnHover>
 						</CheckedState>
 					</Checkbox>
+					
+					<!-- reset game progress -->
+					<Button origin="0 -300" tooltip="@menu_options_reset_game_progress_ttip">
+						<RenderObject2D texture="data/textures/gui/menu_resetprogress_normal.tga" color="ffffff"/>
+						<OnHover>
+							<RenderObject2D texture="data/textures/gui/menu_resetprogress_hover.tga"/>
+						</OnHover>
+						<OnClick>
+							<RenderObject2D texture="data/textures/gui/menu_resetprogress_hover.tga" color="ffffff8c"/>
+							<Action type="TriggerEvent" target="GUI_GAME_OPTIONS_RESET_PROGRESS"/>
+						</OnClick>
+					</Button>					
 
 					<!-- no longer working
 					<Checkbox name="Options_SendAnalytics" origin="0 -360" stealFocus="true" defaultState="UncheckedState" tooltip="@menu_options_send_analytics_ttip">
@@ -474,7 +476,7 @@
 					</Checkbox>
 					-->
 					
-					<!-- for debug purposes -->
+					<!-- for debug purposes 
 					<Button name="Options_ResetAchievements" align="l" origin="-780 -360">
 						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="256" sizeY="48" color="f00000"/>
 						<ButtonText text="RESET ACHIEVEMENTS" origin="0 0" font="header_4" textColor="f0e3cc" />
@@ -488,13 +490,14 @@
 							<Action type="TriggerEvent" target="GUI_GAME_OPTIONS_RESET_ACHIEVEMENTS_TEST"/>
 						</OnClick>
 					</Button>
+					-->
 				</Item>
 			</Item>
 
 			<!-- Video Options -->
-			<Item align="t" sizeX="996" sizeY="900" origin="-512 -640">
+			<Item align="t" sizeX="996" sizeY="900" origin="-512 -580">
 				<StaticImage align="t" origin="0 0">
-					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="996" sizeY="633" color="211e1dB3"/>
+					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="996" sizeY="693" color="211e1dB3"/>
 					<StaticImage align="t" origin="0 0">
 						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="996" sizeY="72" color="f97b03"/>
 						<StaticText text="@menu_options_video" align="lt" origin="20 0" font="header_3" textColor="201f1b" />

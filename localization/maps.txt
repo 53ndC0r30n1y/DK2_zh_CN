@@ -1,12 +1,4 @@
-﻿#
-# IMPORTANT
-# -Do not modify/localize %s, %d, %u or any other such constructs, leave them as they are.
-# -Do not modify \n (it moves the text following it to the next line).
-# -Text IDs ending in _ttip or _tooltip can be translated using any length, for all others try to keep the same length (though it depends from text to text).
-# -Keep every @id=text on one line
-#
-
-
+﻿
 #
 # Single Player Mission Packs
 #
@@ -97,10 +89,9 @@
 @map_factory=WIP DUSK DELIVERY
 @map_avtt6=WIP HARD CHOICES
 @map_tiny_modern_trouble=WIP MODERN TROUBLE
-@map_tiny_trouble_09=WIP TINY TROUBLE 9
 @map_tt10=WIP THE TROUBLE WITH DOORS
 @map_traitors=WIP TRAITORS
-
+@map_against=AGAINST DEATH
 
 #  Deck of Cards
 @map_living_large=红桃J
@@ -131,6 +122,7 @@
 @map_doublerush=双向奔赴
 @map_hallwayhell=地狱走廊
 @map_unaware=出敌不意
+@map_tiny_trouble_09=WIP FOREST SPIRITS
 
 
 # Indian Country
@@ -151,8 +143,8 @@
 @map_universityassault=大学袭击
 @map_canyonambush=杀出重围
 @map_tinyswat=贵重货物
-@map_ghostcity=WIP GHOST CITY
 @map_surrounded=WIP SURROUNDED
+@map_ghostcity=WIP GHOST CITY
 
 
 # Still Classified

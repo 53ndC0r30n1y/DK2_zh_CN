@@ -16,6 +16,8 @@
 
 @campaign_op_kerak=卡拉克城堡
 @campaign_op_kerak_desc: 十字军时代的城堡已被禁忌树团伙占领。他们在城堡内设有防御工事并扣押人质，同时利用城堡作为该地区的权力投射基地。我们必须进去消灭所有威胁，同时保护无辜的生命和古代文物。
+@campaign_op_chess=CHATURANGA
+@campaign_op_chess_desc=Fun.
 #
 # Various campaign-related texts that are hardcoded
 #
@@ -77,6 +79,9 @@
 @menu_campaign_newday_txt5=%s 已晋升为 %s
 @menu_campaign_newday_txt6=小队晋升至 %d 级，你有 %d 个新的条令点数可用。
 @menu_campaign_newday_txt7=晋升：
+@menu_campaign_newday_reinforcements_arrived=* %d reinforcements have arrived
+@menu_campaign_newday_reinforcements_singular=* reinforcements ETA: %d day
+@menu_campaign_newday_reinforcements_plural=* reinforcements ETA: %d days
 @menu_campaign_status_report=状态报告
 @menu_campaign_day=天:
 @menu_campaign_days_remaining=剩余 %d 天

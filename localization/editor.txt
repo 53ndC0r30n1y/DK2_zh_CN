@@ -1,10 +1,3 @@
-#
-# IMPORTANT
-# -Do not modify/localize %s, %d, %u or any other such constructs, leave them as they are.
-# -Do not modify \n (it moves the text following it to the next line).
-# -Text IDs ending in _ttip or _tooltip can be translated using any length, for all others try to keep the same length (though it depends from text to text).
-# -Keep every @id=text on one line
-#
 
 @ed_file=文件
 @ed_new=新建...
@@ -357,6 +350,7 @@
 @ed_waypoints_chance=等待可能性
 
 @ed_timebomb_kaboomtime=倒计时 (秒)
+@ed_timebomb_kaboomtime_ttip=Set to 0 to make it not blow up automatically, only by using a Trigger
 
 @ed_cannot_overwrite_stock_map=无法修改库存地图。\n因此，您需要将它们复制到用户文件夹。
 
@@ -458,3 +452,42 @@
 @ed_mover_rot_info=Will rotate in the direction of the waypoints.
 @ed_mover_loop=loop
 @ed_mover_loop_info=After reaching the last waypoint, entities will move back to the first point and repeat.
+
+@ed_help_tutorials=Tutorials (a bit outdated, click to open):
+
+@@ed_help=
+Shortcuts:
+CTRL + E: open / close editor for the current map
+ESCAPE or RClick: deselect
+DEL: delete current selection
+SHIFT + MouseWheel: rotate selection on Y axis (also press X or Z to rotate on other axes)
+SHIFT + MouseWheel + Ctrl: rotate selection by 45 degrees
+SHIFT + RClick drag: rotate selection on Y axis (press X or Z to rotate on other axes)
+SHIFT + Click: add/remove to selection
+ALT + Click: depth selection (repeat click in the same place to cycle selection though all entities in that spot)
+Y + MouseWhell: changes the height of selection
+CTRL + MouseWheel: scale selection
+CTRL + Y: toggles Auto Y setting on selection
+CTRL + click entity on the map: automatically selects that entity type from the entity panel
+R: rotate randomly on Y (keep pressed while an entity is selected from the entity panel, to randomize its rotation)
+H + move mouse: move selection
+SPACE (hold): show in 3D perspective
+SHIFT + ArrowKeys: will move all objects in a map in the given direction
+CTLR + Click an editbox/scrollbox to manually edit its values
+
+
+Groups:
+Holding SHIFT while placing new objects will auto-create a group with all new objects
+Click + SHIFT on a sub-item from a group allows moving that object alone from within a group
+
+
+Painting shortcuts:
+ALT + LClick / RClick: paint in the normals layer
+SHIFT + paint: locks the direction of paint on X / Y
+SPACE: show terrain only
+[ / ] : increase / decrease brush size
+SHIFT + MouseWheel: increase / decrease brush size
+1 / 2 / 3 / 4 : select respective layer from the current painting material
+CTRL + Click: pick(select) material from the mouse cursor location
+R : Rotate brush 90 deg when pasting
+@

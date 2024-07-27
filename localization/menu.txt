@@ -441,7 +441,7 @@
 @menu_m_quit_replay=退出回放
 @menu_m_num_deployable=你能部署的最大士兵数量
 @menu_m_sendfeedbackbugtitle=反馈 / BUG报告
-@menu_m_sendfeedback=发送反馈
+@menu_m_sendfeedback=
 @menu_m_sendbugreport_ttip=报告一个BUG
 @menu_m_sendfeedback_ttip=友善一些
 @menu_m_sendfeedback_email=你的邮箱（可选）
